@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PixelTracer:  Fichier source de Documents/srcCPixelTracer/src/pixel_tracer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PixelTracer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_0db95f55e3ad953757e5ce90fe678e4e.html">srcCPixelTracer</a></li><li class="navelem"><a class="el" href="dir_a5bcfe2c18b31d3d4493ec20fc962c25.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">pixel_tracer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pixel__tracer_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="pixel__tracer_8h.html#a763b86b7f19e15cb237c980c118d47b6">    1</a></span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef _PIXEL_TRACER_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define _PIXEL_TRACER_H_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="list_8h.html">list.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="id_8h.html">id.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="area_8h.html">area.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="layers_8h.html">layers.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="shape_8h.html">shape.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pixel_8h.html">pixel.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="render_8h.html">render.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structpixel__tracer.html">   27</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structpixel__tracer.html">pixel_tracer</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structpixel__tracer.html#ab506d8ad053653569c1f338a70f0bc8a">   28</a></span>&#160;    <a class="code" href="structlist__.html">AreaList</a> *<a class="code" href="structpixel__tracer.html#ab506d8ad053653569c1f338a70f0bc8a">list_area</a>;    </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structpixel__tracer.html#acf8efe429a78d36200e3ca33bea41d77">   29</a></span>&#160;    <a class="code" href="structarea.html">Area</a> *<a class="code" href="structpixel__tracer.html#acf8efe429a78d36200e3ca33bea41d77">current_area</a>;     </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structpixel__tracer.html#aa452bb7fdd6a122dfa97538e548f9aba">   30</a></span>&#160;    <a class="code" href="structlayer.html">Layer</a> *<a class="code" href="structpixel__tracer.html#aa452bb7fdd6a122dfa97538e548f9aba">current_layer</a>;   </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structpixel__tracer.html#aab92254454867034e6564796f308c3c3">   31</a></span>&#160;    <a class="code" href="structshape.html">Shape</a> *<a class="code" href="structpixel__tracer.html#aab92254454867034e6564796f308c3c3">current_shape</a>;   </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpixel__tracer.html">pixel_tracer</a> <a class="code" href="structPixel__tracer__app.html">Pixel_tracer_app</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="pixel__tracer_8h.html#ab0438ce252e17dfe737ec2c4715e4dea">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="pixel__tracer_8h.html#ab0438ce252e17dfe737ec2c4715e4dea">init_app</a>(<a class="code" href="structPixel__tracer__app.html">Pixel_tracer_app</a> *app);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="pixel__tracer_8h.html#ae6a262210e7d36160929f102eb606d50">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="pixel__tracer_8h.html#ae6a262210e7d36160929f102eb606d50">destry_app</a>(<a class="code" href="structPixel__tracer__app.html">Pixel_tracer_app</a> *app);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PIXEL_TRACER_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aarea_8h_html"><div class="ttname"><a href="area_8h.html">area.h</a></div><div class="ttdoc">Définition de la structure et des fonctions pour la gestion des zones de dessin.</div></div>
+<div class="ttc" id="aid_8h_html"><div class="ttname"><a href="id_8h.html">id.h</a></div><div class="ttdoc">Gestionnaire d'ID global.</div></div>
+<div class="ttc" id="alayers_8h_html"><div class="ttname"><a href="layers_8h.html">layers.h</a></div><div class="ttdoc">Gestion des calques dans l'application de dessin vectoriel.</div></div>
+<div class="ttc" id="alist_8h_html"><div class="ttname"><a href="list_8h.html">list.h</a></div><div class="ttdoc">Définition et manipulation de listes doublement chaînées.</div></div>
+<div class="ttc" id="apixel_8h_html"><div class="ttname"><a href="pixel_8h.html">pixel.h</a></div><div class="ttdoc">Déclarations des fonctions et structures liées à la gestion des pixels pour différentes formes géomét...</div></div>
+<div class="ttc" id="apixel__tracer_8h_html_ab0438ce252e17dfe737ec2c4715e4dea"><div class="ttname"><a href="pixel__tracer_8h.html#ab0438ce252e17dfe737ec2c4715e4dea">init_app</a></div><div class="ttdeci">void init_app(Pixel_tracer_app *app)</div><div class="ttdoc">Initialise une instance de l'application Pixel Tracer.</div></div>
+<div class="ttc" id="apixel__tracer_8h_html_ae6a262210e7d36160929f102eb606d50"><div class="ttname"><a href="pixel__tracer_8h.html#ae6a262210e7d36160929f102eb606d50">destry_app</a></div><div class="ttdeci">void destry_app(Pixel_tracer_app *app)</div><div class="ttdoc">Détruit une instance de l'application Pixel Tracer.</div></div>
+<div class="ttc" id="arender_8h_html"><div class="ttname"><a href="render_8h.html">render.h</a></div><div class="ttdoc">Fonctions liées à l'affichage des zones et des formes dans l'application.</div></div>
+<div class="ttc" id="ashape_8h_html"><div class="ttname"><a href="shape_8h.html">shape.h</a></div><div class="ttdoc">Définition des structures et fonctions pour la manipulation de différentes formes géométriques (point...</div></div>
+<div class="ttc" id="astructPixel__tracer__app_html"><div class="ttname"><a href="structPixel__tracer__app.html">Pixel_tracer_app</a></div><div class="ttdoc">Structure représentant l'application de traçage de pixels.</div><div class="ttdef"><b>Definition:</b> pixel_tracer.c:25</div></div>
+<div class="ttc" id="astructarea_html"><div class="ttname"><a href="structarea.html">area</a></div><div class="ttdoc">Structure représentant une zone de dessin.</div><div class="ttdef"><b>Definition:</b> area.h:23</div></div>
+<div class="ttc" id="astructlayer_html"><div class="ttname"><a href="structlayer.html">layer</a></div><div class="ttdoc">Structure représentant un calque.</div><div class="ttdef"><b>Definition:</b> layers.h:37</div></div>
+<div class="ttc" id="astructlist___html"><div class="ttname"><a href="structlist__.html">list_</a></div><div class="ttdoc">Structure représentant une liste doublement chaînée.</div><div class="ttdef"><b>Definition:</b> list.h:31</div></div>
+<div class="ttc" id="astructpixel__tracer_html"><div class="ttname"><a href="structpixel__tracer.html">pixel_tracer</a></div><div class="ttdoc">Structure représentant l'application Pixel Tracer.</div><div class="ttdef"><b>Definition:</b> pixel_tracer.h:27</div></div>
+<div class="ttc" id="astructpixel__tracer_html_aa452bb7fdd6a122dfa97538e548f9aba"><div class="ttname"><a href="structpixel__tracer.html#aa452bb7fdd6a122dfa97538e548f9aba">pixel_tracer::current_layer</a></div><div class="ttdeci">Layer * current_layer</div><div class="ttdef"><b>Definition:</b> pixel_tracer.h:30</div></div>
+<div class="ttc" id="astructpixel__tracer_html_aab92254454867034e6564796f308c3c3"><div class="ttname"><a href="structpixel__tracer.html#aab92254454867034e6564796f308c3c3">pixel_tracer::current_shape</a></div><div class="ttdeci">Shape * current_shape</div><div class="ttdef"><b>Definition:</b> pixel_tracer.h:31</div></div>
+<div class="ttc" id="astructpixel__tracer_html_ab506d8ad053653569c1f338a70f0bc8a"><div class="ttname"><a href="structpixel__tracer.html#ab506d8ad053653569c1f338a70f0bc8a">pixel_tracer::list_area</a></div><div class="ttdeci">AreaList * list_area</div><div class="ttdef"><b>Definition:</b> pixel_tracer.h:28</div></div>
+<div class="ttc" id="astructpixel__tracer_html_acf8efe429a78d36200e3ca33bea41d77"><div class="ttname"><a href="structpixel__tracer.html#acf8efe429a78d36200e3ca33bea41d77">pixel_tracer::current_area</a></div><div class="ttdeci">Area * current_area</div><div class="ttdef"><b>Definition:</b> pixel_tracer.h:29</div></div>
+<div class="ttc" id="astructshape_html"><div class="ttname"><a href="structshape.html">shape</a></div><div class="ttdoc">Structure générique représentant une forme géométrique.</div><div class="ttdef"><b>Definition:</b> shape.h:112</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

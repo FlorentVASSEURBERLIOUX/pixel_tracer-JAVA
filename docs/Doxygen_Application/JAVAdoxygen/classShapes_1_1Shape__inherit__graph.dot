@@ -1,0 +1,19 @@
+digraph "Shapes.Shape"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Shapes.Shape",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Classe abstraite représentant une forme géométrique."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Shapes.Circle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classShapes_1_1Circle.html",tooltip="Représente un cercle défini par un centre et un rayon."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Shapes.Curve",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classShapes_1_1Curve.html",tooltip="Représente une courbe de Bézier cubique définie par quatre points."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Shapes.Line",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classShapes_1_1Line.html",tooltip="Représente une ligne définie par deux points de départ et d'arrivée."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Shapes.Point",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classShapes_1_1Point.html",tooltip="Représente un point avec des coordonnées (x, y)."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Shapes.Polygon",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classShapes_1_1Polygon.html",tooltip="Représente un polygone défini par plusieurs points."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Shapes.Rectangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classShapes_1_1Rectangle.html",tooltip="Représente un rectangle dans un système de dessin."];
+}

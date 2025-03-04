@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PixelTracer: Référence du fichier Documents/srcCPixelTracer/src/render.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PixelTracer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_0db95f55e3ad953757e5ce90fe678e4e.html">srcCPixelTracer</a></li><li class="navelem"><a class="el" href="dir_a5bcfe2c18b31d3d4493ec20fc962c25.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier render.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions liées à l'affichage des zones et des formes dans l'application.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="render_8h__dep__incl.png" border="0" usemap="#aDocuments_2srcCPixelTracer_2src_2render_8hdep" alt=""/></div>
+</div>
+</div>
+<p><a href="render_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:af1bec510ebacb4ac125a5db6223fa09e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="render_8h.html#af1bec510ebacb4ac125a5db6223fa09e">EMPTY_CHAR</a>&#160;&#160;&#160;'.'</td></tr>
+<tr class="separator:af1bec510ebacb4ac125a5db6223fa09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd1f3f5d95b6d561fd863b6e8ea53a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="render_8h.html#a1dd1f3f5d95b6d561fd863b6e8ea53a6">FULL_CHAR</a>&#160;&#160;&#160;'#'</td></tr>
+<tr class="separator:a1dd1f3f5d95b6d561fd863b6e8ea53a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:afb357ddf7c2eb20e7781c00ff0d2941f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="render_8h.html#afb357ddf7c2eb20e7781c00ff0d2941f">color_cell</a> { <b>EMPTY_CELL</b>
+, <b>BLACK_CELL</b>
+, <b>RED_CELL</b>
+ }</td></tr>
+<tr class="memdesc:afb357ddf7c2eb20e7781c00ff0d2941f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumération représentant les différents types de cellules dans une zone.  <a href="render_8h.html#afb357ddf7c2eb20e7781c00ff0d2941f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afb357ddf7c2eb20e7781c00ff0d2941f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a922fbab4f1663611713b25986613bffb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="render_8h.html#a922fbab4f1663611713b25986613bffb">render_area</a> (<a class="el" href="area_8h.html#a7329e4a6d6eb2b57249363b5b838be37">Area</a> *<a class="el" href="structarea.html">area</a>)</td></tr>
+<tr class="memdesc:a922fbab4f1663611713b25986613bffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rendu de la zone spécifiée sur l'écran.  <a href="render_8h.html#a922fbab4f1663611713b25986613bffb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a922fbab4f1663611713b25986613bffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc0a81dcc0de7f785c914d4e63355764"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="render_8h.html#abc0a81dcc0de7f785c914d4e63355764">draw_area</a> (<a class="el" href="area_8h.html#a7329e4a6d6eb2b57249363b5b838be37">Area</a> *<a class="el" href="structarea.html">area</a>)</td></tr>
+<tr class="memdesc:abc0a81dcc0de7f785c914d4e63355764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine la zone spécifiée sur l'écran.  <a href="render_8h.html#abc0a81dcc0de7f785c914d4e63355764">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abc0a81dcc0de7f785c914d4e63355764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4953d1edcbbfc7e420c423ded1d5621a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="render_8h.html#a4953d1edcbbfc7e420c423ded1d5621a">clear_screen</a> ()</td></tr>
+<tr class="memdesc:a4953d1edcbbfc7e420c423ded1d5621a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efface l'écran de l'application.  <a href="render_8h.html#a4953d1edcbbfc7e420c423ded1d5621a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4953d1edcbbfc7e420c423ded1d5621a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd298d7e1cef8783b3407d92e31d6e79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="render_8h.html#abd298d7e1cef8783b3407d92e31d6e79">draw_layer_shapes</a> (<a class="el" href="area_8h.html#a7329e4a6d6eb2b57249363b5b838be37">Area</a> *<a class="el" href="structarea.html">area</a>, <a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *<a class="el" href="structlayer.html">layer</a>)</td></tr>
+<tr class="memdesc:abd298d7e1cef8783b3407d92e31d6e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine toutes les formes d'une couche spécifiée dans la zone.  <a href="render_8h.html#abd298d7e1cef8783b3407d92e31d6e79">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abd298d7e1cef8783b3407d92e31d6e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806efbe893839426da6aab797dcdb568"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="render_8h.html#a806efbe893839426da6aab797dcdb568">draw_all_layers</a> (<a class="el" href="area_8h.html#a7329e4a6d6eb2b57249363b5b838be37">Area</a> *<a class="el" href="structarea.html">area</a>)</td></tr>
+<tr class="memdesc:a806efbe893839426da6aab797dcdb568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine toutes les couches de la zone spécifiée.  <a href="render_8h.html#a806efbe893839426da6aab797dcdb568">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a806efbe893839426da6aab797dcdb568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions liées à l'affichage des zones et des formes dans l'application. </p>
+<p>Fonctions de rendu pour afficher et manipuler des zones et des couches.</p>
+<p>Ce fichier contient des fonctions pour gérer l'affichage et le nettoyage de l'écran, ainsi que le dessin des différentes couches et formes dans une zone.</p>
+<p>Ce fichier contient des fonctions permettant de dessiner des zones, des couches, et des formes dans l'application. Les fonctions incluent la gestion de l'affichage de la zone, le nettoyage de l'écran et le rendu des couches visibles. </p>
+</div><h2 class="groupheader">Documentation des macros</h2>
+<a id="af1bec510ebacb4ac125a5db6223fa09e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1bec510ebacb4ac125a5db6223fa09e">&#9670;&nbsp;</a></span>EMPTY_CHAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EMPTY_CHAR&#160;&#160;&#160;'.'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Caractère utilisé pour représenter une cellule vide. </p>
+
+</div>
+</div>
+<a id="a1dd1f3f5d95b6d561fd863b6e8ea53a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd1f3f5d95b6d561fd863b6e8ea53a6">&#9670;&nbsp;</a></span>FULL_CHAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FULL_CHAR&#160;&#160;&#160;'#'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Caractère utilisé pour représenter une cellule pleine. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="afb357ddf7c2eb20e7781c00ff0d2941f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb357ddf7c2eb20e7781c00ff0d2941f">&#9670;&nbsp;</a></span>color_cell</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="render_8h.html#afb357ddf7c2eb20e7781c00ff0d2941f">color_cell</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumération représentant les différents types de cellules dans une zone. </p>
+<p>Cette énumération définit les différents états possibles d'une cellule dans une zone.</p><ul>
+<li><code>EMPTY_CELL</code> représente une cellule vide.</li>
+<li><code>BLACK_CELL</code> représente une cellule noire.</li>
+<li><code>RED_CELL</code> représente une cellule rouge. </li>
+</ul>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a4953d1edcbbfc7e420c423ded1d5621a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4953d1edcbbfc7e420c423ded1d5621a">&#9670;&nbsp;</a></span>clear_screen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clear_screen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Efface l'écran de l'application. </p>
+<p>Cette fonction nettoie l'écran en utilisant des commandes spécifiques en fonction du système d'exploitation :</p><ul>
+<li>Sous Linux, elle utilise une séquence d'échappement ANSI pour effacer l'écran.</li>
+<li>Sous Windows, elle utilise la commande <code>cls</code> pour effacer le terminal.</li>
+<li>Pour d'autres systèmes, elle utilise également la séquence d'échappement ANSI. </li>
+</ul>
+
+</div>
+</div>
+<a id="a806efbe893839426da6aab797dcdb568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a806efbe893839426da6aab797dcdb568">&#9670;&nbsp;</a></span>draw_all_layers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void draw_all_layers </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="area_8h.html#a7329e4a6d6eb2b57249363b5b838be37">Area</a> *&#160;</td>
+          <td class="paramname"><em>area</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dessine toutes les couches de la zone spécifiée. </p>
+<p>Cette fonction commence par dessiner toutes les couches visibles de la zone. Elle parcourt la liste des couches et appelle <code>draw_layer_shapes</code> pour chaque couche qui est marquée comme visible.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">area</td><td>Pointeur vers la zone contenant les couches à dessiner. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc0a81dcc0de7f785c914d4e63355764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc0a81dcc0de7f785c914d4e63355764">&#9670;&nbsp;</a></span>draw_area()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void draw_area </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="area_8h.html#a7329e4a6d6eb2b57249363b5b838be37">Area</a> *&#160;</td>
+          <td class="paramname"><em>area</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dessine la zone spécifiée sur l'écran. </p>
+<p>Cette fonction parcourt chaque cellule de la zone et affiche un caractère différent en fonction de l'état de chaque cellule. Elle est appelée par <code>render_area</code> pour afficher la zone à l'écran.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">area</td><td>Pointeur vers la zone à dessiner. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd298d7e1cef8783b3407d92e31d6e79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd298d7e1cef8783b3407d92e31d6e79">&#9670;&nbsp;</a></span>draw_layer_shapes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void draw_layer_shapes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="area_8h.html#a7329e4a6d6eb2b57249363b5b838be37">Area</a> *&#160;</td>
+          <td class="paramname"><em>area</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *&#160;</td>
+          <td class="paramname"><em>layer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dessine toutes les formes d'une couche spécifiée dans la zone. </p>
+<p>Cette fonction parcourt toutes les formes dans la couche spécifiée et les dessine sur la zone, en modifiant l'état des cellules dans la zone pour refléter l'apparence des formes. Seules les formes visibles sont dessinées.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">area</td><td>Pointeur vers la zone dans laquelle dessiner les formes. </td></tr>
+    <tr><td class="paramname">layer</td><td>Pointeur vers la couche contenant les formes à dessiner. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a922fbab4f1663611713b25986613bffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a922fbab4f1663611713b25986613bffb">&#9670;&nbsp;</a></span>render_area()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render_area </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="area_8h.html#a7329e4a6d6eb2b57249363b5b838be37">Area</a> *&#160;</td>
+          <td class="paramname"><em>area</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rendu de la zone spécifiée sur l'écran. </p>
+<p>Cette fonction parcourt chaque cellule de la zone et affiche son état correspondant. Les cellules vides sont représentées par <code>EMPTY_CHAR</code>, tandis que les cellules pleines sont représentées par <code>FULL_CHAR</code>.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">area</td><td>Pointeur vers la zone à afficher. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

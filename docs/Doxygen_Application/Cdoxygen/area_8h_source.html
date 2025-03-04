@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PixelTracer:  Fichier source de Documents/srcCPixelTracer/src/area.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PixelTracer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_0db95f55e3ad953757e5ce90fe678e4e.html">srcCPixelTracer</a></li><li class="navelem"><a class="el" href="dir_a5bcfe2c18b31d3d4493ec20fc962c25.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">area.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="area_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="area_8h.html#a7329e4a6d6eb2b57249363b5b838be37">    1</a></span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef _AREA_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define _AREA_H_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="layers_8h.html">layers.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structarea.html">   23</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structarea.html">area</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structarea.html#a36df9979809c53d4b7210bf732ef921d">   24</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="structarea.html#a36df9979809c53d4b7210bf732ef921d">id</a>;        </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structarea.html#a1a90a2457cd4590b49cd8bba26f846f3">   25</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structarea.html#a1a90a2457cd4590b49cd8bba26f846f3">name</a>[255];          </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structarea.html#aaed7d1987b5ac3ea8baa67d87b7adb32">   26</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structarea.html#aaed7d1987b5ac3ea8baa67d87b7adb32">width</a>;      </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structarea.html#a116f287d81c0f08805f87fdf0cc26117">   27</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structarea.html#a116f287d81c0f08805f87fdf0cc26117">height</a>;     </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structarea.html#a155aab3fa1a8ac46e724c738319e1c31">   28</a></span>&#160;    <span class="keywordtype">char</span> **<a class="code" href="structarea.html#a155aab3fa1a8ac46e724c738319e1c31">area</a>;             </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structarea.html#a10523e1da1dda3db531dbe1e7da1c559">   29</a></span>&#160;    <a class="code" href="structlist__.html">LayersList</a> *<a class="code" href="structarea.html#a10523e1da1dda3db531dbe1e7da1c559">lst_layers</a>;  </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structarea.html#aa87d7a1c1ce32baa2e1edc8eb0df132d">   30</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structarea.html#aa87d7a1c1ce32baa2e1edc8eb0df132d">empty_char</a>;         </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structarea.html#ae0be0eaa58a8e8b292ad138df3f0632d">   31</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structarea.html#ae0be0eaa58a8e8b292ad138df3f0632d">full_char</a>;          </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structarea.html">area</a> <a class="code" href="structarea.html">Area</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="area_8h.html#acb3f42a5994de701623f11948f01ce1c">   44</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="structlist__.html">list</a> <a class="code" href="area_8h.html#acb3f42a5994de701623f11948f01ce1c">AreaList</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="structarea.html">Area</a> *<a class="code" href="area_8h.html#a7b9505a5226b093d891217df3cff2e53">create_area</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structarea.html#aaed7d1987b5ac3ea8baa67d87b7adb32">width</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structarea.html#a116f287d81c0f08805f87fdf0cc26117">height</a>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <span class="keywordtype">id</span>, <span class="keywordtype">char</span> *<a class="code" href="structarea.html#a1a90a2457cd4590b49cd8bba26f846f3">name</a>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> <a class="code" href="area_8h.html#a00bf57aac2acf3b2b140c38a10f07644">delete_area</a>(<a class="code" href="structarea.html">Area</a> *<a class="code" href="structarea.html">area</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="area_8h.html#aea91d73a0878801b1968d245ccd4a94d">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="area_8h.html#aea91d73a0878801b1968d245ccd4a94d">clear_area</a>(<a class="code" href="structarea.html">Area</a> *<a class="code" href="structarea.html">area</a>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<a class="code" href="structlist__.html">AreaList</a> *<a class="code" href="area_8h.html#a4e63e0a64ea96a156cd3d1a8b9c86ff0">create_area_list</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> <a class="code" href="area_8h.html#a90d22265cf606b715a58b96cf33ac782">delete_area_list</a>(<a class="code" href="structlist__.html">AreaList</a> *area_list);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">void</span> <a class="code" href="area_8h.html#a83dc095cf944e02fad182ff383880d2f">add_area_to_list</a>(<a class="code" href="structlist__.html">AreaList</a> *area_list, <a class="code" href="structarea.html">Area</a> *<a class="code" href="structarea.html">area</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">void</span> <a class="code" href="area_8h.html#a3836b8e2e44c3a032fe7b6dc57d4369d">remove_area_from_list</a>(<a class="code" href="structlist__.html">AreaList</a> *area_list, <a class="code" href="structarea.html">Area</a> *<a class="code" href="structarea.html">area</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _AREA_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aarea_8h_html_a00bf57aac2acf3b2b140c38a10f07644"><div class="ttname"><a href="area_8h.html#a00bf57aac2acf3b2b140c38a10f07644">delete_area</a></div><div class="ttdeci">void delete_area(Area *area)</div><div class="ttdoc">Supprime une zone de dessin.</div><div class="ttdef"><b>Definition:</b> area.c:50</div></div>
+<div class="ttc" id="aarea_8h_html_a3836b8e2e44c3a032fe7b6dc57d4369d"><div class="ttname"><a href="area_8h.html#a3836b8e2e44c3a032fe7b6dc57d4369d">remove_area_from_list</a></div><div class="ttdeci">void remove_area_from_list(AreaList *area_list, Area *area)</div><div class="ttdoc">Supprime une zone d'une liste de zones de dessin.</div><div class="ttdef"><b>Definition:</b> area.c:104</div></div>
+<div class="ttc" id="aarea_8h_html_a4e63e0a64ea96a156cd3d1a8b9c86ff0"><div class="ttname"><a href="area_8h.html#a4e63e0a64ea96a156cd3d1a8b9c86ff0">create_area_list</a></div><div class="ttdeci">AreaList * create_area_list()</div><div class="ttdoc">Crée une liste de zones de dessin.</div><div class="ttdef"><b>Definition:</b> area.c:65</div></div>
+<div class="ttc" id="aarea_8h_html_a7b9505a5226b093d891217df3cff2e53"><div class="ttname"><a href="area_8h.html#a7b9505a5226b093d891217df3cff2e53">create_area</a></div><div class="ttdeci">Area * create_area(unsigned int width, unsigned int height, unsigned char id, char *name)</div><div class="ttdoc">Crée une nouvelle zone de dessin.</div><div class="ttdef"><b>Definition:</b> area.c:26</div></div>
+<div class="ttc" id="aarea_8h_html_a83dc095cf944e02fad182ff383880d2f"><div class="ttname"><a href="area_8h.html#a83dc095cf944e02fad182ff383880d2f">add_area_to_list</a></div><div class="ttdeci">void add_area_to_list(AreaList *area_list, Area *area)</div><div class="ttdoc">Ajoute une zone à une liste de zones de dessin.</div><div class="ttdef"><b>Definition:</b> area.c:91</div></div>
+<div class="ttc" id="aarea_8h_html_a90d22265cf606b715a58b96cf33ac782"><div class="ttname"><a href="area_8h.html#a90d22265cf606b715a58b96cf33ac782">delete_area_list</a></div><div class="ttdeci">void delete_area_list(AreaList *area_list)</div><div class="ttdoc">Supprime une liste de zones de dessin.</div><div class="ttdef"><b>Definition:</b> area.c:78</div></div>
+<div class="ttc" id="aarea_8h_html_acb3f42a5994de701623f11948f01ce1c"><div class="ttname"><a href="area_8h.html#acb3f42a5994de701623f11948f01ce1c">AreaList</a></div><div class="ttdeci">list AreaList</div><div class="ttdoc">Liste de zones de dessin.</div><div class="ttdef"><b>Definition:</b> area.h:44</div></div>
+<div class="ttc" id="aarea_8h_html_aea91d73a0878801b1968d245ccd4a94d"><div class="ttname"><a href="area_8h.html#aea91d73a0878801b1968d245ccd4a94d">clear_area</a></div><div class="ttdeci">void clear_area(Area *area)</div><div class="ttdoc">Efface le contenu d'une zone de dessin.</div></div>
+<div class="ttc" id="alayers_8h_html"><div class="ttname"><a href="layers_8h.html">layers.h</a></div><div class="ttdoc">Gestion des calques dans l'application de dessin vectoriel.</div></div>
+<div class="ttc" id="astructarea_html"><div class="ttname"><a href="structarea.html">area</a></div><div class="ttdoc">Structure représentant une zone de dessin.</div><div class="ttdef"><b>Definition:</b> area.h:23</div></div>
+<div class="ttc" id="astructarea_html_a10523e1da1dda3db531dbe1e7da1c559"><div class="ttname"><a href="structarea.html#a10523e1da1dda3db531dbe1e7da1c559">area::lst_layers</a></div><div class="ttdeci">LayersList * lst_layers</div><div class="ttdef"><b>Definition:</b> area.h:29</div></div>
+<div class="ttc" id="astructarea_html_a116f287d81c0f08805f87fdf0cc26117"><div class="ttname"><a href="structarea.html#a116f287d81c0f08805f87fdf0cc26117">area::height</a></div><div class="ttdeci">unsigned int height</div><div class="ttdef"><b>Definition:</b> area.h:27</div></div>
+<div class="ttc" id="astructarea_html_a155aab3fa1a8ac46e724c738319e1c31"><div class="ttname"><a href="structarea.html#a155aab3fa1a8ac46e724c738319e1c31">area::area</a></div><div class="ttdeci">char ** area</div><div class="ttdef"><b>Definition:</b> area.h:28</div></div>
+<div class="ttc" id="astructarea_html_a1a90a2457cd4590b49cd8bba26f846f3"><div class="ttname"><a href="structarea.html#a1a90a2457cd4590b49cd8bba26f846f3">area::name</a></div><div class="ttdeci">char name[255]</div><div class="ttdef"><b>Definition:</b> area.h:25</div></div>
+<div class="ttc" id="astructarea_html_a36df9979809c53d4b7210bf732ef921d"><div class="ttname"><a href="structarea.html#a36df9979809c53d4b7210bf732ef921d">area::id</a></div><div class="ttdeci">unsigned char id</div><div class="ttdef"><b>Definition:</b> area.h:24</div></div>
+<div class="ttc" id="astructarea_html_aa87d7a1c1ce32baa2e1edc8eb0df132d"><div class="ttname"><a href="structarea.html#aa87d7a1c1ce32baa2e1edc8eb0df132d">area::empty_char</a></div><div class="ttdeci">char empty_char</div><div class="ttdef"><b>Definition:</b> area.h:30</div></div>
+<div class="ttc" id="astructarea_html_aaed7d1987b5ac3ea8baa67d87b7adb32"><div class="ttname"><a href="structarea.html#aaed7d1987b5ac3ea8baa67d87b7adb32">area::width</a></div><div class="ttdeci">unsigned int width</div><div class="ttdef"><b>Definition:</b> area.h:26</div></div>
+<div class="ttc" id="astructarea_html_ae0be0eaa58a8e8b292ad138df3f0632d"><div class="ttname"><a href="structarea.html#ae0be0eaa58a8e8b292ad138df3f0632d">area::full_char</a></div><div class="ttdeci">char full_char</div><div class="ttdef"><b>Definition:</b> area.h:31</div></div>
+<div class="ttc" id="astructlist___html"><div class="ttname"><a href="structlist__.html">list_</a></div><div class="ttdoc">Structure représentant une liste doublement chaînée.</div><div class="ttdef"><b>Definition:</b> list.h:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

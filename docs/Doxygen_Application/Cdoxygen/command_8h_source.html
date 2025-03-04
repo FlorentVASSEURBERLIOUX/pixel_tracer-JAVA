@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PixelTracer:  Fichier source de Documents/srcCPixelTracer/src/command.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PixelTracer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_0db95f55e3ad953757e5ce90fe678e4e.html">srcCPixelTracer</a></li><li class="navelem"><a class="el" href="dir_a5bcfe2c18b31d3d4493ec20fc962c25.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">command.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="command_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">    1</a></span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _COMMAND_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#  define _COMMAND_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="command_8h.html#a5732be69f55a5dbbfa3df82d31314cb1">   15</a></span>&#160;<span class="preprocessor">#  define MAX_PARAM 30</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#  include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#  include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#  include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#  include &lt;readline/readline.h&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#  include &lt;readline/history.h&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#  include &quot;<a class="code" href="pixel__tracer_8h.html">pixel_tracer.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structcommand.html">   37</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structcommand.html">command</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structcommand.html#a23c0ecf45150a634c564c6410f1ae521">   38</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structcommand.html#a23c0ecf45150a634c564c6410f1ae521">name</a>[50];                </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structcommand.html#a499bf80d4d3eae7e9cf15f4e447d22d1">   39</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structcommand.html#a499bf80d4d3eae7e9cf15f4e447d22d1">int_size</a>;                 </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structcommand.html#a483212b41416a8b87a6a57ec10551e2e">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structcommand.html#a483212b41416a8b87a6a57ec10551e2e">int_params</a>[<a class="code" href="command_8h.html#a5732be69f55a5dbbfa3df82d31314cb1">MAX_PARAM</a>];    </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structcommand.html#a855d1acbb98e0a59116bd63c423759ae">   41</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structcommand.html#a855d1acbb98e0a59116bd63c423759ae">str_size</a>;                 </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structcommand.html#af1fa447d4a7484d8cb3ecc323a4669bd">   42</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcommand.html#af1fa447d4a7484d8cb3ecc323a4669bd">str_params</a>[<a class="code" href="command_8h.html#a5732be69f55a5dbbfa3df82d31314cb1">MAX_PARAM</a>]; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structcommand.html#abe33064402f577290301d43c2759388d">   43</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structcommand.html#abe33064402f577290301d43c2759388d">flt_size</a>;                 </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structcommand.html#acc61ee3d2e81034275e97c3c3501a015">   44</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structcommand.html#acc61ee3d2e81034275e97c3c3501a015">flt_params</a>[<a class="code" href="command_8h.html#a5732be69f55a5dbbfa3df82d31314cb1">MAX_PARAM</a>]; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcommand.html">command</a> <a class="code" href="structcommand.html">Command</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<a class="code" href="structcommand.html">Command</a> *<a class="code" href="command_8h.html#aca08b1efa804aac66e6a59102b693102">create_commande</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> <a class="code" href="command_8h.html#aaf5356b7d3e00e352c0e55e07e728ea2">add_int_param</a>(<a class="code" href="structcommand.html">Command</a> * cmd, <span class="keywordtype">int</span> p);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> <a class="code" href="command_8h.html#a97d0318f3c3d640783b5c1efa2187e0e">add_float_param</a>(<a class="code" href="structcommand.html">Command</a> * cmd, <span class="keywordtype">float</span> p);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span> <a class="code" href="command_8h.html#adfb1fa24d5d651505e1e71b10344fd03">add_str_param</a>(<a class="code" href="structcommand.html">Command</a> * cmd, <span class="keywordtype">char</span> *p);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> <a class="code" href="command_8h.html#aad98ce99863879716cbb6f748b12b75d">free_cmd</a>(<a class="code" href="structcommand.html">Command</a> * cmd);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">int</span> <a class="code" href="command_8h.html#ab576f5b835e80a0ef9ba46654a6295cb">read_exec_command</a>(<a class="code" href="structPixel__tracer__app.html">Pixel_tracer_app</a> * app);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">void</span> <a class="code" href="command_8h.html#a3ee388bf58d7da98c66b98d3d2ee63c5">read_from_stdin</a>(<a class="code" href="structcommand.html">Command</a> * cmd);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _COMMAND_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="acommand_8h_html_a3ee388bf58d7da98c66b98d3d2ee63c5"><div class="ttname"><a href="command_8h.html#a3ee388bf58d7da98c66b98d3d2ee63c5">read_from_stdin</a></div><div class="ttdeci">void read_from_stdin(Command *cmd)</div><div class="ttdoc">Lit les entrées utilisateur et les ajoute comme paramètres à une commande.</div><div class="ttdef"><b>Definition:</b> command.c:202</div></div>
+<div class="ttc" id="acommand_8h_html_a5732be69f55a5dbbfa3df82d31314cb1"><div class="ttname"><a href="command_8h.html#a5732be69f55a5dbbfa3df82d31314cb1">MAX_PARAM</a></div><div class="ttdeci">#define MAX_PARAM</div><div class="ttdoc">Nombre maximal de paramètres qu'une commande peut contenir.</div><div class="ttdef"><b>Definition:</b> command.h:15</div></div>
+<div class="ttc" id="acommand_8h_html_a97d0318f3c3d640783b5c1efa2187e0e"><div class="ttname"><a href="command_8h.html#a97d0318f3c3d640783b5c1efa2187e0e">add_float_param</a></div><div class="ttdeci">void add_float_param(Command *cmd, float p)</div><div class="ttdoc">Ajoute un paramètre flottant à une commande.</div><div class="ttdef"><b>Definition:</b> command.c:71</div></div>
+<div class="ttc" id="acommand_8h_html_aad98ce99863879716cbb6f748b12b75d"><div class="ttname"><a href="command_8h.html#aad98ce99863879716cbb6f748b12b75d">free_cmd</a></div><div class="ttdeci">void free_cmd(Command *cmd)</div><div class="ttdoc">Libère la mémoire allouée pour une commande.</div><div class="ttdef"><b>Definition:</b> command.c:103</div></div>
+<div class="ttc" id="acommand_8h_html_aaf5356b7d3e00e352c0e55e07e728ea2"><div class="ttname"><a href="command_8h.html#aaf5356b7d3e00e352c0e55e07e728ea2">add_int_param</a></div><div class="ttdeci">void add_int_param(Command *cmd, int p)</div><div class="ttdoc">Ajoute un paramètre entier à une commande.</div><div class="ttdef"><b>Definition:</b> command.c:56</div></div>
+<div class="ttc" id="acommand_8h_html_ab576f5b835e80a0ef9ba46654a6295cb"><div class="ttname"><a href="command_8h.html#ab576f5b835e80a0ef9ba46654a6295cb">read_exec_command</a></div><div class="ttdeci">int read_exec_command(Pixel_tracer_app *app)</div><div class="ttdoc">Lit et exécute une commande depuis l'entrée standard.</div><div class="ttdef"><b>Definition:</b> command.c:360</div></div>
+<div class="ttc" id="acommand_8h_html_aca08b1efa804aac66e6a59102b693102"><div class="ttname"><a href="command_8h.html#aca08b1efa804aac66e6a59102b693102">create_commande</a></div><div class="ttdeci">Command * create_commande()</div><div class="ttdoc">Crée une nouvelle commande.</div><div class="ttdef"><b>Definition:</b> command.c:39</div></div>
+<div class="ttc" id="acommand_8h_html_adfb1fa24d5d651505e1e71b10344fd03"><div class="ttname"><a href="command_8h.html#adfb1fa24d5d651505e1e71b10344fd03">add_str_param</a></div><div class="ttdeci">void add_str_param(Command *cmd, char *p)</div><div class="ttdoc">Ajoute un paramètre chaîne de caractères à une commande.</div><div class="ttdef"><b>Definition:</b> command.c:86</div></div>
+<div class="ttc" id="apixel__tracer_8h_html"><div class="ttname"><a href="pixel__tracer_8h.html">pixel_tracer.h</a></div><div class="ttdoc">Déclarations des fonctions liées à la gestion de l'application de traçage de pixels.</div></div>
+<div class="ttc" id="astructPixel__tracer__app_html"><div class="ttname"><a href="structPixel__tracer__app.html">Pixel_tracer_app</a></div><div class="ttdoc">Structure représentant l'application de traçage de pixels.</div><div class="ttdef"><b>Definition:</b> pixel_tracer.c:25</div></div>
+<div class="ttc" id="astructcommand_html"><div class="ttname"><a href="structcommand.html">command</a></div><div class="ttdoc">Structure représentant une commande avec ses différents paramètres.</div><div class="ttdef"><b>Definition:</b> command.h:37</div></div>
+<div class="ttc" id="astructcommand_html_a23c0ecf45150a634c564c6410f1ae521"><div class="ttname"><a href="structcommand.html#a23c0ecf45150a634c564c6410f1ae521">command::name</a></div><div class="ttdeci">char name[50]</div><div class="ttdef"><b>Definition:</b> command.h:38</div></div>
+<div class="ttc" id="astructcommand_html_a483212b41416a8b87a6a57ec10551e2e"><div class="ttname"><a href="structcommand.html#a483212b41416a8b87a6a57ec10551e2e">command::int_params</a></div><div class="ttdeci">int int_params[MAX_PARAM]</div><div class="ttdef"><b>Definition:</b> command.h:40</div></div>
+<div class="ttc" id="astructcommand_html_a499bf80d4d3eae7e9cf15f4e447d22d1"><div class="ttname"><a href="structcommand.html#a499bf80d4d3eae7e9cf15f4e447d22d1">command::int_size</a></div><div class="ttdeci">int int_size</div><div class="ttdef"><b>Definition:</b> command.h:39</div></div>
+<div class="ttc" id="astructcommand_html_a855d1acbb98e0a59116bd63c423759ae"><div class="ttname"><a href="structcommand.html#a855d1acbb98e0a59116bd63c423759ae">command::str_size</a></div><div class="ttdeci">int str_size</div><div class="ttdef"><b>Definition:</b> command.h:41</div></div>
+<div class="ttc" id="astructcommand_html_abe33064402f577290301d43c2759388d"><div class="ttname"><a href="structcommand.html#abe33064402f577290301d43c2759388d">command::flt_size</a></div><div class="ttdeci">int flt_size</div><div class="ttdef"><b>Definition:</b> command.h:43</div></div>
+<div class="ttc" id="astructcommand_html_acc61ee3d2e81034275e97c3c3501a015"><div class="ttname"><a href="structcommand.html#acc61ee3d2e81034275e97c3c3501a015">command::flt_params</a></div><div class="ttdeci">float flt_params[MAX_PARAM]</div><div class="ttdef"><b>Definition:</b> command.h:44</div></div>
+<div class="ttc" id="astructcommand_html_af1fa447d4a7484d8cb3ecc323a4669bd"><div class="ttname"><a href="structcommand.html#af1fa447d4a7484d8cb3ecc323a4669bd">command::str_params</a></div><div class="ttdeci">char * str_params[MAX_PARAM]</div><div class="ttdef"><b>Definition:</b> command.h:42</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

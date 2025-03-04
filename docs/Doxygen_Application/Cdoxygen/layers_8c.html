@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PixelTracer: Référence du fichier Documents/srcCPixelTracer/src/layers.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PixelTracer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_0db95f55e3ad953757e5ce90fe678e4e.html">srcCPixelTracer</a></li><li class="navelem"><a class="el" href="dir_a5bcfe2c18b31d3d4493ec20fc962c25.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier layers.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Gestion des couches (layers) et des formes (shapes).  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="layers_8h_source.html">layers.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de layers.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="layers_8c__incl.png" border="0" usemap="#aDocuments_2srcCPixelTracer_2src_2layers_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:aaaf6f196eb2a8c58c20406285de620a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="layers_8c.html#aaaf6f196eb2a8c58c20406285de620a2">create_layer</a> (int id, char *name)</td></tr>
+<tr class="memdesc:aaaf6f196eb2a8c58c20406285de620a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une nouvelle couche.  <a href="layers_8c.html#aaaf6f196eb2a8c58c20406285de620a2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aaaf6f196eb2a8c58c20406285de620a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3ed3647c3307a0911045c2afc1c36ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="layers_8c.html#ab3ed3647c3307a0911045c2afc1c36ab">delete_layer</a> (<a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *<a class="el" href="structlayer.html">layer</a>)</td></tr>
+<tr class="memdesc:ab3ed3647c3307a0911045c2afc1c36ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime une couche.  <a href="layers_8c.html#ab3ed3647c3307a0911045c2afc1c36ab">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab3ed3647c3307a0911045c2afc1c36ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d969b9785e58ea6265e374923f5eff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="layers_8h.html#a8273dfced8a8500299e9d2ea6d02a831">LayersList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="layers_8c.html#a60d969b9785e58ea6265e374923f5eff">create_layers_list</a> ()</td></tr>
+<tr class="memdesc:a60d969b9785e58ea6265e374923f5eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une liste de couches.  <a href="layers_8c.html#a60d969b9785e58ea6265e374923f5eff">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a60d969b9785e58ea6265e374923f5eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc379be8abba3e431a40369dbdeed98d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="layers_8c.html#acc379be8abba3e431a40369dbdeed98d">delete_layers_list</a> (<a class="el" href="layers_8h.html#a8273dfced8a8500299e9d2ea6d02a831">LayersList</a> *layer_list)</td></tr>
+<tr class="memdesc:acc379be8abba3e431a40369dbdeed98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime une liste de couches.  <a href="layers_8c.html#acc379be8abba3e431a40369dbdeed98d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acc379be8abba3e431a40369dbdeed98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59217268dcc283a4942f7e3ed56e3c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="layers_8c.html#ab59217268dcc283a4942f7e3ed56e3c8">add_layer_to_list</a> (<a class="el" href="layers_8h.html#a8273dfced8a8500299e9d2ea6d02a831">LayersList</a> *layer_list, <a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *<a class="el" href="structlayer.html">layer</a>)</td></tr>
+<tr class="memdesc:ab59217268dcc283a4942f7e3ed56e3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute une couche à une liste de couches.  <a href="layers_8c.html#ab59217268dcc283a4942f7e3ed56e3c8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab59217268dcc283a4942f7e3ed56e3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68278e8226ecbaf6bbe27addfb9152b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="layers_8c.html#a68278e8226ecbaf6bbe27addfb9152b6">remove_layer_from_list</a> (<a class="el" href="layers_8h.html#a8273dfced8a8500299e9d2ea6d02a831">LayersList</a> *layer_list, <a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *<a class="el" href="structlayer.html">layer</a>)</td></tr>
+<tr class="memdesc:a68278e8226ecbaf6bbe27addfb9152b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retire une couche d'une liste de couches.  <a href="layers_8c.html#a68278e8226ecbaf6bbe27addfb9152b6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a68278e8226ecbaf6bbe27addfb9152b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a138d9be5f5e57bb32477ae04bf5696"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="layers_8c.html#a6a138d9be5f5e57bb32477ae04bf5696">set_layer_visible</a> (<a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *<a class="el" href="structlayer.html">layer</a>)</td></tr>
+<tr class="memdesc:a6a138d9be5f5e57bb32477ae04bf5696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rendre une couche visible.  <a href="layers_8c.html#a6a138d9be5f5e57bb32477ae04bf5696">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6a138d9be5f5e57bb32477ae04bf5696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae65dbbb2e84affd3a5f58a1bf7974fa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="layers_8c.html#ae65dbbb2e84affd3a5f58a1bf7974fa5">set_layer_unvisible</a> (<a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *<a class="el" href="structlayer.html">layer</a>)</td></tr>
+<tr class="memdesc:ae65dbbb2e84affd3a5f58a1bf7974fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rendre une couche invisible.  <a href="layers_8c.html#ae65dbbb2e84affd3a5f58a1bf7974fa5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae65dbbb2e84affd3a5f58a1bf7974fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047dc1f75af9fbeee695b1dca8878c5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="layers_8c.html#a047dc1f75af9fbeee695b1dca8878c5e">add_shape_to_layer</a> (<a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *<a class="el" href="structlayer.html">layer</a>, <a class="el" href="structshape.html">Shape</a> *<a class="el" href="structshape.html">shape</a>)</td></tr>
+<tr class="memdesc:a047dc1f75af9fbeee695b1dca8878c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute une forme à une couche.  <a href="layers_8c.html#a047dc1f75af9fbeee695b1dca8878c5e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a047dc1f75af9fbeee695b1dca8878c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca54ff31c800dfa70eb0ff3019b9f05c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="layers_8c.html#aca54ff31c800dfa70eb0ff3019b9f05c">remove_shape_to_from</a> (<a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *<a class="el" href="structlayer.html">layer</a>, <a class="el" href="structshape.html">Shape</a> *<a class="el" href="structshape.html">shape</a>)</td></tr>
+<tr class="memdesc:aca54ff31c800dfa70eb0ff3019b9f05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retire une forme d'une couche.  <a href="layers_8c.html#aca54ff31c800dfa70eb0ff3019b9f05c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aca54ff31c800dfa70eb0ff3019b9f05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Gestion des couches (layers) et des formes (shapes). </p>
+<p>Ce fichier contient des fonctions pour la gestion des couches dans un système de dessin. Chaque couche peut contenir plusieurs formes et peut être visible ou invisible.</p>
+<p>Ce fichier permet de créer, supprimer, ajouter et retirer des couches, ainsi que de manipuler la visibilité des couches et des formes au sein de celles-ci. </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ab59217268dcc283a4942f7e3ed56e3c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab59217268dcc283a4942f7e3ed56e3c8">&#9670;&nbsp;</a></span>add_layer_to_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_layer_to_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="layers_8h.html#a8273dfced8a8500299e9d2ea6d02a831">LayersList</a> *&#160;</td>
+          <td class="paramname"><em>layer_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *&#160;</td>
+          <td class="paramname"><em>layer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute une couche à une liste de couches. </p>
+<p>Ajoute un calque à une liste de calques.</p>
+<p>Cette fonction insère une nouvelle couche à la fin d'une liste de couches existante.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer_list</td><td>La liste des couches à laquelle ajouter la nouvelle couche. </td></tr>
+    <tr><td class="paramname">layer</td><td>La couche à ajouter à la liste. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Création d'un nouveau nœud contenant la couche</p>
+<p>&lt; Insertion du nœud à la fin de la liste</p>
+
+</div>
+</div>
+<a id="a047dc1f75af9fbeee695b1dca8878c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a047dc1f75af9fbeee695b1dca8878c5e">&#9670;&nbsp;</a></span>add_shape_to_layer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_shape_to_layer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structshape.html">Shape</a> *&#160;</td>
+          <td class="paramname"><em>shape</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute une forme à une couche. </p>
+<p>Ajoute une forme à un calque.</p>
+<p>Cette fonction ajoute une forme spécifique à la liste des formes de la couche. La forme est insérée à la fin de la liste des formes de la couche.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer</td><td>La couche à laquelle la forme doit être ajoutée. </td></tr>
+    <tr><td class="paramname">shape</td><td>La forme à ajouter à la couche. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Création d'un nœud pour la forme</p>
+<p>&lt; Insertion de la forme à la fin de la liste des formes de la couche</p>
+
+</div>
+</div>
+<a id="aaaf6f196eb2a8c58c20406285de620a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf6f196eb2a8c58c20406285de620a2">&#9670;&nbsp;</a></span>create_layer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a>* create_layer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une nouvelle couche. </p>
+<p>Crée un calque.</p>
+<p>Cette fonction alloue de la mémoire pour une nouvelle couche, lui attribue un ID, un nom et une liste vide de formes. La couche est initialement visible.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>L'ID de la couche à créer. </td></tr>
+    <tr><td class="paramname">name</td><td>Le nom de la couche à créer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers la nouvelle couche créée. </dd></dl>
+<p>&lt; Allocation mémoire pour une nouvelle couche</p>
+<p>&lt; Attribution de l'ID</p>
+<p>&lt; Copie du nom dans la structure</p>
+<p>&lt; Initialisation de la liste des formes (vide au départ)</p>
+<p>&lt; La couche est visible par défaut</p>
+
+</div>
+</div>
+<a id="a60d969b9785e58ea6265e374923f5eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60d969b9785e58ea6265e374923f5eff">&#9670;&nbsp;</a></span>create_layers_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="layers_8h.html#a8273dfced8a8500299e9d2ea6d02a831">LayersList</a>* create_layers_list </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une liste de couches. </p>
+<p>Crée une liste de calques.</p>
+<p>Cette fonction alloue de la mémoire pour une nouvelle liste de couches et retourne un pointeur vers cette liste. La liste est initialement vide.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers la liste de couches créée. </dd></dl>
+<p>&lt; Création d'une nouvelle liste vide</p>
+
+</div>
+</div>
+<a id="ab3ed3647c3307a0911045c2afc1c36ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ed3647c3307a0911045c2afc1c36ab">&#9670;&nbsp;</a></span>delete_layer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_layer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *&#160;</td>
+          <td class="paramname"><em>layer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime une couche. </p>
+<p>Supprime un calque.</p>
+<p>Cette fonction libère la mémoire allouée pour une couche et efface la liste des formes contenues dans cette couche.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer</td><td>Le pointeur vers la couche à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Suppression des formes de la couche</p>
+<p>&lt; Libération de la mémoire allouée pour la couche</p>
+
+</div>
+</div>
+<a id="acc379be8abba3e431a40369dbdeed98d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc379be8abba3e431a40369dbdeed98d">&#9670;&nbsp;</a></span>delete_layers_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_layers_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="layers_8h.html#a8273dfced8a8500299e9d2ea6d02a831">LayersList</a> *&#160;</td>
+          <td class="paramname"><em>layer_list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime une liste de couches. </p>
+<p>Supprime une liste de calques.</p>
+<p>Cette fonction libère la mémoire allouée pour une liste de couches.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer_list</td><td>Le pointeur vers la liste des couches à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Suppression de la liste de couches</p>
+
+</div>
+</div>
+<a id="a68278e8226ecbaf6bbe27addfb9152b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68278e8226ecbaf6bbe27addfb9152b6">&#9670;&nbsp;</a></span>remove_layer_from_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void remove_layer_from_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="layers_8h.html#a8273dfced8a8500299e9d2ea6d02a831">LayersList</a> *&#160;</td>
+          <td class="paramname"><em>layer_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *&#160;</td>
+          <td class="paramname"><em>layer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retire une couche d'une liste de couches. </p>
+<p>Supprime un calque d'une liste de calques.</p>
+<p>Cette fonction retire une couche spécifique de la liste. L'implémentation de cette fonctionnalité reste à faire.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer_list</td><td>La liste des couches dont il faut retirer une couche. </td></tr>
+    <tr><td class="paramname">layer</td><td>La couche à retirer de la liste.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>L'implémentation de cette fonction est encore à réaliser. </dd></dl>
+
+</div>
+</div>
+<a id="aca54ff31c800dfa70eb0ff3019b9f05c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca54ff31c800dfa70eb0ff3019b9f05c">&#9670;&nbsp;</a></span>remove_shape_to_from()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void remove_shape_to_from </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structshape.html">Shape</a> *&#160;</td>
+          <td class="paramname"><em>shape</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retire une forme d'une couche. </p>
+<p>Supprime une forme d'un calque.</p>
+<p>Cette fonction est destinée à retirer une forme spécifique de la liste des formes d'une couche. L'implémentation de cette fonctionnalité reste à faire.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer</td><td>La couche dont il faut retirer une forme. </td></tr>
+    <tr><td class="paramname">shape</td><td>La forme à retirer de la couche.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>L'implémentation de cette fonction est encore à réaliser. </dd></dl>
+
+</div>
+</div>
+<a id="ae65dbbb2e84affd3a5f58a1bf7974fa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae65dbbb2e84affd3a5f58a1bf7974fa5">&#9670;&nbsp;</a></span>set_layer_unvisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_layer_unvisible </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *&#160;</td>
+          <td class="paramname"><em>layer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rendre une couche invisible. </p>
+<p>Rend un calque invisible.</p>
+<p>Cette fonction définit l'état de visibilité de la couche à invisible. Cela peut affecter l'affichage des formes contenues dans cette couche.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer</td><td>La couche dont la visibilité doit être définie sur invisible. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Rendre la couche invisible</p>
+
+</div>
+</div>
+<a id="a6a138d9be5f5e57bb32477ae04bf5696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a138d9be5f5e57bb32477ae04bf5696">&#9670;&nbsp;</a></span>set_layer_visible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_layer_visible </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="layers_8h.html#a9a8118be7780e95363d631cbca7e7800">Layer</a> *&#160;</td>
+          <td class="paramname"><em>layer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rendre une couche visible. </p>
+<p>Rend un calque visible.</p>
+<p>Cette fonction définit l'état de visibilité de la couche à visible. Cela peut affecter l'affichage des formes contenues dans cette couche.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer</td><td>La couche dont la visibilité doit être définie sur visible. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Rendre la couche visible</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

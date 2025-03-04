@@ -1,0 +1,1407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PixelTracer: Référence du fichier Documents/srcCPixelTracer/src/shape.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PixelTracer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_0db95f55e3ad953757e5ce90fe678e4e.html">srcCPixelTracer</a></li><li class="navelem"><a class="el" href="dir_a5bcfe2c18b31d3d4493ec20fc962c25.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier shape.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions de création, suppression et gestion des formes géométriques.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="id_8h_source.html">id.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="shape_8h_source.html">shape.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de shape.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="shape_8c__incl.png" border="0" usemap="#aDocuments_2srcCPixelTracer_2src_2shape_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a2d9de1dac97ddb7e3e6ecf43be2bbe5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpoint.html">Point</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a2d9de1dac97ddb7e3e6ecf43be2bbe5c">create_point</a> (int px, int py)</td></tr>
+<tr class="memdesc:a2d9de1dac97ddb7e3e6ecf43be2bbe5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée un point avec les coordonnées spécifiées.  <a href="shape_8c.html#a2d9de1dac97ddb7e3e6ecf43be2bbe5c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2d9de1dac97ddb7e3e6ecf43be2bbe5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dade23c37d4b2c409163edfc522b18f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a4dade23c37d4b2c409163edfc522b18f">delete_point</a> (<a class="el" href="structpoint.html">Point</a> *<a class="el" href="structpoint.html">point</a>)</td></tr>
+<tr class="memdesc:a4dade23c37d4b2c409163edfc522b18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un point.  <a href="shape_8c.html#a4dade23c37d4b2c409163edfc522b18f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4dade23c37d4b2c409163edfc522b18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3936d3d6b6faced269e02282a7c7d7f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structline.html">Line</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a3936d3d6b6faced269e02282a7c7d7f1">create_line</a> (<a class="el" href="structpoint.html">Point</a> *p1, <a class="el" href="structpoint.html">Point</a> *p2)</td></tr>
+<tr class="memdesc:a3936d3d6b6faced269e02282a7c7d7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une ligne à partir de deux points spécifiés.  <a href="shape_8c.html#a3936d3d6b6faced269e02282a7c7d7f1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3936d3d6b6faced269e02282a7c7d7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a93415a118bb4ec12ce97b1d601ba3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#ae8a93415a118bb4ec12ce97b1d601ba3">delete_line</a> (<a class="el" href="structline.html">Line</a> *<a class="el" href="structline.html">line</a>)</td></tr>
+<tr class="memdesc:ae8a93415a118bb4ec12ce97b1d601ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime une ligne.  <a href="shape_8c.html#ae8a93415a118bb4ec12ce97b1d601ba3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae8a93415a118bb4ec12ce97b1d601ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db976a5e06c6791319866a8547bd9a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsquar.html">Squar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a8db976a5e06c6791319866a8547bd9a5">create_squar</a> (<a class="el" href="structpoint.html">Point</a> *<a class="el" href="structpoint.html">point</a>, int length)</td></tr>
+<tr class="memdesc:a8db976a5e06c6791319866a8547bd9a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée un carré à partir d'un point et d'une longueur.  <a href="shape_8c.html#a8db976a5e06c6791319866a8547bd9a5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8db976a5e06c6791319866a8547bd9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9719ed7c7a5d88c62cf6b772797dcbf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a9719ed7c7a5d88c62cf6b772797dcbf6">delete_squar</a> (<a class="el" href="structsquar.html">Squar</a> *<a class="el" href="structsquar.html">squar</a>)</td></tr>
+<tr class="memdesc:a9719ed7c7a5d88c62cf6b772797dcbf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un carré.  <a href="shape_8c.html#a9719ed7c7a5d88c62cf6b772797dcbf6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9719ed7c7a5d88c62cf6b772797dcbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8915b7d1981d6eaa33ba94b0d5c4f09a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrectangle.html">Rectangle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a8915b7d1981d6eaa33ba94b0d5c4f09a">create_rectangle</a> (<a class="el" href="structpoint.html">Point</a> *<a class="el" href="structpoint.html">point</a>, int width, int height)</td></tr>
+<tr class="memdesc:a8915b7d1981d6eaa33ba94b0d5c4f09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée un rectangle à partir d'un point, de la largeur et de la hauteur.  <a href="shape_8c.html#a8915b7d1981d6eaa33ba94b0d5c4f09a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8915b7d1981d6eaa33ba94b0d5c4f09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e48149920001dcdba970cdcd16bb94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#aa9e48149920001dcdba970cdcd16bb94">delete_rectangle</a> (<a class="el" href="structrectangle.html">Rectangle</a> *<a class="el" href="structrectangle.html">rectangle</a>)</td></tr>
+<tr class="memdesc:aa9e48149920001dcdba970cdcd16bb94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un rectangle.  <a href="shape_8c.html#aa9e48149920001dcdba970cdcd16bb94">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa9e48149920001dcdba970cdcd16bb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308817247ea14aa07584f7d3cf7d0ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcercle.html">Cercle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a308817247ea14aa07584f7d3cf7d0ca7">create_cercle</a> (<a class="el" href="structpoint.html">Point</a> *center, int radus)</td></tr>
+<tr class="memdesc:a308817247ea14aa07584f7d3cf7d0ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée un cercle à partir d'un centre et d'un rayon spécifiés.  <a href="shape_8c.html#a308817247ea14aa07584f7d3cf7d0ca7">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a308817247ea14aa07584f7d3cf7d0ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a66a133e444cd75bcfd3aaba3639a74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a2a66a133e444cd75bcfd3aaba3639a74">delete_cercle</a> (<a class="el" href="structcercle.html">Cercle</a> *<a class="el" href="structcercle.html">cercle</a>)</td></tr>
+<tr class="memdesc:a2a66a133e444cd75bcfd3aaba3639a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un cercle.  <a href="shape_8c.html#a2a66a133e444cd75bcfd3aaba3639a74">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2a66a133e444cd75bcfd3aaba3639a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcca1281025c224e6a4ce90fe487c13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpolygon.html">Polygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a5dcca1281025c224e6a4ce90fe487c13">create_polygon</a> (int n)</td></tr>
+<tr class="memdesc:a5dcca1281025c224e6a4ce90fe487c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée un polygone avec <code>n</code> points.  <a href="shape_8c.html#a5dcca1281025c224e6a4ce90fe487c13">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5dcca1281025c224e6a4ce90fe487c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3c09a25ea963bb9a9feabcd1ef3d67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a8a3c09a25ea963bb9a9feabcd1ef3d67">delete_polygon</a> (<a class="el" href="structpolygon.html">Polygon</a> *<a class="el" href="structpolygon.html">polygon</a>)</td></tr>
+<tr class="memdesc:a8a3c09a25ea963bb9a9feabcd1ef3d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un polygone.  <a href="shape_8c.html#a8a3c09a25ea963bb9a9feabcd1ef3d67">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8a3c09a25ea963bb9a9feabcd1ef3d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeac936a01b181c336d7a650618f1721"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcurve.html">Curve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#aeeac936a01b181c336d7a650618f1721">create_curve</a> (<a class="el" href="structpoint.html">Point</a> *p1, <a class="el" href="structpoint.html">Point</a> *p2, <a class="el" href="structpoint.html">Point</a> *p3, <a class="el" href="structpoint.html">Point</a> *p4)</td></tr>
+<tr class="memdesc:aeeac936a01b181c336d7a650618f1721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une courbe à partir de 4 points de contrôle spécifiés.  <a href="shape_8c.html#aeeac936a01b181c336d7a650618f1721">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aeeac936a01b181c336d7a650618f1721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab785bcd1ddf2cf76008057c1e3f71362"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#ab785bcd1ddf2cf76008057c1e3f71362">delete_curve</a> (<a class="el" href="structcurve.html">Curve</a> *<a class="el" href="structcurve.html">curve</a>)</td></tr>
+<tr class="memdesc:ab785bcd1ddf2cf76008057c1e3f71362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime une courbe.  <a href="shape_8c.html#ab785bcd1ddf2cf76008057c1e3f71362">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab785bcd1ddf2cf76008057c1e3f71362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefcd4246c9128031c547f6a9f755a116"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structshape.html">Shape</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#aefcd4246c9128031c547f6a9f755a116">create_empty_shape</a> (Shape_type <a class="el" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5">shape_type</a>)</td></tr>
+<tr class="memdesc:aefcd4246c9128031c547f6a9f755a116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une forme vide avec un type de forme spécifié.  <a href="shape_8c.html#aefcd4246c9128031c547f6a9f755a116">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aefcd4246c9128031c547f6a9f755a116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2551f83fb7456ad8e3f913a78b59a1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#ad2551f83fb7456ad8e3f913a78b59a1e">sprint_point</a> (<a class="el" href="structpoint.html">Point</a> *p, char *str)</td></tr>
+<tr class="memdesc:ad2551f83fb7456ad8e3f913a78b59a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit un point en chaîne de caractères.  <a href="shape_8c.html#ad2551f83fb7456ad8e3f913a78b59a1e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad2551f83fb7456ad8e3f913a78b59a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f431cb3f02d6b1a9967dc64591b1db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a26f431cb3f02d6b1a9967dc64591b1db">sprint_line</a> (<a class="el" href="structline.html">Line</a> *<a class="el" href="structline.html">line</a>, char *str)</td></tr>
+<tr class="memdesc:a26f431cb3f02d6b1a9967dc64591b1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit une ligne en chaîne de caractères.  <a href="shape_8c.html#a26f431cb3f02d6b1a9967dc64591b1db">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a26f431cb3f02d6b1a9967dc64591b1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3571899d19b29d8571e6c090065121f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a3571899d19b29d8571e6c090065121f3">sprint_squar</a> (<a class="el" href="structsquar.html">Squar</a> *<a class="el" href="structsquar.html">squar</a>, char *str)</td></tr>
+<tr class="memdesc:a3571899d19b29d8571e6c090065121f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit un carré en chaîne de caractères.  <a href="shape_8c.html#a3571899d19b29d8571e6c090065121f3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3571899d19b29d8571e6c090065121f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be86d5bc934d6905c849b96f71ccc14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a9be86d5bc934d6905c849b96f71ccc14">sprint_rectangle</a> (<a class="el" href="structrectangle.html">Rectangle</a> *<a class="el" href="structrectangle.html">rectangle</a>, char *str)</td></tr>
+<tr class="memdesc:a9be86d5bc934d6905c849b96f71ccc14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit un rectangle en chaîne de caractères.  <a href="shape_8c.html#a9be86d5bc934d6905c849b96f71ccc14">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9be86d5bc934d6905c849b96f71ccc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068a5bc38689a7b8fae84ef6a3dc0f47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a068a5bc38689a7b8fae84ef6a3dc0f47">sprint_cercle</a> (<a class="el" href="structcercle.html">Cercle</a> *<a class="el" href="structcercle.html">cercle</a>, char *str)</td></tr>
+<tr class="memdesc:a068a5bc38689a7b8fae84ef6a3dc0f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit un cercle en chaîne de caractères.  <a href="shape_8c.html#a068a5bc38689a7b8fae84ef6a3dc0f47">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a068a5bc38689a7b8fae84ef6a3dc0f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e3c87d1041b6439c310bb63e810f3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a71e3c87d1041b6439c310bb63e810f3d">sprint_polygon</a> (<a class="el" href="structpolygon.html">Polygon</a> *<a class="el" href="structpolygon.html">polygon</a>, char *str)</td></tr>
+<tr class="memdesc:a71e3c87d1041b6439c310bb63e810f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction pour convertir un objet Polygon en une représentation sous forme de chaîne de caractères.  <a href="shape_8c.html#a71e3c87d1041b6439c310bb63e810f3d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a71e3c87d1041b6439c310bb63e810f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575942d1117aebe05159a42d4aacda53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a575942d1117aebe05159a42d4aacda53">sprint_curve</a> (<a class="el" href="structcurve.html">Curve</a> *<a class="el" href="structcurve.html">curve</a>, char *str)</td></tr>
+<tr class="memdesc:a575942d1117aebe05159a42d4aacda53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction pour convertir un objet Curve en une représentation sous forme de chaîne de caractères.  <a href="shape_8c.html#a575942d1117aebe05159a42d4aacda53">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a575942d1117aebe05159a42d4aacda53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbbc03fb73c6d0e0c915a0653e25ef4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structshape.html">Shape</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#acbbc03fb73c6d0e0c915a0653e25ef4c">create_point_shape</a> (int px, int py)</td></tr>
+<tr class="memdesc:acbbc03fb73c6d0e0c915a0653e25ef4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction pour créer une forme de point.  <a href="shape_8c.html#acbbc03fb73c6d0e0c915a0653e25ef4c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acbbc03fb73c6d0e0c915a0653e25ef4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6b0d4e5ac72b8eb40de79897ff0cc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structshape.html">Shape</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#acc6b0d4e5ac72b8eb40de79897ff0cc9">create_line_shape</a> (int px1, int py1, int px2, int py2)</td></tr>
+<tr class="memdesc:acc6b0d4e5ac72b8eb40de79897ff0cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction pour créer une forme de ligne.  <a href="shape_8c.html#acc6b0d4e5ac72b8eb40de79897ff0cc9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acc6b0d4e5ac72b8eb40de79897ff0cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f3d1be6220cdf21f37ce049a057b3b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structshape.html">Shape</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a2f3d1be6220cdf21f37ce049a057b3b9">create_square_shape</a> (int px, int py, int length)</td></tr>
+<tr class="memdesc:a2f3d1be6220cdf21f37ce049a057b3b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction pour créer une forme de carré.  <a href="shape_8c.html#a2f3d1be6220cdf21f37ce049a057b3b9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2f3d1be6220cdf21f37ce049a057b3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd4f5ce869b32d2686e2d6f3e1c00d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structshape.html">Shape</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a8cd4f5ce869b32d2686e2d6f3e1c00d5">create_rectangle_shape</a> (int px, int py, int width, int height)</td></tr>
+<tr class="memdesc:a8cd4f5ce869b32d2686e2d6f3e1c00d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction pour créer une forme de rectangle.  <a href="shape_8c.html#a8cd4f5ce869b32d2686e2d6f3e1c00d5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8cd4f5ce869b32d2686e2d6f3e1c00d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83fb9d780094c0479c818044c06bd4aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structshape.html">Shape</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a83fb9d780094c0479c818044c06bd4aa">create_cercle_shape</a> (int px, int py, int radus)</td></tr>
+<tr class="memdesc:a83fb9d780094c0479c818044c06bd4aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction pour créer une forme de cercle.  <a href="shape_8c.html#a83fb9d780094c0479c818044c06bd4aa">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a83fb9d780094c0479c818044c06bd4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64a9f508bb28cca13ff289efc8fe063"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structshape.html">Shape</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#af64a9f508bb28cca13ff289efc8fe063">create_polygon_shape</a> (int n, int *tab)</td></tr>
+<tr class="memdesc:af64a9f508bb28cca13ff289efc8fe063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction pour créer une forme de polygone.  <a href="shape_8c.html#af64a9f508bb28cca13ff289efc8fe063">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af64a9f508bb28cca13ff289efc8fe063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02f53747813ba7e192e2b4f7c1b4c29e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structshape.html">Shape</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a02f53747813ba7e192e2b4f7c1b4c29e">create_curve_shape</a> (int px1, int py1, int px2, int py2, int px3, int py3, int px4, int py4)</td></tr>
+<tr class="memdesc:a02f53747813ba7e192e2b4f7c1b4c29e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction pour créer une forme de courbe.  <a href="shape_8c.html#a02f53747813ba7e192e2b4f7c1b4c29e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a02f53747813ba7e192e2b4f7c1b4c29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a161cb800ff00feffb5cf5d7592b3b8be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a161cb800ff00feffb5cf5d7592b3b8be">delete_shape</a> (<a class="el" href="structshape.html">Shape</a> *<a class="el" href="structshape.html">shape</a>)</td></tr>
+<tr class="memdesc:a161cb800ff00feffb5cf5d7592b3b8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction pour supprimer un objet Shape.  <a href="shape_8c.html#a161cb800ff00feffb5cf5d7592b3b8be">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a161cb800ff00feffb5cf5d7592b3b8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5167551a1a804f8b67d74ed0ce9b738d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shape_8c.html#a5167551a1a804f8b67d74ed0ce9b738d">sprint_shape</a> (<a class="el" href="structshape.html">Shape</a> *<a class="el" href="structshape.html">shape</a>, char *str)</td></tr>
+<tr class="memdesc:a5167551a1a804f8b67d74ed0ce9b738d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction pour convertir un objet Shape en une représentation sous forme de chaîne de caractères.  <a href="shape_8c.html#a5167551a1a804f8b67d74ed0ce9b738d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5167551a1a804f8b67d74ed0ce9b738d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions de création, suppression et gestion des formes géométriques. </p>
+<p>Ce fichier contient les fonctions pour créer et manipuler différentes formes géométriques telles que des points, des lignes, des carrés, des rectangles, des cercles, des polygones et des courbes. Chaque forme est associée à un type spécifique et chaque type de forme possède une gestion mémoire spécifique pour sa création et suppression. </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a308817247ea14aa07584f7d3cf7d0ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308817247ea14aa07584f7d3cf7d0ca7">&#9670;&nbsp;</a></span>create_cercle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcercle.html">Cercle</a>* create_cercle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> *&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>radus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée un cercle à partir d'un centre et d'un rayon spécifiés. </p>
+<p>Crée un cercle défini par un centre et un rayon.</p>
+<p>Cette fonction alloue de la mémoire pour un cercle et l'initialise avec le centre et le rayon spécifiés.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">center</td><td>Le point central du cercle. </td></tr>
+    <tr><td class="paramname">radus</td><td>Le rayon du cercle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers le cercle créé. </dd></dl>
+
+</div>
+</div>
+<a id="a83fb9d780094c0479c818044c06bd4aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83fb9d780094c0479c818044c06bd4aa">&#9670;&nbsp;</a></span>create_cercle_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structshape.html">Shape</a>* create_cercle_shape </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>radus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction pour créer une forme de cercle. </p>
+<p>Crée une forme de type Cercle à partir d'un centre et d'un rayon.</p>
+<p>Cette fonction crée un objet Shape de type CERCLE avec un centre spécifié et un rayon donné.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">px</td><td>La coordonnée x du centre du cercle. </td></tr>
+    <tr><td class="paramname">py</td><td>La coordonnée y du centre du cercle. </td></tr>
+    <tr><td class="paramname">radus</td><td>Le rayon du cercle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers l'objet Shape créé. </dd></dl>
+
+</div>
+</div>
+<a id="aeeac936a01b181c336d7a650618f1721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeac936a01b181c336d7a650618f1721">&#9670;&nbsp;</a></span>create_curve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcurve.html">Curve</a>* create_curve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> *&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> *&#160;</td>
+          <td class="paramname"><em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> *&#160;</td>
+          <td class="paramname"><em>p3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> *&#160;</td>
+          <td class="paramname"><em>p4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une courbe à partir de 4 points de contrôle spécifiés. </p>
+<p>Crée une courbe définie par quatre points de contrôle.</p>
+<p>Cette fonction alloue de la mémoire pour une courbe et initialise les 4 points de contrôle.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>Le premier point de la courbe. </td></tr>
+    <tr><td class="paramname">p2</td><td>Le deuxième point de la courbe. </td></tr>
+    <tr><td class="paramname">p3</td><td>Le troisième point de la courbe. </td></tr>
+    <tr><td class="paramname">p4</td><td>Le quatrième point de la courbe. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers la courbe créée. </dd></dl>
+
+</div>
+</div>
+<a id="a02f53747813ba7e192e2b4f7c1b4c29e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02f53747813ba7e192e2b4f7c1b4c29e">&#9670;&nbsp;</a></span>create_curve_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structshape.html">Shape</a>* create_curve_shape </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction pour créer une forme de courbe. </p>
+<p>Crée une forme de type Courbe à partir de quatre points de contrôle.</p>
+<p>Cette fonction crée un objet Shape de type CURVE avec quatre points qui définissent la courbe.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">px1</td><td>La coordonnée x du premier point. </td></tr>
+    <tr><td class="paramname">py1</td><td>La coordonnée y du premier point. </td></tr>
+    <tr><td class="paramname">px2</td><td>La coordonnée x du deuxième point. </td></tr>
+    <tr><td class="paramname">py2</td><td>La coordonnée y du deuxième point. </td></tr>
+    <tr><td class="paramname">px3</td><td>La coordonnée x du troisième point. </td></tr>
+    <tr><td class="paramname">py3</td><td>La coordonnée y du troisième point. </td></tr>
+    <tr><td class="paramname">px4</td><td>La coordonnée x du quatrième point. </td></tr>
+    <tr><td class="paramname">py4</td><td>La coordonnée y du quatrième point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers l'objet Shape créé. </dd></dl>
+
+</div>
+</div>
+<a id="aefcd4246c9128031c547f6a9f755a116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefcd4246c9128031c547f6a9f755a116">&#9670;&nbsp;</a></span>create_empty_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structshape.html">Shape</a>* create_empty_shape </td>
+          <td>(</td>
+          <td class="paramtype">Shape_type&#160;</td>
+          <td class="paramname"><em>shape_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une forme vide avec un type de forme spécifié. </p>
+<p>Crée une forme vide (sans spécification de détails).</p>
+<p>Cette fonction crée une forme vide avec le type spécifié (point, ligne, carré, etc.) et assigne un identifiant unique.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape_type</td><td>Le type de la forme à créer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers la forme vide créée. </dd></dl>
+
+</div>
+</div>
+<a id="a3936d3d6b6faced269e02282a7c7d7f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3936d3d6b6faced269e02282a7c7d7f1">&#9670;&nbsp;</a></span>create_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structline.html">Line</a>* create_line </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> *&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> *&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une ligne à partir de deux points spécifiés. </p>
+<p>Crée une ligne entre deux points.</p>
+<p>Cette fonction alloue de la mémoire pour une ligne et initialise les deux points qui la définissent.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>Le premier point de la ligne. </td></tr>
+    <tr><td class="paramname">p2</td><td>Le second point de la ligne. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers la ligne créée. </dd></dl>
+
+</div>
+</div>
+<a id="acc6b0d4e5ac72b8eb40de79897ff0cc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc6b0d4e5ac72b8eb40de79897ff0cc9">&#9670;&nbsp;</a></span>create_line_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structshape.html">Shape</a>* create_line_shape </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction pour créer une forme de ligne. </p>
+<p>Crée une forme de type Ligne à partir de deux points spécifiques.</p>
+<p>Cette fonction crée un objet Shape de type LINE défini par deux points.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">px1</td><td>La coordonnée x du premier point. </td></tr>
+    <tr><td class="paramname">py1</td><td>La coordonnée y du premier point. </td></tr>
+    <tr><td class="paramname">px2</td><td>La coordonnée x du deuxième point. </td></tr>
+    <tr><td class="paramname">py2</td><td>La coordonnée y du deuxième point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers l'objet Shape créé. </dd></dl>
+
+</div>
+</div>
+<a id="a2d9de1dac97ddb7e3e6ecf43be2bbe5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9de1dac97ddb7e3e6ecf43be2bbe5c">&#9670;&nbsp;</a></span>create_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpoint.html">Point</a>* create_point </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée un point avec les coordonnées spécifiées. </p>
+<p>Crée un point avec des coordonnées spécifiques.</p>
+<p>Cette fonction alloue de la mémoire pour un nouveau point et initialise ses coordonnées <code>pos_x</code> et <code>pos_y</code>.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">px</td><td>La coordonnée x du point. </td></tr>
+    <tr><td class="paramname">py</td><td>La coordonnée y du point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers le nouveau point créé. </dd></dl>
+
+</div>
+</div>
+<a id="acbbc03fb73c6d0e0c915a0653e25ef4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbbc03fb73c6d0e0c915a0653e25ef4c">&#9670;&nbsp;</a></span>create_point_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structshape.html">Shape</a>* create_point_shape </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction pour créer une forme de point. </p>
+<p>Crée une forme de type Point à partir de coordonnées spécifiques.</p>
+<p>Cette fonction crée un objet Shape de type POINT avec une position spécifiée pour le point.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">px</td><td>La coordonnée x du point. </td></tr>
+    <tr><td class="paramname">py</td><td>La coordonnée y du point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers l'objet Shape créé. </dd></dl>
+
+</div>
+</div>
+<a id="a5dcca1281025c224e6a4ce90fe487c13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcca1281025c224e6a4ce90fe487c13">&#9670;&nbsp;</a></span>create_polygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpolygon.html">Polygon</a>* create_polygon </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée un polygone avec <code>n</code> points. </p>
+<p>Crée un polygone défini par un nombre de points.</p>
+<p>Cette fonction alloue de la mémoire pour un polygone et initialise un tableau de <code>n</code> points.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Le nombre de points du polygone. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers le polygone créé. </dd></dl>
+
+</div>
+</div>
+<a id="af64a9f508bb28cca13ff289efc8fe063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64a9f508bb28cca13ff289efc8fe063">&#9670;&nbsp;</a></span>create_polygon_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structshape.html">Shape</a>* create_polygon_shape </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>tab</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction pour créer une forme de polygone. </p>
+<p>Crée une forme de type Polygone à partir d'un nombre de points.</p>
+<p>Cette fonction crée un objet Shape de type POLYGON avec un nombre spécifié de points, fournis sous forme d'un tableau de coordonnées.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Le nombre de coordonnées (doit être un nombre pair). </td></tr>
+    <tr><td class="paramname">tab</td><td>Un tableau d'entiers représentant les coordonnées des points du polygone. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers l'objet Shape créé, ou NULL si le nombre de coordonnées est impair. </dd></dl>
+
+</div>
+</div>
+<a id="a8915b7d1981d6eaa33ba94b0d5c4f09a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8915b7d1981d6eaa33ba94b0d5c4f09a">&#9670;&nbsp;</a></span>create_rectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrectangle.html">Rectangle</a>* create_rectangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> *&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée un rectangle à partir d'un point, de la largeur et de la hauteur. </p>
+<p>Crée un rectangle défini par un point, une largeur et une hauteur.</p>
+<p>Cette fonction alloue de la mémoire pour un rectangle et l'initialise avec le point de départ, la largeur et la hauteur spécifiés.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>Le point de départ du rectangle. </td></tr>
+    <tr><td class="paramname">width</td><td>La largeur du rectangle. </td></tr>
+    <tr><td class="paramname">height</td><td>La hauteur du rectangle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers le rectangle créé. </dd></dl>
+
+</div>
+</div>
+<a id="a8cd4f5ce869b32d2686e2d6f3e1c00d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd4f5ce869b32d2686e2d6f3e1c00d5">&#9670;&nbsp;</a></span>create_rectangle_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structshape.html">Shape</a>* create_rectangle_shape </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction pour créer une forme de rectangle. </p>
+<p>Crée une forme de type Rectangle à partir d'un point, d'une largeur et d'une hauteur.</p>
+<p>Cette fonction crée un objet Shape de type RECTANGLE avec une position spécifiée, une largeur et une hauteur.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">px</td><td>La coordonnée x du coin inférieur gauche du rectangle. </td></tr>
+    <tr><td class="paramname">py</td><td>La coordonnée y du coin inférieur gauche du rectangle. </td></tr>
+    <tr><td class="paramname">width</td><td>La largeur du rectangle. </td></tr>
+    <tr><td class="paramname">height</td><td>La hauteur du rectangle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers l'objet Shape créé. </dd></dl>
+
+</div>
+</div>
+<a id="a8db976a5e06c6791319866a8547bd9a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db976a5e06c6791319866a8547bd9a5">&#9670;&nbsp;</a></span>create_squar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsquar.html">Squar</a>* create_squar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> *&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée un carré à partir d'un point et d'une longueur. </p>
+<p>Crée un carré défini par un point et une longueur de côté.</p>
+<p>Cette fonction alloue de la mémoire pour un carré et l'initialise avec le point de départ et la longueur spécifiée.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>Le point de départ du carré. </td></tr>
+    <tr><td class="paramname">length</td><td>La longueur des côtés du carré. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers le carré créé. </dd></dl>
+
+</div>
+</div>
+<a id="a2f3d1be6220cdf21f37ce049a057b3b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f3d1be6220cdf21f37ce049a057b3b9">&#9670;&nbsp;</a></span>create_square_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structshape.html">Shape</a>* create_square_shape </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction pour créer une forme de carré. </p>
+<p>Crée une forme de type Carré à partir d'un point et d'une longueur.</p>
+<p>Cette fonction crée un objet Shape de type SQUAR avec une position spécifiée et une longueur de côté donnée.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">px</td><td>La coordonnée x du coin inférieur gauche du carré. </td></tr>
+    <tr><td class="paramname">py</td><td>La coordonnée y du coin inférieur gauche du carré. </td></tr>
+    <tr><td class="paramname">length</td><td>La longueur du côté du carré. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers l'objet Shape créé. </dd></dl>
+
+</div>
+</div>
+<a id="a2a66a133e444cd75bcfd3aaba3639a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a66a133e444cd75bcfd3aaba3639a74">&#9670;&nbsp;</a></span>delete_cercle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_cercle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcercle.html">Cercle</a> *&#160;</td>
+          <td class="paramname"><em>cercle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime un cercle. </p>
+<p>Cette fonction libère la mémoire allouée pour le cercle et son centre.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cercle</td><td>Pointeur vers le cercle à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab785bcd1ddf2cf76008057c1e3f71362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab785bcd1ddf2cf76008057c1e3f71362">&#9670;&nbsp;</a></span>delete_curve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_curve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcurve.html">Curve</a> *&#160;</td>
+          <td class="paramname"><em>curve</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime une courbe. </p>
+<p>Cette fonction libère la mémoire allouée pour la courbe et ses points de contrôle.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curve</td><td>Pointeur vers la courbe à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae8a93415a118bb4ec12ce97b1d601ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8a93415a118bb4ec12ce97b1d601ba3">&#9670;&nbsp;</a></span>delete_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_line </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structline.html">Line</a> *&#160;</td>
+          <td class="paramname"><em>line</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime une ligne. </p>
+<p>Cette fonction libère la mémoire allouée pour la ligne, ainsi que la mémoire des points associés.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>Pointeur vers la ligne à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4dade23c37d4b2c409163edfc522b18f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dade23c37d4b2c409163edfc522b18f">&#9670;&nbsp;</a></span>delete_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> *&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime un point. </p>
+<p>Cette fonction libère la mémoire allouée pour le point.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>Pointeur vers le point à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8a3c09a25ea963bb9a9feabcd1ef3d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a3c09a25ea963bb9a9feabcd1ef3d67">&#9670;&nbsp;</a></span>delete_polygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_polygon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpolygon.html">Polygon</a> *&#160;</td>
+          <td class="paramname"><em>polygon</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime un polygone. </p>
+<p>Cette fonction libère la mémoire allouée pour le polygone et ses points.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">polygon</td><td>Pointeur vers le polygone à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa9e48149920001dcdba970cdcd16bb94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e48149920001dcdba970cdcd16bb94">&#9670;&nbsp;</a></span>delete_rectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_rectangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrectangle.html">Rectangle</a> *&#160;</td>
+          <td class="paramname"><em>rectangle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime un rectangle. </p>
+<p>Cette fonction libère la mémoire allouée pour le rectangle et le point associé.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rectangle</td><td>Pointeur vers le rectangle à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a161cb800ff00feffb5cf5d7592b3b8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a161cb800ff00feffb5cf5d7592b3b8be">&#9670;&nbsp;</a></span>delete_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_shape </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshape.html">Shape</a> *&#160;</td>
+          <td class="paramname"><em>shape</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction pour supprimer un objet Shape. </p>
+<p>Supprime une forme.</p>
+<p>Cette fonction supprime un objet Shape, en libérant la mémoire associée. La fonction appelle la fonction de suppression appropriée en fonction du type de forme (Point, Line, Square, Rectangle, Circle, Polygon ou Curve).</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Un pointeur vers la structure Shape à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9719ed7c7a5d88c62cf6b772797dcbf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9719ed7c7a5d88c62cf6b772797dcbf6">&#9670;&nbsp;</a></span>delete_squar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_squar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsquar.html">Squar</a> *&#160;</td>
+          <td class="paramname"><em>squar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime un carré. </p>
+<p>Cette fonction libère la mémoire allouée pour le carré et le point associé.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">squar</td><td>Pointeur vers le carré à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a068a5bc38689a7b8fae84ef6a3dc0f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a068a5bc38689a7b8fae84ef6a3dc0f47">&#9670;&nbsp;</a></span>sprint_cercle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sprint_cercle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcercle.html">Cercle</a> *&#160;</td>
+          <td class="paramname"><em>cercle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit un cercle en chaîne de caractères. </p>
+<p>Affiche les informations d'un cercle sous forme de chaîne de caractères.</p>
+<p>Cette fonction convertit les informations d'un cercle en une chaîne de caractères.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cercle</td><td>Le cercle à convertir. </td></tr>
+    <tr><td class="paramname">str</td><td>La chaîne de caractères dans laquelle le cercle sera stocké. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a575942d1117aebe05159a42d4aacda53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a575942d1117aebe05159a42d4aacda53">&#9670;&nbsp;</a></span>sprint_curve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sprint_curve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcurve.html">Curve</a> *&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction pour convertir un objet Curve en une représentation sous forme de chaîne de caractères. </p>
+<p>Affiche les informations d'une courbe sous forme de chaîne de caractères.</p>
+<p>Cette fonction convertit un objet Curve en une chaîne de caractères. La chaîne résultante représente les quatre points qui définissent la courbe.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curve</td><td>Un pointeur vers la structure Curve à convertir. </td></tr>
+    <tr><td class="paramname">str</td><td>Un pointeur vers le tampon de chaîne dans lequel le résultat sera stocké. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a26f431cb3f02d6b1a9967dc64591b1db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26f431cb3f02d6b1a9967dc64591b1db">&#9670;&nbsp;</a></span>sprint_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sprint_line </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structline.html">Line</a> *&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit une ligne en chaîne de caractères. </p>
+<p>Affiche les coordonnées d'une ligne sous forme de chaîne de caractères.</p>
+<p>Cette fonction convertit les deux points d'une ligne en une chaîne de caractères.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>La ligne à convertir. </td></tr>
+    <tr><td class="paramname">str</td><td>La chaîne de caractères dans laquelle la ligne sera stockée. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2551f83fb7456ad8e3f913a78b59a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2551f83fb7456ad8e3f913a78b59a1e">&#9670;&nbsp;</a></span>sprint_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sprint_point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit un point en chaîne de caractères. </p>
+<p>Affiche les coordonnées d'un point sous forme de chaîne de caractères.</p>
+<p>Cette fonction formate les coordonnées du point en une chaîne de caractères.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Le point à convertir. </td></tr>
+    <tr><td class="paramname">str</td><td>La chaîne de caractères dans laquelle les coordonnées seront stockées. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a71e3c87d1041b6439c310bb63e810f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e3c87d1041b6439c310bb63e810f3d">&#9670;&nbsp;</a></span>sprint_polygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sprint_polygon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpolygon.html">Polygon</a> *&#160;</td>
+          <td class="paramname"><em>polygon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction pour convertir un objet Polygon en une représentation sous forme de chaîne de caractères. </p>
+<p>Affiche les informations d'un polygone sous forme de chaîne de caractères.</p>
+<p>Cette fonction convertit un objet Polygon en une chaîne de caractères. La chaîne résultante représente la liste des points dans le polygone.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">polygon</td><td>Un pointeur vers la structure Polygon à convertir. </td></tr>
+    <tr><td class="paramname">str</td><td>Un pointeur vers le tampon de chaîne dans lequel le résultat sera stocké. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9be86d5bc934d6905c849b96f71ccc14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be86d5bc934d6905c849b96f71ccc14">&#9670;&nbsp;</a></span>sprint_rectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sprint_rectangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrectangle.html">Rectangle</a> *&#160;</td>
+          <td class="paramname"><em>rectangle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit un rectangle en chaîne de caractères. </p>
+<p>Affiche les informations d'un rectangle sous forme de chaîne de caractères.</p>
+<p>Cette fonction convertit les informations d'un rectangle en une chaîne de caractères.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rectangle</td><td>Le rectangle à convertir. </td></tr>
+    <tr><td class="paramname">str</td><td>La chaîne de caractères dans laquelle le rectangle sera stocké. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5167551a1a804f8b67d74ed0ce9b738d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5167551a1a804f8b67d74ed0ce9b738d">&#9670;&nbsp;</a></span>sprint_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sprint_shape </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshape.html">Shape</a> *&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction pour convertir un objet Shape en une représentation sous forme de chaîne de caractères. </p>
+<p>Affiche les informations d'une forme sous forme de chaîne de caractères.</p>
+<p>Cette fonction convertit un objet Shape en une chaîne de caractères en fonction de son type (Point, Line, Square, Rectangle, Circle, Polygon ou Curve).</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Un pointeur vers la structure Shape à convertir. </td></tr>
+    <tr><td class="paramname">str</td><td>Un pointeur vers le tampon de chaîne dans lequel le résultat sera stocké. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3571899d19b29d8571e6c090065121f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3571899d19b29d8571e6c090065121f3">&#9670;&nbsp;</a></span>sprint_squar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sprint_squar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsquar.html">Squar</a> *&#160;</td>
+          <td class="paramname"><em>squar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit un carré en chaîne de caractères. </p>
+<p>Affiche les informations d'un carré sous forme de chaîne de caractères.</p>
+<p>Cette fonction convertit les informations d'un carré en une chaîne de caractères.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">squar</td><td>Le carré à convertir. </td></tr>
+    <tr><td class="paramname">str</td><td>La chaîne de caractères dans laquelle le carré sera stocké. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

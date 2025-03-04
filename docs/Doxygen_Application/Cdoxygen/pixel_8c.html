@@ -1,0 +1,725 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PixelTracer: Référence du fichier Documents/srcCPixelTracer/src/pixel.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PixelTracer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_0db95f55e3ad953757e5ce90fe678e4e.html">srcCPixelTracer</a></li><li class="navelem"><a class="el" href="dir_a5bcfe2c18b31d3d4493ec20fc962c25.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier pixel.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Gestion des pixels et des formes géométriques.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="pixel_8h_source.html">pixel.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de pixel.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="pixel_8c__incl.png" border="0" usemap="#aDocuments_2srcCPixelTracer_2src_2pixel_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a8a4bcbde9aa312231fd4bae3a01478ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pixel_8h.html#aa189e9477c486a6eef29d93821297ad5">Pixel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#a8a4bcbde9aa312231fd4bae3a01478ab">create_pixel</a> (int px, int py, int color)</td></tr>
+<tr class="memdesc:a8a4bcbde9aa312231fd4bae3a01478ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée un pixel avec les coordonnées et la couleur spécifiées.  <a href="pixel_8c.html#a8a4bcbde9aa312231fd4bae3a01478ab">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8a4bcbde9aa312231fd4bae3a01478ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2719c50c617c53984ef5484ea011c9cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#a2719c50c617c53984ef5484ea011c9cf">delete_pixel</a> (<a class="el" href="pixel_8h.html#aa189e9477c486a6eef29d93821297ad5">Pixel</a> *<a class="el" href="structpixel.html">pixel</a>)</td></tr>
+<tr class="memdesc:a2719c50c617c53984ef5484ea011c9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un pixel en libérant sa mémoire.  <a href="pixel_8c.html#a2719c50c617c53984ef5484ea011c9cf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2719c50c617c53984ef5484ea011c9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a484b3385a2339f74f9e0ad43bdbd3344"><td class="memItemLeft" align="right" valign="top"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#a484b3385a2339f74f9e0ad43bdbd3344">create_shape_to_pixel</a> (<a class="el" href="structshape.html">Shape</a> *<a class="el" href="structshape.html">shape</a>)</td></tr>
+<tr class="memdesc:a484b3385a2339f74f9e0ad43bdbd3344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une liste de pixels représentant une forme géométrique.  <a href="pixel_8c.html#a484b3385a2339f74f9e0ad43bdbd3344">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a484b3385a2339f74f9e0ad43bdbd3344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa885a1c0aceaa86e24b2822756553f14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#aa885a1c0aceaa86e24b2822756553f14">remove_pixel_shape</a> (<a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *pixel_lst)</td></tr>
+<tr class="memdesc:aa885a1c0aceaa86e24b2822756553f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime les pixels d'une forme géométrique.  <a href="pixel_8c.html#aa885a1c0aceaa86e24b2822756553f14">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa885a1c0aceaa86e24b2822756553f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5fdff7e509d6ede5e290a32044d4ae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#ac5fdff7e509d6ede5e290a32044d4ae9">pixel_point</a> (<a class="el" href="structshape.html">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:ac5fdff7e509d6ede5e290a32044d4ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit un point en une liste de pixels.  <a href="pixel_8c.html#ac5fdff7e509d6ede5e290a32044d4ae9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac5fdff7e509d6ede5e290a32044d4ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada24bb1dd5c74df0c61ffd451a603da6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#ada24bb1dd5c74df0c61ffd451a603da6">draw_segment</a> (int x, int y, int dx, int dy, Color color, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:ada24bb1dd5c74df0c61ffd451a603da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine un segment de ligne à l'aide de l'algorithme de Bresenham.  <a href="pixel_8c.html#ada24bb1dd5c74df0c61ffd451a603da6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ada24bb1dd5c74df0c61ffd451a603da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e9a749297e1988b199d7fb75c7f7cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#a49e9a749297e1988b199d7fb75c7f7cd">pixel_line</a> (<a class="el" href="structshape.html">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:a49e9a749297e1988b199d7fb75c7f7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit une ligne en une liste de pixels.  <a href="pixel_8c.html#a49e9a749297e1988b199d7fb75c7f7cd">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a49e9a749297e1988b199d7fb75c7f7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87abc331cfb87a9a9a56f1db0c1ca587"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#a87abc331cfb87a9a9a56f1db0c1ca587">pixel_cercle</a> (<a class="el" href="structshape.html">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:a87abc331cfb87a9a9a56f1db0c1ca587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit un cercle en une liste de pixels.  <a href="pixel_8c.html#a87abc331cfb87a9a9a56f1db0c1ca587">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a87abc331cfb87a9a9a56f1db0c1ca587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be84707cddae4c88c715fc31a89db84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#a4be84707cddae4c88c715fc31a89db84">pixel_rectangle</a> (<a class="el" href="structshape.html">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:a4be84707cddae4c88c715fc31a89db84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit un rectangle en une liste de pixels.  <a href="pixel_8c.html#a4be84707cddae4c88c715fc31a89db84">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4be84707cddae4c88c715fc31a89db84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ac3154a410a7daf32aa794ed4c000a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#a33ac3154a410a7daf32aa794ed4c000a">pixel_square</a> (<a class="el" href="structshape.html">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:a33ac3154a410a7daf32aa794ed4c000a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit un carré en une liste de pixels.  <a href="pixel_8c.html#a33ac3154a410a7daf32aa794ed4c000a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a33ac3154a410a7daf32aa794ed4c000a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5667750b581fe21ec08d266b521b98f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#a5667750b581fe21ec08d266b521b98f4">pixel_polygon</a> (<a class="el" href="structshape.html">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:a5667750b581fe21ec08d266b521b98f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit un polygone en une liste de pixels.  <a href="pixel_8c.html#a5667750b581fe21ec08d266b521b98f4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5667750b581fe21ec08d266b521b98f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70bfd04ebb4770aa9fbc3c828c15d74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpoint.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#ab70bfd04ebb4770aa9fbc3c828c15d74">calc_point_median</a> (<a class="el" href="structpoint.html">Point</a> *p1, <a class="el" href="structpoint.html">Point</a> *p2, double t)</td></tr>
+<tr class="memdesc:ab70bfd04ebb4770aa9fbc3c828c15d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule le point médian entre deux points donnés en fonction du paramètre t.  <a href="pixel_8c.html#ab70bfd04ebb4770aa9fbc3c828c15d74">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab70bfd04ebb4770aa9fbc3c828c15d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5b30d66d93f7fce626c1547736471c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpoint.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#a5f5b30d66d93f7fce626c1547736471c">cj_calc</a> (<a class="el" href="structpoint.html">Point</a> **points, int num_pt, double t)</td></tr>
+<tr class="memdesc:a5f5b30d66d93f7fce626c1547736471c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule un point sur une courbe de Bézier à l'aide de l'algorithme de Casteljau.  <a href="pixel_8c.html#a5f5b30d66d93f7fce626c1547736471c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5f5b30d66d93f7fce626c1547736471c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a17e77b9983a5d25c11f697bb1f6147"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pixel_8c.html#a1a17e77b9983a5d25c11f697bb1f6147">pixel_curve</a> (<a class="el" href="structshape.html">Shape</a> *<a class="el" href="structshape.html">shape</a>, <a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:a1a17e77b9983a5d25c11f697bb1f6147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit une courbe de Bézier en une liste de pixels.  <a href="pixel_8c.html#a1a17e77b9983a5d25c11f697bb1f6147">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1a17e77b9983a5d25c11f697bb1f6147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Gestion des pixels et des formes géométriques. </p>
+<p>Ce fichier contient des fonctions pour créer et manipuler des pixels, ainsi que pour convertir diverses formes géométriques en une liste de pixels représentant ces formes à l'écran. </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ab70bfd04ebb4770aa9fbc3c828c15d74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab70bfd04ebb4770aa9fbc3c828c15d74">&#9670;&nbsp;</a></span>calc_point_median()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpoint.html">Point</a> calc_point_median </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> *&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> *&#160;</td>
+          <td class="paramname"><em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule le point médian entre deux points donnés en fonction du paramètre t. </p>
+<p>Cette fonction calcule un point situé entre deux points donnés sur la ligne les reliant, selon une valeur t. Lorsque t = 0, le point est égale à p1, et lorsque t = 1, le point est égale à p2.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>Le premier point. </td></tr>
+    <tr><td class="paramname">p2</td><td>Le second point. </td></tr>
+    <tr><td class="paramname">t</td><td>Le paramètre de transition (0 &lt;= t &lt;= 1).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le point médian entre p1 et p2. </dd></dl>
+<p>&lt; Crée et retourne le point médian</p>
+
+</div>
+</div>
+<a id="a5f5b30d66d93f7fce626c1547736471c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f5b30d66d93f7fce626c1547736471c">&#9670;&nbsp;</a></span>cj_calc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpoint.html">Point</a> cj_calc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpoint.html">Point</a> **&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_pt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule un point sur une courbe de Bézier à l'aide de l'algorithme de Casteljau. </p>
+<p>Cette fonction utilise l'algorithme de Casteljau pour calculer un point sur une courbe de Bézier à partir d'un ensemble de points de contrôle et d'un paramètre t (entre 0 et 1).</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>Tableau de pointeurs vers les points de contrôle. </td></tr>
+    <tr><td class="paramname">num_pt</td><td>Le nombre de points de contrôle. </td></tr>
+    <tr><td class="paramname">t</td><td>Le paramètre de la courbe (0 &lt;= t &lt;= 1).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le point sur la courbe de Bézier à la position t. </dd></dl>
+<p>&lt; Copie les points de contrôle dans un tableau temporaire</p>
+<p>&lt; Calcule les points intermédiaires</p>
+<p>&lt; Retourne le premier point calculé, qui est le point sur la courbe de Bézier</p>
+
+</div>
+</div>
+<a id="a8a4bcbde9aa312231fd4bae3a01478ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a4bcbde9aa312231fd4bae3a01478ab">&#9670;&nbsp;</a></span>create_pixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pixel_8h.html#aa189e9477c486a6eef29d93821297ad5">Pixel</a>* create_pixel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée un pixel avec les coordonnées et la couleur spécifiées. </p>
+<p>Crée un pixel avec des coordonnées spécifiques et une couleur donnée.</p>
+<p>Cette fonction alloue de la mémoire pour un pixel et initialise ses coordonnées et sa couleur.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">px</td><td>La coordonnée x du pixel. </td></tr>
+    <tr><td class="paramname">py</td><td>La coordonnée y du pixel. </td></tr>
+    <tr><td class="paramname">color</td><td>La couleur du pixel.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers le pixel créé. </dd></dl>
+<p>&lt; Allocation de mémoire pour un pixel</p>
+
+</div>
+</div>
+<a id="a484b3385a2339f74f9e0ad43bdbd3344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a484b3385a2339f74f9e0ad43bdbd3344">&#9670;&nbsp;</a></span>create_shape_to_pixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a>* create_shape_to_pixel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshape.html">Shape</a> *&#160;</td>
+          <td class="paramname"><em>shape</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une liste de pixels représentant une forme géométrique. </p>
+<p>Crée une liste de pixels à partir d'une forme géométrique.</p>
+<p>Cette fonction prend une forme géométrique et génère une liste de pixels correspondant à cette forme. Les types de formes supportées sont : Point, Line, Square, Rectangle, Cercle, Polygon et Curve.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme géométrique à convertir en pixels.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La liste de pixels représentant la forme. </dd></dl>
+<p>&lt; Retourne NULL si la forme est vide</p>
+<p>&lt; Création d'une nouvelle liste de pixels</p>
+<p>&lt; Gère le cas d'un point</p>
+<p>&lt; Gère le cas d'une ligne</p>
+<p>&lt; Gère le cas d'un carré</p>
+<p>&lt; Gère le cas d'un rectangle</p>
+<p>&lt; Gère le cas d'un cercle</p>
+<p>&lt; Gère le cas d'un polygone</p>
+<p>&lt; Gère le cas d'une courbe</p>
+<p>&lt; Retourne la liste des pixels</p>
+
+</div>
+</div>
+<a id="a2719c50c617c53984ef5484ea011c9cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2719c50c617c53984ef5484ea011c9cf">&#9670;&nbsp;</a></span>delete_pixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_pixel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pixel_8h.html#aa189e9477c486a6eef29d93821297ad5">Pixel</a> *&#160;</td>
+          <td class="paramname"><em>pixel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime un pixel en libérant sa mémoire. </p>
+<p>Supprime un pixel et libère sa mémoire.</p>
+<p>Cette fonction libère la mémoire allouée pour un pixel.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixel</td><td>Le pointeur vers le pixel à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Libère la mémoire du pixel</p>
+
+</div>
+</div>
+<a id="ada24bb1dd5c74df0c61ffd451a603da6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada24bb1dd5c74df0c61ffd451a603da6">&#9670;&nbsp;</a></span>draw_segment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void draw_segment </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dessine un segment de ligne à l'aide de l'algorithme de Bresenham. </p>
+<p>Cette fonction dessine un segment de ligne entre les coordonnées spécifiées en utilisant l'algorithme de Bresenham pour obtenir une approximation optimale de la ligne.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Coordonnée x du point de départ. </td></tr>
+    <tr><td class="paramname">y</td><td>Coordonnée y du point de départ. </td></tr>
+    <tr><td class="paramname">dx</td><td>Différence en x entre les deux points de la ligne. </td></tr>
+    <tr><td class="paramname">dy</td><td>Différence en y entre les deux points de la ligne. </td></tr>
+    <tr><td class="paramname">color</td><td>La couleur du pixel. </td></tr>
+    <tr><td class="paramname">lst</td><td>La liste de pixels à laquelle les pixels du segment seront ajoutés. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a87abc331cfb87a9a9a56f1db0c1ca587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87abc331cfb87a9a9a56f1db0c1ca587">&#9670;&nbsp;</a></span>pixel_cercle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pixel_cercle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshape.html">Shape</a> *&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit un cercle en une liste de pixels. </p>
+<p>Cette fonction utilise l'algorithme de tracé de cercle pour dessiner un cercle à partir de son centre et de son rayon.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme géométrique (cercle). </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à compléter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1a17e77b9983a5d25c11f697bb1f6147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a17e77b9983a5d25c11f697bb1f6147">&#9670;&nbsp;</a></span>pixel_curve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pixel_curve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshape.html">Shape</a> *&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit une courbe de Bézier en une liste de pixels. </p>
+<p>Cette fonction génère une liste de pixels représentant une courbe de Bézier à quatre points de contrôle en utilisant l'algorithme de Casteljau pour calculer les points sur la courbe.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme géométrique (courbe de Bézier). </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à compléter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Récupère les informations de la courbe</p>
+<p>&lt; Points de contrôle de la courbe</p>
+<p>&lt; Nombre de points de contrôle</p>
+<p>&lt; Calcule un point sur la courbe</p>
+<p>&lt; Crée un pixel pour ce point</p>
+<p>&lt; Ajoute le pixel à la liste</p>
+
+</div>
+</div>
+<a id="a49e9a749297e1988b199d7fb75c7f7cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49e9a749297e1988b199d7fb75c7f7cd">&#9670;&nbsp;</a></span>pixel_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pixel_line </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshape.html">Shape</a> *&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit une ligne en une liste de pixels. </p>
+<p>Cette fonction utilise l'algorithme de Bresenham pour dessiner une ligne entre deux points et ajoute les pixels à la liste.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme géométrique (ligne). </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à compléter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Récupère les informations de la ligne</p>
+<p>&lt; Dessine le segment de la ligne</p>
+
+</div>
+</div>
+<a id="ac5fdff7e509d6ede5e290a32044d4ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5fdff7e509d6ede5e290a32044d4ae9">&#9670;&nbsp;</a></span>pixel_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pixel_point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshape.html">Shape</a> *&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit un point en une liste de pixels. </p>
+<p>Cette fonction crée un pixel pour un point donné et l'ajoute à la liste de pixels.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme géométrique (point). </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à compléter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Récupère les informations du point</p>
+<p>&lt; Crée un pixel pour le point</p>
+<p>&lt; Ajoute le pixel à la liste</p>
+
+</div>
+</div>
+<a id="a5667750b581fe21ec08d266b521b98f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5667750b581fe21ec08d266b521b98f4">&#9670;&nbsp;</a></span>pixel_polygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pixel_polygon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshape.html">Shape</a> *&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit un polygone en une liste de pixels. </p>
+<p>Cette fonction génère une liste de pixels représentant les segments d'un polygone en reliant tous les points consécutifs du polygone.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme géométrique (polygone). </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à compléter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Récupère les informations du polygone</p>
+
+</div>
+</div>
+<a id="a4be84707cddae4c88c715fc31a89db84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be84707cddae4c88c715fc31a89db84">&#9670;&nbsp;</a></span>pixel_rectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pixel_rectangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshape.html">Shape</a> *&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit un rectangle en une liste de pixels. </p>
+<p>Cette fonction génère une liste de pixels représentant les quatre segments d'un rectangle, en utilisant l'algorithme de tracé de segments de lignes.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme géométrique (rectangle). </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à compléter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Récupère les informations du rectangle</p>
+
+</div>
+</div>
+<a id="a33ac3154a410a7daf32aa794ed4c000a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33ac3154a410a7daf32aa794ed4c000a">&#9670;&nbsp;</a></span>pixel_square()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pixel_square </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshape.html">Shape</a> *&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit un carré en une liste de pixels. </p>
+<p>Cette fonction génère une liste de pixels représentant les quatre segments d'un carré, en utilisant l'algorithme de tracé de segments de lignes.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>Pointeur vers la forme géométrique (carré). </td></tr>
+    <tr><td class="paramname">lst</td><td>Liste des pixels à compléter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Récupère les informations du carré</p>
+
+</div>
+</div>
+<a id="aa885a1c0aceaa86e24b2822756553f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa885a1c0aceaa86e24b2822756553f14">&#9670;&nbsp;</a></span>remove_pixel_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void remove_pixel_shape </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>pixel_lst</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime les pixels d'une forme géométrique. </p>
+<p>Supprime les pixels associés à une forme géométrique.</p>
+<p>Cette fonction est vide dans votre code, elle devrait permettre de supprimer les pixels associés à une forme géométrique.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixel_lst</td><td>La liste des pixels à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PixelTracer:  Fichier source de Documents/srcCPixelTracer/src/shape.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PixelTracer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_0db95f55e3ad953757e5ce90fe678e4e.html">srcCPixelTracer</a></li><li class="navelem"><a class="el" href="dir_a5bcfe2c18b31d3d4493ec20fc962c25.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">shape.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="shape_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _SHAPE_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#  define _SHAPE_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5">shape_type</a> { </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5a15108ccafa3232b9067f889b6156f565">   15</a></span>&#160;    <a class="code" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5a15108ccafa3232b9067f889b6156f565">POINT</a>,        </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5ab023460c84f774a219d46ccf4665994c">   16</a></span>&#160;    <a class="code" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5ab023460c84f774a219d46ccf4665994c">LINE</a>,         </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5a6bbf18c3b9c541f6f2e858477b9156ee">   17</a></span>&#160;    <a class="code" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5a6bbf18c3b9c541f6f2e858477b9156ee">SQUAR</a>,        </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5ae552ab0a96c0384a6e918e726b7f6102">   18</a></span>&#160;    <a class="code" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5ae552ab0a96c0384a6e918e726b7f6102">RECTANGLE</a>,    </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5abcaa0644a60d3e413e905e97a4a7878c">   19</a></span>&#160;    <a class="code" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5abcaa0644a60d3e413e905e97a4a7878c">CERCLE</a>,       </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5ad5355465780b9a6259ebbc74d47477db">   20</a></span>&#160;    <a class="code" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5ad5355465780b9a6259ebbc74d47477db">POLYGON</a>,      </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5a2267c8aab80fd31714c264f251e343cf">CURVE</a>         </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5a2267c8aab80fd31714c264f251e343cf">   22</a></span>&#160;} Shape_type;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> color { </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    BLACK,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    WIGHT,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    RED,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    GREEN</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} Color;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structpoint.html">   39</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structpoint.html">point</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structpoint.html#a00f7c5252c35e9832c816e46f43cf0f6">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpoint.html#a00f7c5252c35e9832c816e46f43cf0f6">pos_x</a>;   </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structpoint.html#aca61b7514e93cea5c4b75223ba221fb9">   41</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpoint.html#aca61b7514e93cea5c4b75223ba221fb9">pos_y</a>;   </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpoint.html">point</a> <a class="code" href="structpoint.html">Point</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structline.html">   49</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structline.html">line</a> {</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structline.html#a222a06ddc9ff30baea309da19f3af9a2">   50</a></span>&#160;    <a class="code" href="structpoint.html">Point</a> *<a class="code" href="structline.html#a222a06ddc9ff30baea309da19f3af9a2">p1</a>;   </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structline.html#ad0b7d037443c9280483e4ffb8c2d9994">   51</a></span>&#160;    <a class="code" href="structpoint.html">Point</a> *<a class="code" href="structline.html#ad0b7d037443c9280483e4ffb8c2d9994">p2</a>;   </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structline.html">line</a> <a class="code" href="structline.html">Line</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structsquar.html">   59</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structsquar.html">squar</a> {</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structsquar.html#a024b5d2a140fb337cf31d768c0ff4473">   60</a></span>&#160;    <a class="code" href="structpoint.html">Point</a> *<a class="code" href="structsquar.html#a024b5d2a140fb337cf31d768c0ff4473">p1</a>;   </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structsquar.html#a6d4f75c4f59a0a491e2c9019828b5cdf">   61</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structsquar.html#a6d4f75c4f59a0a491e2c9019828b5cdf">length</a>;  </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structsquar.html">squar</a> <a class="code" href="structsquar.html">Squar</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structrectangle.html">   69</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structrectangle.html">rectangle</a> {</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structrectangle.html#a093c0a077cbd95ccdafd31ac0d46ee50">   70</a></span>&#160;    <a class="code" href="structpoint.html">Point</a> *<a class="code" href="structrectangle.html#a093c0a077cbd95ccdafd31ac0d46ee50">p1</a>;   </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structrectangle.html#a57a9b24a714057d8d2ca9a06333560d3">   71</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structrectangle.html#a57a9b24a714057d8d2ca9a06333560d3">width</a>;   </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structrectangle.html#af460193d9a375b8e2813bf1fe6216cce">   72</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structrectangle.html#af460193d9a375b8e2813bf1fe6216cce">height</a>;  </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structrectangle.html">rectangle</a> <a class="code" href="structrectangle.html">Rectangle</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structcercle.html">   80</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structcercle.html">cercle</a> {</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="structcercle.html#ad23bbcf8d815514979009d92e52bd4ad">   81</a></span>&#160;    <a class="code" href="structpoint.html">Point</a> *<a class="code" href="structcercle.html#ad23bbcf8d815514979009d92e52bd4ad">center</a>; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="structcercle.html#ae8c572b4626d043ac1f0a31187e15add">   82</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structcercle.html#ae8c572b4626d043ac1f0a31187e15add">radus</a>;     </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcercle.html">cercle</a> <a class="code" href="structcercle.html">Cercle</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="structpolygon.html">   90</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structpolygon.html">polygon</a> {</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="structpolygon.html#a0db4c6cc6718e31d230f434119a6a76a">   91</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpolygon.html#a0db4c6cc6718e31d230f434119a6a76a">n</a>;           </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="structpolygon.html#a3f171e839141589275ef99cdea665883">   92</a></span>&#160;    <a class="code" href="structpoint.html">Point</a> **<a class="code" href="structpolygon.html#a3f171e839141589275ef99cdea665883">points</a>;  </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpolygon.html">polygon</a> <a class="code" href="structpolygon.html">Polygon</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="structcurve.html">  100</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structcurve.html">curve</a> {</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="structcurve.html#ae97341ffcb82b693cb5cc135293811c5">  101</a></span>&#160;    <a class="code" href="structpoint.html">Point</a> *<a class="code" href="structcurve.html#ae97341ffcb82b693cb5cc135293811c5">p1</a>;   </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="structcurve.html#a9c79178b66ff49260ace7ca36755bdd9">  102</a></span>&#160;    <a class="code" href="structpoint.html">Point</a> *<a class="code" href="structcurve.html#a9c79178b66ff49260ace7ca36755bdd9">p2</a>;   </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="structcurve.html#a6410ca9efd0cba4e1d2c07385a34e72d">  103</a></span>&#160;    <a class="code" href="structpoint.html">Point</a> *<a class="code" href="structcurve.html#a6410ca9efd0cba4e1d2c07385a34e72d">p3</a>;   </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="structcurve.html#a41d84ff397bd8ed50fa21e9eae31eedf">  104</a></span>&#160;    <a class="code" href="structpoint.html">Point</a> *<a class="code" href="structcurve.html#a41d84ff397bd8ed50fa21e9eae31eedf">p4</a>;   </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcurve.html">curve</a> <a class="code" href="structcurve.html">Curve</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="structshape.html">  112</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structshape.html">shape</a> {</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="structshape.html#a5ab155c0bd96c1c77d7e60f885f06f3a">  113</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="structshape.html#a5ab155c0bd96c1c77d7e60f885f06f3a">id</a>;  </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="structshape.html#a99fa0ff090d3185f221f018105cc7c61">  114</a></span>&#160;    Shape_type <a class="code" href="structshape.html#a99fa0ff090d3185f221f018105cc7c61">shape_type</a>;      </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="structshape.html#ad35b62b43df67ffd250b10a12b5aa21e">  115</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="structshape.html#ad35b62b43df67ffd250b10a12b5aa21e">ptrShape</a>;             </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="structshape.html#aae9d2bcf7128295094d9bf30839b50e3">  116</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="structshape.html#aae9d2bcf7128295094d9bf30839b50e3">fill</a>;         </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="structshape.html#a5b30fdfe5af32c5e1bb0152a9a9ee9cd">  117</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structshape.html#a5b30fdfe5af32c5e1bb0152a9a9ee9cd">thickness</a>;            </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="structshape.html#a2bbf8072d19c537b38fc028172e9f730">  118</a></span>&#160;    Color <a class="code" href="structshape.html#a2bbf8072d19c537b38fc028172e9f730">color</a>;                </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="structshape.html#ac1d368a09ec8ea44ce18c4b514bcd051">  119</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structshape.html#ac1d368a09ec8ea44ce18c4b514bcd051">rotation</a>;            </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structshape.html">shape</a> <a class="code" href="structshape.html">Shape</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<a class="code" href="structpoint.html">Point</a> *<a class="code" href="shape_8h.html#a2d9de1dac97ddb7e3e6ecf43be2bbe5c">create_point</a>(<span class="keywordtype">int</span> px, <span class="keywordtype">int</span> py);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#a4dade23c37d4b2c409163edfc522b18f">delete_point</a>(<a class="code" href="structpoint.html">Point</a> * <a class="code" href="structpoint.html">point</a>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<a class="code" href="structline.html">Line</a> *<a class="code" href="shape_8h.html#a3936d3d6b6faced269e02282a7c7d7f1">create_line</a>(<a class="code" href="structpoint.html">Point</a> * p1, <a class="code" href="structpoint.html">Point</a> * p2);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#ae8a93415a118bb4ec12ce97b1d601ba3">delete_line</a>(<a class="code" href="structline.html">Line</a> * <a class="code" href="structline.html">line</a>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<a class="code" href="structsquar.html">Squar</a> *<a class="code" href="shape_8h.html#a8db976a5e06c6791319866a8547bd9a5">create_squar</a>(<a class="code" href="structpoint.html">Point</a> * <a class="code" href="structpoint.html">point</a>, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#a9719ed7c7a5d88c62cf6b772797dcbf6">delete_squar</a>(<a class="code" href="structsquar.html">Squar</a> * <a class="code" href="structsquar.html">squar</a>);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<a class="code" href="structrectangle.html">Rectangle</a> *<a class="code" href="shape_8h.html#a8915b7d1981d6eaa33ba94b0d5c4f09a">create_rectangle</a>(<a class="code" href="structpoint.html">Point</a> * <a class="code" href="structpoint.html">point</a>, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#aa9e48149920001dcdba970cdcd16bb94">delete_rectangle</a>(<a class="code" href="structrectangle.html">Rectangle</a> * <a class="code" href="structrectangle.html">rectangle</a>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<a class="code" href="structcercle.html">Cercle</a> *<a class="code" href="shape_8h.html#a308817247ea14aa07584f7d3cf7d0ca7">create_cercle</a>(<a class="code" href="structpoint.html">Point</a> * center, <span class="keywordtype">int</span> radus);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#a2a66a133e444cd75bcfd3aaba3639a74">delete_cercle</a>(<a class="code" href="structcercle.html">Cercle</a> * <a class="code" href="structcercle.html">cercle</a>);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<a class="code" href="structpolygon.html">Polygon</a> *<a class="code" href="shape_8h.html#a5dcca1281025c224e6a4ce90fe487c13">create_polygon</a>(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#a8a3c09a25ea963bb9a9feabcd1ef3d67">delete_polygon</a>(<a class="code" href="structpolygon.html">Polygon</a> * <a class="code" href="structpolygon.html">polygon</a>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<a class="code" href="structcurve.html">Curve</a> *<a class="code" href="shape_8h.html#aeeac936a01b181c336d7a650618f1721">create_curve</a>(<a class="code" href="structpoint.html">Point</a> * p1, <a class="code" href="structpoint.html">Point</a> * p2, <a class="code" href="structpoint.html">Point</a> * p3, <a class="code" href="structpoint.html">Point</a> * p4);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#ab785bcd1ddf2cf76008057c1e3f71362">delete_curve</a>(<a class="code" href="structcurve.html">Curve</a> * <a class="code" href="structcurve.html">curve</a>);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<a class="code" href="structshape.html">Shape</a> *<a class="code" href="shape_8h.html#aefcd4246c9128031c547f6a9f755a116">create_empty_shape</a>(Shape_type <a class="code" href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5">shape_type</a>);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#ad2551f83fb7456ad8e3f913a78b59a1e">sprint_point</a>(<a class="code" href="structpoint.html">Point</a> * p, <span class="keywordtype">char</span> *str);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#a26f431cb3f02d6b1a9967dc64591b1db">sprint_line</a>(<a class="code" href="structline.html">Line</a> * <a class="code" href="structline.html">line</a>, <span class="keywordtype">char</span> *str);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#a3571899d19b29d8571e6c090065121f3">sprint_squar</a>(<a class="code" href="structsquar.html">Squar</a> * <a class="code" href="structsquar.html">squar</a>, <span class="keywordtype">char</span> *str);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#a9be86d5bc934d6905c849b96f71ccc14">sprint_rectangle</a>(<a class="code" href="structrectangle.html">Rectangle</a> * <a class="code" href="structrectangle.html">rectangle</a>, <span class="keywordtype">char</span> *str);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#a068a5bc38689a7b8fae84ef6a3dc0f47">sprint_cercle</a>(<a class="code" href="structcercle.html">Cercle</a> * <a class="code" href="structcercle.html">cercle</a>, <span class="keywordtype">char</span> *str);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#a71e3c87d1041b6439c310bb63e810f3d">sprint_polygon</a>(<a class="code" href="structpolygon.html">Polygon</a> * <a class="code" href="structpolygon.html">polygon</a>, <span class="keywordtype">char</span> *str);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#a575942d1117aebe05159a42d4aacda53">sprint_curve</a>(<a class="code" href="structcurve.html">Curve</a> * <a class="code" href="structcurve.html">curve</a>, <span class="keywordtype">char</span> *str);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<a class="code" href="structshape.html">Shape</a> *<a class="code" href="shape_8h.html#acbbc03fb73c6d0e0c915a0653e25ef4c">create_point_shape</a>(<span class="keywordtype">int</span> px, <span class="keywordtype">int</span> py);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<a class="code" href="structshape.html">Shape</a> *<a class="code" href="shape_8h.html#acc6b0d4e5ac72b8eb40de79897ff0cc9">create_line_shape</a>(<span class="keywordtype">int</span> px1, <span class="keywordtype">int</span> py1, <span class="keywordtype">int</span> px2, <span class="keywordtype">int</span> py2);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<a class="code" href="structshape.html">Shape</a> *<a class="code" href="shape_8h.html#a2f3d1be6220cdf21f37ce049a057b3b9">create_square_shape</a>(<span class="keywordtype">int</span> px, <span class="keywordtype">int</span> py, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<a class="code" href="structshape.html">Shape</a> *<a class="code" href="shape_8h.html#a8cd4f5ce869b32d2686e2d6f3e1c00d5">create_rectangle_shape</a>(<span class="keywordtype">int</span> px, <span class="keywordtype">int</span> py, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<a class="code" href="structshape.html">Shape</a> *<a class="code" href="shape_8h.html#a83fb9d780094c0479c818044c06bd4aa">create_cercle_shape</a>(<span class="keywordtype">int</span> px, <span class="keywordtype">int</span> py, <span class="keywordtype">int</span> radus);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<a class="code" href="structshape.html">Shape</a> *<a class="code" href="shape_8h.html#af64a9f508bb28cca13ff289efc8fe063">create_polygon_shape</a>(<span class="keywordtype">int</span> n, <span class="keywordtype">int</span> *tab);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<a class="code" href="structshape.html">Shape</a> *<a class="code" href="shape_8h.html#a02f53747813ba7e192e2b4f7c1b4c29e">create_curve_shape</a>(<span class="keywordtype">int</span> px1, <span class="keywordtype">int</span> py1, <span class="keywordtype">int</span> px2, <span class="keywordtype">int</span> py2, <span class="keywordtype">int</span> px3,</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                          <span class="keywordtype">int</span> py3, <span class="keywordtype">int</span> px4, <span class="keywordtype">int</span> py4);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#a161cb800ff00feffb5cf5d7592b3b8be">delete_shape</a>(<a class="code" href="structshape.html">Shape</a> * <a class="code" href="structshape.html">shape</a>);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shape_8h.html#a5167551a1a804f8b67d74ed0ce9b738d">sprint_shape</a>(<a class="code" href="structshape.html">Shape</a> * <a class="code" href="structshape.html">shape</a>, <span class="keywordtype">char</span> *str);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="ashape_8h_html_a02f53747813ba7e192e2b4f7c1b4c29e"><div class="ttname"><a href="shape_8h.html#a02f53747813ba7e192e2b4f7c1b4c29e">create_curve_shape</a></div><div class="ttdeci">Shape * create_curve_shape(int px1, int py1, int px2, int py2, int px3, int py3, int px4, int py4)</div><div class="ttdoc">Crée une forme de type Courbe à partir de quatre points de contrôle.</div><div class="ttdef"><b>Definition:</b> shape.c:507</div></div>
+<div class="ttc" id="ashape_8h_html_a068a5bc38689a7b8fae84ef6a3dc0f47"><div class="ttname"><a href="shape_8h.html#a068a5bc38689a7b8fae84ef6a3dc0f47">sprint_cercle</a></div><div class="ttdeci">void sprint_cercle(Cercle *cercle, char *str)</div><div class="ttdoc">Affiche les informations d'un cercle sous forme de chaîne de caractères.</div><div class="ttdef"><b>Definition:</b> shape.c:311</div></div>
+<div class="ttc" id="ashape_8h_html_a161cb800ff00feffb5cf5d7592b3b8be"><div class="ttname"><a href="shape_8h.html#a161cb800ff00feffb5cf5d7592b3b8be">delete_shape</a></div><div class="ttdeci">void delete_shape(Shape *shape)</div><div class="ttdoc">Supprime une forme.</div><div class="ttdef"><b>Definition:</b> shape.c:527</div></div>
+<div class="ttc" id="ashape_8h_html_a26f431cb3f02d6b1a9967dc64591b1db"><div class="ttname"><a href="shape_8h.html#a26f431cb3f02d6b1a9967dc64591b1db">sprint_line</a></div><div class="ttdeci">void sprint_line(Line *line, char *str)</div><div class="ttdoc">Affiche les coordonnées d'une ligne sous forme de chaîne de caractères.</div><div class="ttdef"><b>Definition:</b> shape.c:267</div></div>
+<div class="ttc" id="ashape_8h_html_a2a66a133e444cd75bcfd3aaba3639a74"><div class="ttname"><a href="shape_8h.html#a2a66a133e444cd75bcfd3aaba3639a74">delete_cercle</a></div><div class="ttdeci">void delete_cercle(Cercle *cercle)</div><div class="ttdoc">Supprime un cercle.</div><div class="ttdef"><b>Definition:</b> shape.c:155</div></div>
+<div class="ttc" id="ashape_8h_html_a2d9de1dac97ddb7e3e6ecf43be2bbe5c"><div class="ttname"><a href="shape_8h.html#a2d9de1dac97ddb7e3e6ecf43be2bbe5c">create_point</a></div><div class="ttdeci">Point * create_point(int px, int py)</div><div class="ttdoc">Crée un point avec des coordonnées spécifiques.</div><div class="ttdef"><b>Definition:</b> shape.c:27</div></div>
+<div class="ttc" id="ashape_8h_html_a2f3d1be6220cdf21f37ce049a057b3b9"><div class="ttname"><a href="shape_8h.html#a2f3d1be6220cdf21f37ce049a057b3b9">create_square_shape</a></div><div class="ttdeci">Shape * create_square_shape(int px, int py, int length)</div><div class="ttdoc">Crée une forme de type Carré à partir d'un point et d'une longueur.</div><div class="ttdef"><b>Definition:</b> shape.c:402</div></div>
+<div class="ttc" id="ashape_8h_html_a308817247ea14aa07584f7d3cf7d0ca7"><div class="ttname"><a href="shape_8h.html#a308817247ea14aa07584f7d3cf7d0ca7">create_cercle</a></div><div class="ttdeci">Cercle * create_cercle(Point *center, int radus)</div><div class="ttdoc">Crée un cercle défini par un centre et un rayon.</div><div class="ttdef"><b>Definition:</b> shape.c:141</div></div>
+<div class="ttc" id="ashape_8h_html_a3571899d19b29d8571e6c090065121f3"><div class="ttname"><a href="shape_8h.html#a3571899d19b29d8571e6c090065121f3">sprint_squar</a></div><div class="ttdeci">void sprint_squar(Squar *squar, char *str)</div><div class="ttdoc">Affiche les informations d'un carré sous forme de chaîne de caractères.</div><div class="ttdef"><b>Definition:</b> shape.c:283</div></div>
+<div class="ttc" id="ashape_8h_html_a3936d3d6b6faced269e02282a7c7d7f1"><div class="ttname"><a href="shape_8h.html#a3936d3d6b6faced269e02282a7c7d7f1">create_line</a></div><div class="ttdeci">Line * create_line(Point *p1, Point *p2)</div><div class="ttdoc">Crée une ligne entre deux points.</div><div class="ttdef"><b>Definition:</b> shape.c:54</div></div>
+<div class="ttc" id="ashape_8h_html_a4dade23c37d4b2c409163edfc522b18f"><div class="ttname"><a href="shape_8h.html#a4dade23c37d4b2c409163edfc522b18f">delete_point</a></div><div class="ttdeci">void delete_point(Point *point)</div><div class="ttdoc">Supprime un point.</div><div class="ttdef"><b>Definition:</b> shape.c:41</div></div>
+<div class="ttc" id="ashape_8h_html_a5167551a1a804f8b67d74ed0ce9b738d"><div class="ttname"><a href="shape_8h.html#a5167551a1a804f8b67d74ed0ce9b738d">sprint_shape</a></div><div class="ttdeci">void sprint_shape(Shape *shape, char *str)</div><div class="ttdoc">Affiche les informations d'une forme sous forme de chaîne de caractères.</div><div class="ttdef"><b>Definition:</b> shape.c:567</div></div>
+<div class="ttc" id="ashape_8h_html_a575942d1117aebe05159a42d4aacda53"><div class="ttname"><a href="shape_8h.html#a575942d1117aebe05159a42d4aacda53">sprint_curve</a></div><div class="ttdeci">void sprint_curve(Curve *curve, char *str)</div><div class="ttdoc">Affiche les informations d'une courbe sous forme de chaîne de caractères.</div><div class="ttdef"><b>Definition:</b> shape.c:348</div></div>
+<div class="ttc" id="ashape_8h_html_a5dcca1281025c224e6a4ce90fe487c13"><div class="ttname"><a href="shape_8h.html#a5dcca1281025c224e6a4ce90fe487c13">create_polygon</a></div><div class="ttdeci">Polygon * create_polygon(int n)</div><div class="ttdoc">Crée un polygone défini par un nombre de points.</div><div class="ttdef"><b>Definition:</b> shape.c:168</div></div>
+<div class="ttc" id="ashape_8h_html_a71e3c87d1041b6439c310bb63e810f3d"><div class="ttname"><a href="shape_8h.html#a71e3c87d1041b6439c310bb63e810f3d">sprint_polygon</a></div><div class="ttdeci">void sprint_polygon(Polygon *polygon, char *str)</div><div class="ttdoc">Affiche les informations d'un polygone sous forme de chaîne de caractères.</div><div class="ttdef"><b>Definition:</b> shape.c:326</div></div>
+<div class="ttc" id="ashape_8h_html_a82a00e336c65dad4cc04b65563b26eb5"><div class="ttname"><a href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5">shape_type</a></div><div class="ttdeci">shape_type</div><div class="ttdef"><b>Definition:</b> shape.h:14</div></div>
+<div class="ttc" id="ashape_8h_html_a82a00e336c65dad4cc04b65563b26eb5a15108ccafa3232b9067f889b6156f565"><div class="ttname"><a href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5a15108ccafa3232b9067f889b6156f565">POINT</a></div><div class="ttdeci">@ POINT</div><div class="ttdef"><b>Definition:</b> shape.h:15</div></div>
+<div class="ttc" id="ashape_8h_html_a82a00e336c65dad4cc04b65563b26eb5a2267c8aab80fd31714c264f251e343cf"><div class="ttname"><a href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5a2267c8aab80fd31714c264f251e343cf">CURVE</a></div><div class="ttdeci">@ CURVE</div><div class="ttdef"><b>Definition:</b> shape.h:21</div></div>
+<div class="ttc" id="ashape_8h_html_a82a00e336c65dad4cc04b65563b26eb5a6bbf18c3b9c541f6f2e858477b9156ee"><div class="ttname"><a href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5a6bbf18c3b9c541f6f2e858477b9156ee">SQUAR</a></div><div class="ttdeci">@ SQUAR</div><div class="ttdef"><b>Definition:</b> shape.h:17</div></div>
+<div class="ttc" id="ashape_8h_html_a82a00e336c65dad4cc04b65563b26eb5ab023460c84f774a219d46ccf4665994c"><div class="ttname"><a href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5ab023460c84f774a219d46ccf4665994c">LINE</a></div><div class="ttdeci">@ LINE</div><div class="ttdef"><b>Definition:</b> shape.h:16</div></div>
+<div class="ttc" id="ashape_8h_html_a82a00e336c65dad4cc04b65563b26eb5abcaa0644a60d3e413e905e97a4a7878c"><div class="ttname"><a href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5abcaa0644a60d3e413e905e97a4a7878c">CERCLE</a></div><div class="ttdeci">@ CERCLE</div><div class="ttdef"><b>Definition:</b> shape.h:19</div></div>
+<div class="ttc" id="ashape_8h_html_a82a00e336c65dad4cc04b65563b26eb5ad5355465780b9a6259ebbc74d47477db"><div class="ttname"><a href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5ad5355465780b9a6259ebbc74d47477db">POLYGON</a></div><div class="ttdeci">@ POLYGON</div><div class="ttdef"><b>Definition:</b> shape.h:20</div></div>
+<div class="ttc" id="ashape_8h_html_a82a00e336c65dad4cc04b65563b26eb5ae552ab0a96c0384a6e918e726b7f6102"><div class="ttname"><a href="shape_8h.html#a82a00e336c65dad4cc04b65563b26eb5ae552ab0a96c0384a6e918e726b7f6102">RECTANGLE</a></div><div class="ttdeci">@ RECTANGLE</div><div class="ttdef"><b>Definition:</b> shape.h:18</div></div>
+<div class="ttc" id="ashape_8h_html_a83fb9d780094c0479c818044c06bd4aa"><div class="ttname"><a href="shape_8h.html#a83fb9d780094c0479c818044c06bd4aa">create_cercle_shape</a></div><div class="ttdeci">Shape * create_cercle_shape(int px, int py, int radus)</div><div class="ttdoc">Crée une forme de type Cercle à partir d'un centre et d'un rayon.</div><div class="ttdef"><b>Definition:</b> shape.c:438</div></div>
+<div class="ttc" id="ashape_8h_html_a8915b7d1981d6eaa33ba94b0d5c4f09a"><div class="ttname"><a href="shape_8h.html#a8915b7d1981d6eaa33ba94b0d5c4f09a">create_rectangle</a></div><div class="ttdeci">Rectangle * create_rectangle(Point *point, int width, int height)</div><div class="ttdoc">Crée un rectangle défini par un point, une largeur et une hauteur.</div><div class="ttdef"><b>Definition:</b> shape.c:112</div></div>
+<div class="ttc" id="ashape_8h_html_a8a3c09a25ea963bb9a9feabcd1ef3d67"><div class="ttname"><a href="shape_8h.html#a8a3c09a25ea963bb9a9feabcd1ef3d67">delete_polygon</a></div><div class="ttdeci">void delete_polygon(Polygon *polygon)</div><div class="ttdoc">Supprime un polygone.</div><div class="ttdef"><b>Definition:</b> shape.c:185</div></div>
+<div class="ttc" id="ashape_8h_html_a8cd4f5ce869b32d2686e2d6f3e1c00d5"><div class="ttname"><a href="shape_8h.html#a8cd4f5ce869b32d2686e2d6f3e1c00d5">create_rectangle_shape</a></div><div class="ttdeci">Shape * create_rectangle_shape(int px, int py, int width, int height)</div><div class="ttdoc">Crée une forme de type Rectangle à partir d'un point, d'une largeur et d'une hauteur.</div><div class="ttdef"><b>Definition:</b> shape.c:421</div></div>
+<div class="ttc" id="ashape_8h_html_a8db976a5e06c6791319866a8547bd9a5"><div class="ttname"><a href="shape_8h.html#a8db976a5e06c6791319866a8547bd9a5">create_squar</a></div><div class="ttdeci">Squar * create_squar(Point *point, int length)</div><div class="ttdoc">Crée un carré défini par un point et une longueur de côté.</div><div class="ttdef"><b>Definition:</b> shape.c:83</div></div>
+<div class="ttc" id="ashape_8h_html_a9719ed7c7a5d88c62cf6b772797dcbf6"><div class="ttname"><a href="shape_8h.html#a9719ed7c7a5d88c62cf6b772797dcbf6">delete_squar</a></div><div class="ttdeci">void delete_squar(Squar *squar)</div><div class="ttdoc">Supprime un carré.</div><div class="ttdef"><b>Definition:</b> shape.c:97</div></div>
+<div class="ttc" id="ashape_8h_html_a9be86d5bc934d6905c849b96f71ccc14"><div class="ttname"><a href="shape_8h.html#a9be86d5bc934d6905c849b96f71ccc14">sprint_rectangle</a></div><div class="ttdeci">void sprint_rectangle(Rectangle *rectangle, char *str)</div><div class="ttdoc">Affiche les informations d'un rectangle sous forme de chaîne de caractères.</div><div class="ttdef"><b>Definition:</b> shape.c:297</div></div>
+<div class="ttc" id="ashape_8h_html_aa9e48149920001dcdba970cdcd16bb94"><div class="ttname"><a href="shape_8h.html#aa9e48149920001dcdba970cdcd16bb94">delete_rectangle</a></div><div class="ttdeci">void delete_rectangle(Rectangle *rectangle)</div><div class="ttdoc">Supprime un rectangle.</div><div class="ttdef"><b>Definition:</b> shape.c:127</div></div>
+<div class="ttc" id="ashape_8h_html_ab785bcd1ddf2cf76008057c1e3f71362"><div class="ttname"><a href="shape_8h.html#ab785bcd1ddf2cf76008057c1e3f71362">delete_curve</a></div><div class="ttdeci">void delete_curve(Curve *curve)</div><div class="ttdoc">Supprime une courbe.</div><div class="ttdef"><b>Definition:</b> shape.c:220</div></div>
+<div class="ttc" id="ashape_8h_html_acbbc03fb73c6d0e0c915a0653e25ef4c"><div class="ttname"><a href="shape_8h.html#acbbc03fb73c6d0e0c915a0653e25ef4c">create_point_shape</a></div><div class="ttdeci">Shape * create_point_shape(int px, int py)</div><div class="ttdoc">Crée une forme de type Point à partir de coordonnées spécifiques.</div><div class="ttdef"><b>Definition:</b> shape.c:366</div></div>
+<div class="ttc" id="ashape_8h_html_acc6b0d4e5ac72b8eb40de79897ff0cc9"><div class="ttname"><a href="shape_8h.html#acc6b0d4e5ac72b8eb40de79897ff0cc9">create_line_shape</a></div><div class="ttdeci">Shape * create_line_shape(int px1, int py1, int px2, int py2)</div><div class="ttdoc">Crée une forme de type Ligne à partir de deux points spécifiques.</div><div class="ttdef"><b>Definition:</b> shape.c:384</div></div>
+<div class="ttc" id="ashape_8h_html_ad2551f83fb7456ad8e3f913a78b59a1e"><div class="ttname"><a href="shape_8h.html#ad2551f83fb7456ad8e3f913a78b59a1e">sprint_point</a></div><div class="ttdeci">void sprint_point(Point *p, char *str)</div><div class="ttdoc">Affiche les coordonnées d'un point sous forme de chaîne de caractères.</div><div class="ttdef"><b>Definition:</b> shape.c:255</div></div>
+<div class="ttc" id="ashape_8h_html_ae8a93415a118bb4ec12ce97b1d601ba3"><div class="ttname"><a href="shape_8h.html#ae8a93415a118bb4ec12ce97b1d601ba3">delete_line</a></div><div class="ttdeci">void delete_line(Line *line)</div><div class="ttdoc">Supprime une ligne.</div><div class="ttdef"><b>Definition:</b> shape.c:68</div></div>
+<div class="ttc" id="ashape_8h_html_aeeac936a01b181c336d7a650618f1721"><div class="ttname"><a href="shape_8h.html#aeeac936a01b181c336d7a650618f1721">create_curve</a></div><div class="ttdeci">Curve * create_curve(Point *p1, Point *p2, Point *p3, Point *p4)</div><div class="ttdoc">Crée une courbe définie par quatre points de contrôle.</div><div class="ttdef"><b>Definition:</b> shape.c:204</div></div>
+<div class="ttc" id="ashape_8h_html_aefcd4246c9128031c547f6a9f755a116"><div class="ttname"><a href="shape_8h.html#aefcd4246c9128031c547f6a9f755a116">create_empty_shape</a></div><div class="ttdeci">Shape * create_empty_shape(Shape_type shape_type)</div><div class="ttdoc">Crée une forme vide (sans spécification de détails).</div><div class="ttdef"><b>Definition:</b> shape.c:236</div></div>
+<div class="ttc" id="ashape_8h_html_af64a9f508bb28cca13ff289efc8fe063"><div class="ttname"><a href="shape_8h.html#af64a9f508bb28cca13ff289efc8fe063">create_polygon_shape</a></div><div class="ttdeci">Shape * create_polygon_shape(int n, int *tab)</div><div class="ttdoc">Crée une forme de type Polygone à partir d'un nombre de points.</div><div class="ttdef"><b>Definition:</b> shape.c:455</div></div>
+<div class="ttc" id="astructcercle_html"><div class="ttname"><a href="structcercle.html">cercle</a></div><div class="ttdoc">Représente un cercle défini par un centre et un rayon.</div><div class="ttdef"><b>Definition:</b> shape.h:80</div></div>
+<div class="ttc" id="astructcercle_html_ad23bbcf8d815514979009d92e52bd4ad"><div class="ttname"><a href="structcercle.html#ad23bbcf8d815514979009d92e52bd4ad">cercle::center</a></div><div class="ttdeci">Point * center</div><div class="ttdef"><b>Definition:</b> shape.h:81</div></div>
+<div class="ttc" id="astructcercle_html_ae8c572b4626d043ac1f0a31187e15add"><div class="ttname"><a href="structcercle.html#ae8c572b4626d043ac1f0a31187e15add">cercle::radus</a></div><div class="ttdeci">int radus</div><div class="ttdef"><b>Definition:</b> shape.h:82</div></div>
+<div class="ttc" id="astructcurve_html"><div class="ttname"><a href="structcurve.html">curve</a></div><div class="ttdoc">Représente une courbe définie par quatre points de contrôle.</div><div class="ttdef"><b>Definition:</b> shape.h:100</div></div>
+<div class="ttc" id="astructcurve_html_a41d84ff397bd8ed50fa21e9eae31eedf"><div class="ttname"><a href="structcurve.html#a41d84ff397bd8ed50fa21e9eae31eedf">curve::p4</a></div><div class="ttdeci">Point * p4</div><div class="ttdef"><b>Definition:</b> shape.h:104</div></div>
+<div class="ttc" id="astructcurve_html_a6410ca9efd0cba4e1d2c07385a34e72d"><div class="ttname"><a href="structcurve.html#a6410ca9efd0cba4e1d2c07385a34e72d">curve::p3</a></div><div class="ttdeci">Point * p3</div><div class="ttdef"><b>Definition:</b> shape.h:103</div></div>
+<div class="ttc" id="astructcurve_html_a9c79178b66ff49260ace7ca36755bdd9"><div class="ttname"><a href="structcurve.html#a9c79178b66ff49260ace7ca36755bdd9">curve::p2</a></div><div class="ttdeci">Point * p2</div><div class="ttdef"><b>Definition:</b> shape.h:102</div></div>
+<div class="ttc" id="astructcurve_html_ae97341ffcb82b693cb5cc135293811c5"><div class="ttname"><a href="structcurve.html#ae97341ffcb82b693cb5cc135293811c5">curve::p1</a></div><div class="ttdeci">Point * p1</div><div class="ttdef"><b>Definition:</b> shape.h:101</div></div>
+<div class="ttc" id="astructline_html"><div class="ttname"><a href="structline.html">line</a></div><div class="ttdoc">Représente une ligne définie par deux points.</div><div class="ttdef"><b>Definition:</b> shape.h:49</div></div>
+<div class="ttc" id="astructline_html_a222a06ddc9ff30baea309da19f3af9a2"><div class="ttname"><a href="structline.html#a222a06ddc9ff30baea309da19f3af9a2">line::p1</a></div><div class="ttdeci">Point * p1</div><div class="ttdef"><b>Definition:</b> shape.h:50</div></div>
+<div class="ttc" id="astructline_html_ad0b7d037443c9280483e4ffb8c2d9994"><div class="ttname"><a href="structline.html#ad0b7d037443c9280483e4ffb8c2d9994">line::p2</a></div><div class="ttdeci">Point * p2</div><div class="ttdef"><b>Definition:</b> shape.h:51</div></div>
+<div class="ttc" id="astructpoint_html"><div class="ttname"><a href="structpoint.html">point</a></div><div class="ttdoc">Représente un point dans un espace 2D.</div><div class="ttdef"><b>Definition:</b> shape.h:39</div></div>
+<div class="ttc" id="astructpoint_html_a00f7c5252c35e9832c816e46f43cf0f6"><div class="ttname"><a href="structpoint.html#a00f7c5252c35e9832c816e46f43cf0f6">point::pos_x</a></div><div class="ttdeci">int pos_x</div><div class="ttdef"><b>Definition:</b> shape.h:40</div></div>
+<div class="ttc" id="astructpoint_html_aca61b7514e93cea5c4b75223ba221fb9"><div class="ttname"><a href="structpoint.html#aca61b7514e93cea5c4b75223ba221fb9">point::pos_y</a></div><div class="ttdeci">int pos_y</div><div class="ttdef"><b>Definition:</b> shape.h:41</div></div>
+<div class="ttc" id="astructpolygon_html"><div class="ttname"><a href="structpolygon.html">polygon</a></div><div class="ttdoc">Représente un polygone défini par un nombre de points.</div><div class="ttdef"><b>Definition:</b> shape.h:90</div></div>
+<div class="ttc" id="astructpolygon_html_a0db4c6cc6718e31d230f434119a6a76a"><div class="ttname"><a href="structpolygon.html#a0db4c6cc6718e31d230f434119a6a76a">polygon::n</a></div><div class="ttdeci">int n</div><div class="ttdef"><b>Definition:</b> shape.h:91</div></div>
+<div class="ttc" id="astructpolygon_html_a3f171e839141589275ef99cdea665883"><div class="ttname"><a href="structpolygon.html#a3f171e839141589275ef99cdea665883">polygon::points</a></div><div class="ttdeci">Point ** points</div><div class="ttdef"><b>Definition:</b> shape.h:92</div></div>
+<div class="ttc" id="astructrectangle_html"><div class="ttname"><a href="structrectangle.html">rectangle</a></div><div class="ttdoc">Représente un rectangle défini par un point, une largeur et une hauteur.</div><div class="ttdef"><b>Definition:</b> shape.h:69</div></div>
+<div class="ttc" id="astructrectangle_html_a093c0a077cbd95ccdafd31ac0d46ee50"><div class="ttname"><a href="structrectangle.html#a093c0a077cbd95ccdafd31ac0d46ee50">rectangle::p1</a></div><div class="ttdeci">Point * p1</div><div class="ttdef"><b>Definition:</b> shape.h:70</div></div>
+<div class="ttc" id="astructrectangle_html_a57a9b24a714057d8d2ca9a06333560d3"><div class="ttname"><a href="structrectangle.html#a57a9b24a714057d8d2ca9a06333560d3">rectangle::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> shape.h:71</div></div>
+<div class="ttc" id="astructrectangle_html_af460193d9a375b8e2813bf1fe6216cce"><div class="ttname"><a href="structrectangle.html#af460193d9a375b8e2813bf1fe6216cce">rectangle::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> shape.h:72</div></div>
+<div class="ttc" id="astructshape_html"><div class="ttname"><a href="structshape.html">shape</a></div><div class="ttdoc">Structure générique représentant une forme géométrique.</div><div class="ttdef"><b>Definition:</b> shape.h:112</div></div>
+<div class="ttc" id="astructshape_html_a2bbf8072d19c537b38fc028172e9f730"><div class="ttname"><a href="structshape.html#a2bbf8072d19c537b38fc028172e9f730">shape::color</a></div><div class="ttdeci">Color color</div><div class="ttdef"><b>Definition:</b> shape.h:118</div></div>
+<div class="ttc" id="astructshape_html_a5ab155c0bd96c1c77d7e60f885f06f3a"><div class="ttname"><a href="structshape.html#a5ab155c0bd96c1c77d7e60f885f06f3a">shape::id</a></div><div class="ttdeci">unsigned long long int id</div><div class="ttdef"><b>Definition:</b> shape.h:113</div></div>
+<div class="ttc" id="astructshape_html_a5b30fdfe5af32c5e1bb0152a9a9ee9cd"><div class="ttname"><a href="structshape.html#a5b30fdfe5af32c5e1bb0152a9a9ee9cd">shape::thickness</a></div><div class="ttdeci">float thickness</div><div class="ttdef"><b>Definition:</b> shape.h:117</div></div>
+<div class="ttc" id="astructshape_html_a99fa0ff090d3185f221f018105cc7c61"><div class="ttname"><a href="structshape.html#a99fa0ff090d3185f221f018105cc7c61">shape::shape_type</a></div><div class="ttdeci">Shape_type shape_type</div><div class="ttdef"><b>Definition:</b> shape.h:114</div></div>
+<div class="ttc" id="astructshape_html_aae9d2bcf7128295094d9bf30839b50e3"><div class="ttname"><a href="structshape.html#aae9d2bcf7128295094d9bf30839b50e3">shape::fill</a></div><div class="ttdeci">unsigned char fill</div><div class="ttdef"><b>Definition:</b> shape.h:116</div></div>
+<div class="ttc" id="astructshape_html_ac1d368a09ec8ea44ce18c4b514bcd051"><div class="ttname"><a href="structshape.html#ac1d368a09ec8ea44ce18c4b514bcd051">shape::rotation</a></div><div class="ttdeci">double rotation</div><div class="ttdef"><b>Definition:</b> shape.h:119</div></div>
+<div class="ttc" id="astructshape_html_ad35b62b43df67ffd250b10a12b5aa21e"><div class="ttname"><a href="structshape.html#ad35b62b43df67ffd250b10a12b5aa21e">shape::ptrShape</a></div><div class="ttdeci">void * ptrShape</div><div class="ttdef"><b>Definition:</b> shape.h:115</div></div>
+<div class="ttc" id="astructsquar_html"><div class="ttname"><a href="structsquar.html">squar</a></div><div class="ttdoc">Représente un carré défini par un point et une longueur de côté.</div><div class="ttdef"><b>Definition:</b> shape.h:59</div></div>
+<div class="ttc" id="astructsquar_html_a024b5d2a140fb337cf31d768c0ff4473"><div class="ttname"><a href="structsquar.html#a024b5d2a140fb337cf31d768c0ff4473">squar::p1</a></div><div class="ttdeci">Point * p1</div><div class="ttdef"><b>Definition:</b> shape.h:60</div></div>
+<div class="ttc" id="astructsquar_html_a6d4f75c4f59a0a491e2c9019828b5cdf"><div class="ttname"><a href="structsquar.html#a6d4f75c4f59a0a491e2c9019828b5cdf">squar::length</a></div><div class="ttdeci">int length</div><div class="ttdef"><b>Definition:</b> shape.h:61</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

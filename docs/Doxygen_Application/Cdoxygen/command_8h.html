@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PixelTracer: Référence du fichier Documents/srcCPixelTracer/src/command.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PixelTracer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_0db95f55e3ad953757e5ce90fe678e4e.html">srcCPixelTracer</a></li><li class="navelem"><a class="el" href="dir_a5bcfe2c18b31d3d4493ec20fc962c25.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier command.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Déclarations des fonctions et structures liées à la gestion des commandes pour une application de traçage de pixels.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;readline/readline.h&gt;</code><br />
+<code>#include &lt;readline/history.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="pixel__tracer_8h_source.html">pixel_tracer.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de command.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="command_8h__incl.png" border="0" usemap="#aDocuments_2srcCPixelTracer_2src_2command_8h" alt=""/></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="command_8h__dep__incl.png" border="0" usemap="#aDocuments_2srcCPixelTracer_2src_2command_8hdep" alt=""/></div>
+</div>
+</div>
+<p><a href="command_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcommand.html">command</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure représentant une commande avec ses différents paramètres.  <a href="structcommand.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a5732be69f55a5dbbfa3df82d31314cb1"><td class="memItemLeft" align="right" valign="top"><a id="a5732be69f55a5dbbfa3df82d31314cb1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8h.html#a5732be69f55a5dbbfa3df82d31314cb1">MAX_PARAM</a>&#160;&#160;&#160;30</td></tr>
+<tr class="memdesc:a5732be69f55a5dbbfa3df82d31314cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre maximal de paramètres qu'une commande peut contenir. <br /></td></tr>
+<tr class="separator:a5732be69f55a5dbbfa3df82d31314cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:a0c87688e472cb20dcda9af493bbdd6f2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structcommand.html">command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a></td></tr>
+<tr class="separator:a0c87688e472cb20dcda9af493bbdd6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:aca08b1efa804aac66e6a59102b693102"><td class="memItemLeft" align="right" valign="top"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8h.html#aca08b1efa804aac66e6a59102b693102">create_commande</a> ()</td></tr>
+<tr class="memdesc:aca08b1efa804aac66e6a59102b693102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une nouvelle commande.  <a href="command_8h.html#aca08b1efa804aac66e6a59102b693102">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aca08b1efa804aac66e6a59102b693102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf5356b7d3e00e352c0e55e07e728ea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8h.html#aaf5356b7d3e00e352c0e55e07e728ea2">add_int_param</a> (<a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *cmd, int p)</td></tr>
+<tr class="memdesc:aaf5356b7d3e00e352c0e55e07e728ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute un paramètre entier à une commande.  <a href="command_8h.html#aaf5356b7d3e00e352c0e55e07e728ea2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aaf5356b7d3e00e352c0e55e07e728ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d0318f3c3d640783b5c1efa2187e0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8h.html#a97d0318f3c3d640783b5c1efa2187e0e">add_float_param</a> (<a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *cmd, float p)</td></tr>
+<tr class="memdesc:a97d0318f3c3d640783b5c1efa2187e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute un paramètre flottant à une commande.  <a href="command_8h.html#a97d0318f3c3d640783b5c1efa2187e0e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a97d0318f3c3d640783b5c1efa2187e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb1fa24d5d651505e1e71b10344fd03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8h.html#adfb1fa24d5d651505e1e71b10344fd03">add_str_param</a> (<a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *cmd, char *p)</td></tr>
+<tr class="memdesc:adfb1fa24d5d651505e1e71b10344fd03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute un paramètre chaîne de caractères à une commande.  <a href="command_8h.html#adfb1fa24d5d651505e1e71b10344fd03">Plus de détails...</a><br /></td></tr>
+<tr class="separator:adfb1fa24d5d651505e1e71b10344fd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad98ce99863879716cbb6f748b12b75d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8h.html#aad98ce99863879716cbb6f748b12b75d">free_cmd</a> (<a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *cmd)</td></tr>
+<tr class="memdesc:aad98ce99863879716cbb6f748b12b75d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libère la mémoire allouée pour une commande.  <a href="command_8h.html#aad98ce99863879716cbb6f748b12b75d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aad98ce99863879716cbb6f748b12b75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab576f5b835e80a0ef9ba46654a6295cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8h.html#ab576f5b835e80a0ef9ba46654a6295cb">read_exec_command</a> (<a class="el" href="structPixel__tracer__app.html">Pixel_tracer_app</a> *app)</td></tr>
+<tr class="memdesc:ab576f5b835e80a0ef9ba46654a6295cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lit et exécute une commande depuis l'entrée standard.  <a href="command_8h.html#ab576f5b835e80a0ef9ba46654a6295cb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab576f5b835e80a0ef9ba46654a6295cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ee388bf58d7da98c66b98d3d2ee63c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8h.html#a3ee388bf58d7da98c66b98d3d2ee63c5">read_from_stdin</a> (<a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *cmd)</td></tr>
+<tr class="memdesc:a3ee388bf58d7da98c66b98d3d2ee63c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lit les entrées utilisateur et les ajoute comme paramètres à une commande.  <a href="command_8h.html#a3ee388bf58d7da98c66b98d3d2ee63c5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3ee388bf58d7da98c66b98d3d2ee63c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Déclarations des fonctions et structures liées à la gestion des commandes pour une application de traçage de pixels. </p>
+<p>Ce fichier contient la définition de la structure <code>Command</code>, qui représente une commande à exécuter dans l'application, ainsi que diverses fonctions permettant de gérer les paramètres associés à chaque commande. </p>
+</div><h2 class="groupheader">Documentation des définitions de type</h2>
+<a id="a0c87688e472cb20dcda9af493bbdd6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c87688e472cb20dcda9af493bbdd6f2">&#9670;&nbsp;</a></span>Command</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structcommand.html">command</a> <a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type défini pour représenter une commande. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a97d0318f3c3d640783b5c1efa2187e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d0318f3c3d640783b5c1efa2187e0e">&#9670;&nbsp;</a></span>add_float_param()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_float_param </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute un paramètre flottant à une commande. </p>
+<p>Cette fonction ajoute un paramètre de type flottant à une commande existante.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande à laquelle ajouter un paramètre. </td></tr>
+    <tr><td class="paramname">p</td><td>Valeur flottante à ajouter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction ajoute un paramètre flottant à la commande, si le nombre de paramètres flottants n'a pas dépassé la limite maximale.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande. </td></tr>
+    <tr><td class="paramname">p</td><td>Paramètre flottant à ajouter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaf5356b7d3e00e352c0e55e07e728ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf5356b7d3e00e352c0e55e07e728ea2">&#9670;&nbsp;</a></span>add_int_param()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_int_param </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute un paramètre entier à une commande. </p>
+<p>Cette fonction ajoute un paramètre de type entier à une commande existante.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande à laquelle ajouter un paramètre. </td></tr>
+    <tr><td class="paramname">p</td><td>Valeur entière à ajouter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction ajoute un paramètre entier à la commande, si le nombre de paramètres entiers n'a pas dépassé la limite maximale.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande. </td></tr>
+    <tr><td class="paramname">p</td><td>Paramètre entier à ajouter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adfb1fa24d5d651505e1e71b10344fd03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfb1fa24d5d651505e1e71b10344fd03">&#9670;&nbsp;</a></span>add_str_param()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_str_param </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute un paramètre chaîne de caractères à une commande. </p>
+<p>Cette fonction ajoute un paramètre de type chaîne de caractères à une commande existante.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande à laquelle ajouter un paramètre. </td></tr>
+    <tr><td class="paramname">p</td><td>Pointeur vers la chaîne de caractères à ajouter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction ajoute un paramètre chaîne de caractères à la commande, si le nombre de paramètres chaînes n'a pas dépassé la limite maximale.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande. </td></tr>
+    <tr><td class="paramname">p</td><td>Chaîne de caractères à ajouter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aca08b1efa804aac66e6a59102b693102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca08b1efa804aac66e6a59102b693102">&#9670;&nbsp;</a></span>create_commande()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a>* create_commande </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une nouvelle commande. </p>
+<p>Cette fonction alloue et initialise une nouvelle instance de la structure <code>Command</code>.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers la commande nouvellement créée.</dd></dl>
+<p>Cette fonction alloue de la mémoire pour une nouvelle structure <code>Command</code> et initialise tous ses champs à des valeurs par défaut.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>Pointeur vers la nouvelle commande créée. </dd></dl>
+
+</div>
+</div>
+<a id="aad98ce99863879716cbb6f748b12b75d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad98ce99863879716cbb6f748b12b75d">&#9670;&nbsp;</a></span>free_cmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free_cmd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libère la mémoire allouée pour une commande. </p>
+<p>Cette fonction libère la mémoire allouée pour les paramètres de type chaîne de caractères d'une commande, ainsi que pour la commande elle-même.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande à libérer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Libère la mémoire allouée pour une commande.</p>
+<p>Cette fonction libère la mémoire allouée pour chaque paramètre de chaîne de caractères dans une commande.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande à nettoyer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab576f5b835e80a0ef9ba46654a6295cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab576f5b835e80a0ef9ba46654a6295cb">&#9670;&nbsp;</a></span>read_exec_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int read_exec_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structPixel__tracer__app.html">Pixel_tracer_app</a> *&#160;</td>
+          <td class="paramname"><em>app</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lit et exécute une commande depuis l'entrée standard. </p>
+<p>Cette fonction lit une commande de l'utilisateur et l'exécute dans le cadre de l'application de traçage de pixels.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app</td><td>Pointeur vers l'application de traçage de pixels qui doit exécuter la commande. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un entier indiquant si la commande a été exécutée avec succès.</dd></dl>
+<p>Lit et exécute une commande depuis l'entrée standard.</p>
+<p>Cette fonction lit une commande depuis l'entrée standard, la vérifie, et effectue l'action correspondante, comme la création de formes (point, ligne, cercle, etc.), ou l'affichage d'informations sur les objets existants.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app</td><td>Pointeur vers la structure <code><a class="el" href="structPixel__tracer__app.html" title="Structure représentant l&#39;application de traçage de pixels.">Pixel_tracer_app</a></code> qui contient l'application et son état.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un code d'erreur ou 0 si la commande a été exécutée avec succès.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>La fonction gère différentes commandes comme "exit", "clear", "new", "select", etc. </dd></dl>
+
+</div>
+</div>
+<a id="a3ee388bf58d7da98c66b98d3d2ee63c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ee388bf58d7da98c66b98d3d2ee63c5">&#9670;&nbsp;</a></span>read_from_stdin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void read_from_stdin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lit les entrées utilisateur et les ajoute comme paramètres à une commande. </p>
+<p>Cette fonction permet de lire les paramètres d'une commande depuis l'entrée standard.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande à laquelle ajouter les paramètres lus.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Lit les entrées utilisateur et les ajoute comme paramètres à une commande.</p>
+<p>Cette fonction lit une ligne de texte depuis l'entrée standard, la découpe en tokens, et ajoute ces tokens aux paramètres de la commande en fonction de leur type (chaîne, entier, flottant).</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers une structure <code>Command</code> qui recevra les paramètres extraits.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Utilise la bibliothèque <code>readline</code> pour lire l'entrée utilisateur. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

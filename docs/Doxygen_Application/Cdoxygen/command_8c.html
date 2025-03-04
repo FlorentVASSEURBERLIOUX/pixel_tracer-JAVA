@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PixelTracer: Référence du fichier Documents/srcCPixelTracer/src/command.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PixelTracer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_0db95f55e3ad953757e5ce90fe678e4e.html">srcCPixelTracer</a></li><li class="navelem"><a class="el" href="dir_a5bcfe2c18b31d3d4493ec20fc962c25.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier command.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Commande et gestion des paramètres du programme.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="command_8h_source.html">command.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de command.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="command_8c__incl.png" border="0" usemap="#aDocuments_2srcCPixelTracer_2src_2command_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:aca08b1efa804aac66e6a59102b693102"><td class="memItemLeft" align="right" valign="top"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#aca08b1efa804aac66e6a59102b693102">create_commande</a> ()</td></tr>
+<tr class="memdesc:aca08b1efa804aac66e6a59102b693102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une nouvelle commande.  <a href="command_8c.html#aca08b1efa804aac66e6a59102b693102">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aca08b1efa804aac66e6a59102b693102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf5356b7d3e00e352c0e55e07e728ea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#aaf5356b7d3e00e352c0e55e07e728ea2">add_int_param</a> (<a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *cmd, int p)</td></tr>
+<tr class="memdesc:aaf5356b7d3e00e352c0e55e07e728ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute un paramètre entier à une commande.  <a href="command_8c.html#aaf5356b7d3e00e352c0e55e07e728ea2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aaf5356b7d3e00e352c0e55e07e728ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d0318f3c3d640783b5c1efa2187e0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#a97d0318f3c3d640783b5c1efa2187e0e">add_float_param</a> (<a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *cmd, float p)</td></tr>
+<tr class="memdesc:a97d0318f3c3d640783b5c1efa2187e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute un paramètre flottant à une commande.  <a href="command_8c.html#a97d0318f3c3d640783b5c1efa2187e0e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a97d0318f3c3d640783b5c1efa2187e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb1fa24d5d651505e1e71b10344fd03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#adfb1fa24d5d651505e1e71b10344fd03">add_str_param</a> (<a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *cmd, char *p)</td></tr>
+<tr class="memdesc:adfb1fa24d5d651505e1e71b10344fd03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute un paramètre chaîne de caractères à une commande.  <a href="command_8c.html#adfb1fa24d5d651505e1e71b10344fd03">Plus de détails...</a><br /></td></tr>
+<tr class="separator:adfb1fa24d5d651505e1e71b10344fd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad98ce99863879716cbb6f748b12b75d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#aad98ce99863879716cbb6f748b12b75d">free_cmd</a> (<a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *cmd)</td></tr>
+<tr class="memdesc:aad98ce99863879716cbb6f748b12b75d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libère la mémoire allouée pour les paramètres de chaîne de caractères d'une commande.  <a href="command_8c.html#aad98ce99863879716cbb6f748b12b75d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aad98ce99863879716cbb6f748b12b75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14cf721a9645a14868ee70af7c2b274"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#aa14cf721a9645a14868ee70af7c2b274">strlwr2</a> (char *str)</td></tr>
+<tr class="memdesc:aa14cf721a9645a14868ee70af7c2b274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertit une chaîne de caractères en minuscules.  <a href="command_8c.html#aa14cf721a9645a14868ee70af7c2b274">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa14cf721a9645a14868ee70af7c2b274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05868663acd37e7f059fee90128ebecc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#a05868663acd37e7f059fee90128ebecc">is_int</a> (const char *str)</td></tr>
+<tr class="memdesc:a05868663acd37e7f059fee90128ebecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si une chaîne de caractères représente un entier.  <a href="command_8c.html#a05868663acd37e7f059fee90128ebecc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a05868663acd37e7f059fee90128ebecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944c5ae6f5e963f5a0f75bf4a43f24b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#a944c5ae6f5e963f5a0f75bf4a43f24b2">is_word</a> (const char *str)</td></tr>
+<tr class="memdesc:a944c5ae6f5e963f5a0f75bf4a43f24b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si une chaîne de caractères représente un mot (composé uniquement de lettres minuscules).  <a href="command_8c.html#a944c5ae6f5e963f5a0f75bf4a43f24b2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a944c5ae6f5e963f5a0f75bf4a43f24b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae408946e5cb86d54f1c5ef67df3a3d92"><td class="memItemLeft" align="right" valign="top"><a id="ae408946e5cb86d54f1c5ef67df3a3d92"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>is_float</b> (const char *str)</td></tr>
+<tr class="separator:ae408946e5cb86d54f1c5ef67df3a3d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a038516a235e9d99f4b126c6f662fd2d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#a038516a235e9d99f4b126c6f662fd2d4">clean_text</a> (char *str)</td></tr>
+<tr class="memdesc:a038516a235e9d99f4b126c6f662fd2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui nettoie le texte d'entrée en supprimant les caractères non autorisés.  <a href="command_8c.html#a038516a235e9d99f4b126c6f662fd2d4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a038516a235e9d99f4b126c6f662fd2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ee388bf58d7da98c66b98d3d2ee63c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#a3ee388bf58d7da98c66b98d3d2ee63c5">read_from_stdin</a> (<a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *cmd)</td></tr>
+<tr class="memdesc:a3ee388bf58d7da98c66b98d3d2ee63c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lit une commande depuis l'entrée standard.  <a href="command_8c.html#a3ee388bf58d7da98c66b98d3d2ee63c5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3ee388bf58d7da98c66b98d3d2ee63c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f80ba7297b350fb42a3b7abf6703ba6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#a1f80ba7297b350fb42a3b7abf6703ba6">debug_cmd</a> (<a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *cmd)</td></tr>
+<tr class="memdesc:a1f80ba7297b350fb42a3b7abf6703ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de débogage pour afficher les détails d'une commande.  <a href="command_8c.html#a1f80ba7297b350fb42a3b7abf6703ba6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1f80ba7297b350fb42a3b7abf6703ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a853216ac51aa181669ff4d3de74058a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#a853216ac51aa181669ff4d3de74058a7">print_help</a> ()</td></tr>
+<tr class="memdesc:a853216ac51aa181669ff4d3de74058a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche l'aide sur les commandes disponibles.  <a href="command_8c.html#a853216ac51aa181669ff4d3de74058a7">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a853216ac51aa181669ff4d3de74058a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24e877cdc99defea900df54423e33fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#ac24e877cdc99defea900df54423e33fd">check_nb_params</a> (<a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *cmd, int nb_str, int nb_int, int nb_flt)</td></tr>
+<tr class="memdesc:ac24e877cdc99defea900df54423e33fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie que le nombre de paramètres d'une commande correspond à ceux attendus.  <a href="command_8c.html#ac24e877cdc99defea900df54423e33fd">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac24e877cdc99defea900df54423e33fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc227008457940d9005875f3c8dae46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#a6bc227008457940d9005875f3c8dae46">check_nb_params_polygon</a> (<a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *cmd)</td></tr>
+<tr class="memdesc:a6bc227008457940d9005875f3c8dae46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie que le nombre de paramètres pour la commande "polygon" est correct.  <a href="command_8c.html#a6bc227008457940d9005875f3c8dae46">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6bc227008457940d9005875f3c8dae46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab576f5b835e80a0ef9ba46654a6295cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html#ab576f5b835e80a0ef9ba46654a6295cb">read_exec_command</a> (<a class="el" href="structPixel__tracer__app.html">Pixel_tracer_app</a> *app)</td></tr>
+<tr class="memdesc:ab576f5b835e80a0ef9ba46654a6295cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lit et exécute une commande en fonction de l'entrée utilisateur.  <a href="command_8c.html#ab576f5b835e80a0ef9ba46654a6295cb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab576f5b835e80a0ef9ba46654a6295cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Commande et gestion des paramètres du programme. </p>
+<p>Ce fichier contient des fonctions permettant de traiter des commandes de l'utilisateur, de gérer les paramètres associés, et d'interagir avec les objets graphiques dans une application de dessin textuelle basée sur des commandes.</p>
+<p>Les principales fonctionnalités incluent la gestion des paramètres de type entier, flottant et chaîne de caractères, ainsi que l'exécution de différentes commandes (par exemple, "exit", "clear", "plot", etc.). </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a97d0318f3c3d640783b5c1efa2187e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d0318f3c3d640783b5c1efa2187e0e">&#9670;&nbsp;</a></span>add_float_param()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_float_param </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute un paramètre flottant à une commande. </p>
+<p>Cette fonction ajoute un paramètre flottant à la commande, si le nombre de paramètres flottants n'a pas dépassé la limite maximale.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande. </td></tr>
+    <tr><td class="paramname">p</td><td>Paramètre flottant à ajouter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaf5356b7d3e00e352c0e55e07e728ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf5356b7d3e00e352c0e55e07e728ea2">&#9670;&nbsp;</a></span>add_int_param()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_int_param </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute un paramètre entier à une commande. </p>
+<p>Cette fonction ajoute un paramètre entier à la commande, si le nombre de paramètres entiers n'a pas dépassé la limite maximale.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande. </td></tr>
+    <tr><td class="paramname">p</td><td>Paramètre entier à ajouter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adfb1fa24d5d651505e1e71b10344fd03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfb1fa24d5d651505e1e71b10344fd03">&#9670;&nbsp;</a></span>add_str_param()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_str_param </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute un paramètre chaîne de caractères à une commande. </p>
+<p>Cette fonction ajoute un paramètre chaîne de caractères à la commande, si le nombre de paramètres chaînes n'a pas dépassé la limite maximale.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande. </td></tr>
+    <tr><td class="paramname">p</td><td>Chaîne de caractères à ajouter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac24e877cdc99defea900df54423e33fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac24e877cdc99defea900df54423e33fd">&#9670;&nbsp;</a></span>check_nb_params()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int check_nb_params </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_int</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_flt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie que le nombre de paramètres d'une commande correspond à ceux attendus. </p>
+<p>Cette fonction vérifie que le nombre de paramètres de type chaîne, entier et flottant correspond à ce qui est attendu pour une commande donnée.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers une structure <code>Command</code> contenant les paramètres de la commande. </td></tr>
+    <tr><td class="paramname">nb_str</td><td>Le nombre attendu de paramètres de type chaîne. </td></tr>
+    <tr><td class="paramname">nb_int</td><td>Le nombre attendu de paramètres de type entier. </td></tr>
+    <tr><td class="paramname">nb_flt</td><td>Le nombre attendu de paramètres de type flottant.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si le nombre de paramètres est correct, 0 sinon. </dd></dl>
+
+</div>
+</div>
+<a id="a6bc227008457940d9005875f3c8dae46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc227008457940d9005875f3c8dae46">&#9670;&nbsp;</a></span>check_nb_params_polygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int check_nb_params_polygon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie que le nombre de paramètres pour la commande "polygon" est correct. </p>
+<p>Cette fonction vérifie que le nombre de paramètres correspond à la commande "polygon", à savoir 1 paramètre de type chaîne et un nombre pair de paramètres entiers.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers une structure <code>Command</code> contenant les paramètres de la commande.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si le nombre de paramètres est correct, 0 sinon. </dd></dl>
+
+</div>
+</div>
+<a id="a038516a235e9d99f4b126c6f662fd2d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a038516a235e9d99f4b126c6f662fd2d4">&#9670;&nbsp;</a></span>clean_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clean_text </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui nettoie le texte d'entrée en supprimant les caractères non autorisés. </p>
+<p>Cette fonction prend une chaîne de caractères et la nettoie en supprimant tous les caractères non autorisés. Elle convertit la chaîne en minuscules et interrompt si un caractère invalide est trouvé.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Chaîne de caractères à nettoyer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aca08b1efa804aac66e6a59102b693102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca08b1efa804aac66e6a59102b693102">&#9670;&nbsp;</a></span>create_commande()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a>* create_commande </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une nouvelle commande. </p>
+<p>Cette fonction alloue de la mémoire pour une nouvelle structure <code>Command</code> et initialise tous ses champs à des valeurs par défaut.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>Pointeur vers la nouvelle commande créée. </dd></dl>
+
+</div>
+</div>
+<a id="a1f80ba7297b350fb42a3b7abf6703ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f80ba7297b350fb42a3b7abf6703ba6">&#9670;&nbsp;</a></span>debug_cmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void debug_cmd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction de débogage pour afficher les détails d'une commande. </p>
+<p>Cette fonction affiche tous les paramètres (entiers, flottants, chaînes) associés à une commande.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande à déboguer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aad98ce99863879716cbb6f748b12b75d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad98ce99863879716cbb6f748b12b75d">&#9670;&nbsp;</a></span>free_cmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free_cmd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libère la mémoire allouée pour les paramètres de chaîne de caractères d'une commande. </p>
+<p>Libère la mémoire allouée pour une commande.</p>
+<p>Cette fonction libère la mémoire allouée pour chaque paramètre de chaîne de caractères dans une commande.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers la commande à nettoyer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a05868663acd37e7f059fee90128ebecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05868663acd37e7f059fee90128ebecc">&#9670;&nbsp;</a></span>is_int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_int </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie si une chaîne de caractères représente un entier. </p>
+<p>Cette fonction vérifie si la chaîne de caractères fournie représente un nombre entier.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Chaîne de caractères à vérifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la chaîne représente un entier, 0 sinon. </dd></dl>
+
+</div>
+</div>
+<a id="a944c5ae6f5e963f5a0f75bf4a43f24b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a944c5ae6f5e963f5a0f75bf4a43f24b2">&#9670;&nbsp;</a></span>is_word()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_word </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie si une chaîne de caractères représente un mot (composé uniquement de lettres minuscules). </p>
+<p>Cette fonction vérifie si la chaîne de caractères fournie représente un mot composé uniquement de lettres minuscules.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Chaîne de caractères à vérifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la chaîne représente un mot, 0 sinon. </dd></dl>
+
+</div>
+</div>
+<a id="a853216ac51aa181669ff4d3de74058a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a853216ac51aa181669ff4d3de74058a7">&#9670;&nbsp;</a></span>print_help()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_help </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche l'aide sur les commandes disponibles. </p>
+<p>Cette fonction affiche une aide textuelle contenant la liste des commandes et de leurs arguments. </p>
+
+</div>
+</div>
+<a id="ab576f5b835e80a0ef9ba46654a6295cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab576f5b835e80a0ef9ba46654a6295cb">&#9670;&nbsp;</a></span>read_exec_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int read_exec_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structPixel__tracer__app.html">Pixel_tracer_app</a> *&#160;</td>
+          <td class="paramname"><em>app</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lit et exécute une commande en fonction de l'entrée utilisateur. </p>
+<p>Lit et exécute une commande depuis l'entrée standard.</p>
+<p>Cette fonction lit une commande depuis l'entrée standard, la vérifie, et effectue l'action correspondante, comme la création de formes (point, ligne, cercle, etc.), ou l'affichage d'informations sur les objets existants.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app</td><td>Pointeur vers la structure <code><a class="el" href="structPixel__tracer__app.html" title="Structure représentant l&#39;application de traçage de pixels.">Pixel_tracer_app</a></code> qui contient l'application et son état.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un code d'erreur ou 0 si la commande a été exécutée avec succès.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>La fonction gère différentes commandes comme "exit", "clear", "new", "select", etc. </dd></dl>
+
+</div>
+</div>
+<a id="a3ee388bf58d7da98c66b98d3d2ee63c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ee388bf58d7da98c66b98d3d2ee63c5">&#9670;&nbsp;</a></span>read_from_stdin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void read_from_stdin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="command_8h.html#a0c87688e472cb20dcda9af493bbdd6f2">Command</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lit une commande depuis l'entrée standard. </p>
+<p>Lit les entrées utilisateur et les ajoute comme paramètres à une commande.</p>
+<p>Cette fonction lit une ligne de texte depuis l'entrée standard, la découpe en tokens, et ajoute ces tokens aux paramètres de la commande en fonction de leur type (chaîne, entier, flottant).</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Pointeur vers une structure <code>Command</code> qui recevra les paramètres extraits.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Utilise la bibliothèque <code>readline</code> pour lire l'entrée utilisateur. </dd></dl>
+
+</div>
+</div>
+<a id="aa14cf721a9645a14868ee70af7c2b274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa14cf721a9645a14868ee70af7c2b274">&#9670;&nbsp;</a></span>strlwr2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void strlwr2 </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertit une chaîne de caractères en minuscules. </p>
+<p>Cette fonction prend une chaîne de caractères et la convertit en minuscules.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Chaîne de caractères à convertir. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

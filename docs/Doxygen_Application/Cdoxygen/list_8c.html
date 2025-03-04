@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PixelTracer: Référence du fichier Documents/srcCPixelTracer/src/list.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PixelTracer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_0db95f55e3ad953757e5ce90fe678e4e.html">srcCPixelTracer</a></li><li class="navelem"><a class="el" href="dir_a5bcfe2c18b31d3d4493ec20fc962c25.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier list.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Gestion des listes doublement chaînées.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="list_8h_source.html">list.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de list.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="list_8c__incl.png" border="0" usemap="#aDocuments_2srcCPixelTracer_2src_2list_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ae66904f8e83ed1c2d2a533128067aa9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="list_8h.html#a298c10f10e87e22810c762b707f615ba">lnode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8c.html#ae66904f8e83ed1c2d2a533128067aa9b">lst_create_lnode</a> (void *dat)</td></tr>
+<tr class="memdesc:ae66904f8e83ed1c2d2a533128067aa9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée un nouveau nœud dans la liste.  <a href="list_8c.html#ae66904f8e83ed1c2d2a533128067aa9b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae66904f8e83ed1c2d2a533128067aa9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c172ee4f010d5da635681de4c05675"><td class="memItemLeft" align="right" valign="top"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8c.html#a02c172ee4f010d5da635681de4c05675">lst_create_list</a> ()</td></tr>
+<tr class="memdesc:a02c172ee4f010d5da635681de4c05675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une nouvelle liste.  <a href="list_8c.html#a02c172ee4f010d5da635681de4c05675">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a02c172ee4f010d5da635681de4c05675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc417a1f2ab316e3c96c35bad7471533"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8c.html#afc417a1f2ab316e3c96c35bad7471533">lst_delete_list</a> (<a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:afc417a1f2ab316e3c96c35bad7471533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime une liste et libère toute la mémoire associée.  <a href="list_8c.html#afc417a1f2ab316e3c96c35bad7471533">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afc417a1f2ab316e3c96c35bad7471533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8a8044852f8f0cf7d990da33bfc745"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8c.html#a8f8a8044852f8f0cf7d990da33bfc745">lst_insert_head</a> (<a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst, <a class="el" href="list_8h.html#a298c10f10e87e22810c762b707f615ba">lnode</a> *pnew)</td></tr>
+<tr class="memdesc:a8f8a8044852f8f0cf7d990da33bfc745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insère un nouveau nœud au début de la liste.  <a href="list_8c.html#a8f8a8044852f8f0cf7d990da33bfc745">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8f8a8044852f8f0cf7d990da33bfc745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f0a81e76357062b9b85825cd0bf7669"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669">lst_insert_tail</a> (<a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst, <a class="el" href="list_8h.html#a298c10f10e87e22810c762b707f615ba">lnode</a> *pnew)</td></tr>
+<tr class="memdesc:a8f0a81e76357062b9b85825cd0bf7669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insère un nouveau nœud à la fin de la liste.  <a href="list_8c.html#a8f0a81e76357062b9b85825cd0bf7669">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8f0a81e76357062b9b85825cd0bf7669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa1ad2575a4ea67d7128ee2a294d98f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8c.html#a5aa1ad2575a4ea67d7128ee2a294d98f">lst_insert_after</a> (<a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst, <a class="el" href="list_8h.html#a298c10f10e87e22810c762b707f615ba">lnode</a> *pnew, <a class="el" href="list_8h.html#a298c10f10e87e22810c762b707f615ba">lnode</a> *ptr)</td></tr>
+<tr class="memdesc:a5aa1ad2575a4ea67d7128ee2a294d98f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insère un nouveau nœud après un nœud donné.  <a href="list_8c.html#a5aa1ad2575a4ea67d7128ee2a294d98f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5aa1ad2575a4ea67d7128ee2a294d98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a043629fa2858488c88d31c266c7e29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8c.html#a1a043629fa2858488c88d31c266c7e29">lst_delete_head</a> (<a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:a1a043629fa2858488c88d31c266c7e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime le premier nœud de la liste.  <a href="list_8c.html#a1a043629fa2858488c88d31c266c7e29">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1a043629fa2858488c88d31c266c7e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af652156d81ac0ee367992d9825f31451"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8c.html#af652156d81ac0ee367992d9825f31451">lst_delete_tail</a> (<a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst)</td></tr>
+<tr class="memdesc:af652156d81ac0ee367992d9825f31451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime le dernier nœud de la liste.  <a href="list_8c.html#af652156d81ac0ee367992d9825f31451">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af652156d81ac0ee367992d9825f31451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9915060f37b2f612a5431868e93aa4ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8c.html#a9915060f37b2f612a5431868e93aa4ac">lst_delete_lnode</a> (<a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *lst, <a class="el" href="list_8h.html#a298c10f10e87e22810c762b707f615ba">lnode</a> *ptr)</td></tr>
+<tr class="memdesc:a9915060f37b2f612a5431868e93aa4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un nœud spécifique de la liste.  <a href="list_8c.html#a9915060f37b2f612a5431868e93aa4ac">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9915060f37b2f612a5431868e93aa4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Gestion des listes doublement chaînées. </p>
+<p>Ce fichier contient des fonctions pour créer et manipuler des listes doublement chaînées. Une liste doublement chaînée contient des nœuds, chaque nœud ayant des pointeurs vers l'élément suivant et précédent. Ce fichier implémente des fonctions pour insérer, supprimer et accéder aux éléments dans la liste. </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a02c172ee4f010d5da635681de4c05675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c172ee4f010d5da635681de4c05675">&#9670;&nbsp;</a></span>lst_create_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a>* lst_create_list </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une nouvelle liste. </p>
+<p>Cette fonction alloue de la mémoire pour une nouvelle liste doublement chaînée, avec les pointeurs vers le début et la fin initialisés à NULL.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers la nouvelle liste créée. </dd></dl>
+<p>&lt; Allocation de mémoire pour la liste</p>
+<p>&lt; Le début de la liste est NULL</p>
+<p>&lt; La fin de la liste est NULL</p>
+
+</div>
+</div>
+<a id="ae66904f8e83ed1c2d2a533128067aa9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66904f8e83ed1c2d2a533128067aa9b">&#9670;&nbsp;</a></span>lst_create_lnode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="list_8h.html#a298c10f10e87e22810c762b707f615ba">lnode</a>* lst_create_lnode </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée un nouveau nœud dans la liste. </p>
+<p>Cette fonction alloue de la mémoire pour un nouveau nœud et l'initialise avec une donnée donnée. Le nœud est initialement isolé (pas de lien avec d'autres nœuds).</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dat</td><td>La donnée à stocker dans le nœud.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers le nouveau nœud créé. </dd></dl>
+<p>&lt; Allocation de mémoire pour un nœud</p>
+<p>&lt; Attribution de la donnée</p>
+<p>&lt; Le nœud suivant est NULL au départ</p>
+<p>&lt; Le nœud précédent est NULL au départ</p>
+
+</div>
+</div>
+<a id="a1a043629fa2858488c88d31c266c7e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a043629fa2858488c88d31c266c7e29">&#9670;&nbsp;</a></span>lst_delete_head()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lst_delete_head </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime le premier nœud de la liste. </p>
+<p>Cette fonction supprime le premier nœud de la liste et ajuste les pointeurs de la liste en conséquence. Si la liste ne contient qu'un seul nœud, la liste devient vide après suppression.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lst</td><td>La liste dont il faut supprimer le premier nœud. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afc417a1f2ab316e3c96c35bad7471533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc417a1f2ab316e3c96c35bad7471533">&#9670;&nbsp;</a></span>lst_delete_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lst_delete_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime une liste et libère toute la mémoire associée. </p>
+<p>Cette fonction efface tous les nœuds de la liste et libère la mémoire allouée pour la liste elle-même.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lst</td><td>La liste à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Efface tous les nœuds de la liste</p>
+<p>&lt; Libère la mémoire de la liste</p>
+
+</div>
+</div>
+<a id="a9915060f37b2f612a5431868e93aa4ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9915060f37b2f612a5431868e93aa4ac">&#9670;&nbsp;</a></span>lst_delete_lnode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lst_delete_lnode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a298c10f10e87e22810c762b707f615ba">lnode</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime un nœud spécifique de la liste. </p>
+<p>Cette fonction supprime un nœud donné de la liste et ajuste les pointeurs des nœuds voisins en conséquence.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lst</td><td>La liste dont il faut supprimer un nœud. </td></tr>
+    <tr><td class="paramname">ptr</td><td>Le nœud à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af652156d81ac0ee367992d9825f31451"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af652156d81ac0ee367992d9825f31451">&#9670;&nbsp;</a></span>lst_delete_tail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lst_delete_tail </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime le dernier nœud de la liste. </p>
+<p>Cette fonction supprime le dernier nœud de la liste et ajuste les pointeurs de la liste en conséquence. Si la liste ne contient qu'un seul nœud, la liste devient vide après suppression.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lst</td><td>La liste dont il faut supprimer le dernier nœud. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5aa1ad2575a4ea67d7128ee2a294d98f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aa1ad2575a4ea67d7128ee2a294d98f">&#9670;&nbsp;</a></span>lst_insert_after()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lst_insert_after </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a298c10f10e87e22810c762b707f615ba">lnode</a> *&#160;</td>
+          <td class="paramname"><em>pnew</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a298c10f10e87e22810c762b707f615ba">lnode</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insère un nouveau nœud après un nœud donné. </p>
+<p>Insère un nœud après un nœud donné dans la liste.</p>
+<p>Cette fonction insère un nœud après un nœud spécifique dans la liste. Si le nœud donné est le dernier nœud, le nœud est ajouté à la fin de la liste.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lst</td><td>La liste dans laquelle insérer le nœud. </td></tr>
+    <tr><td class="paramname">pnew</td><td>Le nœud à insérer. </td></tr>
+    <tr><td class="paramname">ptr</td><td>Le nœud après lequel insérer le nouveau nœud. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8f8a8044852f8f0cf7d990da33bfc745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8a8044852f8f0cf7d990da33bfc745">&#9670;&nbsp;</a></span>lst_insert_head()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lst_insert_head </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a298c10f10e87e22810c762b707f615ba">lnode</a> *&#160;</td>
+          <td class="paramname"><em>pnew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insère un nouveau nœud au début de la liste. </p>
+<p>Cette fonction insère un nœud au début de la liste. Si la liste est vide, le nœud devient le premier et le dernier nœud de la liste.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lst</td><td>La liste dans laquelle insérer le nœud. </td></tr>
+    <tr><td class="paramname">pnew</td><td>Le nœud à insérer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8f0a81e76357062b9b85825cd0bf7669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f0a81e76357062b9b85825cd0bf7669">&#9670;&nbsp;</a></span>lst_insert_tail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lst_insert_tail </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a19e9bc457e4d336b5719026a3256c86d">list</a> *&#160;</td>
+          <td class="paramname"><em>lst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="list_8h.html#a298c10f10e87e22810c762b707f615ba">lnode</a> *&#160;</td>
+          <td class="paramname"><em>pnew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insère un nouveau nœud à la fin de la liste. </p>
+<p>Cette fonction insère un nœud à la fin de la liste. Si la liste est vide, le nœud devient le premier et le dernier nœud de la liste.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lst</td><td>La liste dans laquelle insérer le nœud. </td></tr>
+    <tr><td class="paramname">pnew</td><td>Le nœud à insérer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

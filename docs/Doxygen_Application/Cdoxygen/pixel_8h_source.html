@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PixelTracer:  Fichier source de Documents/srcCPixelTracer/src/pixel.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PixelTracer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_0db95f55e3ad953757e5ce90fe678e4e.html">srcCPixelTracer</a></li><li class="navelem"><a class="el" href="dir_a5bcfe2c18b31d3d4493ec20fc962c25.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">pixel.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pixel_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="pixel_8h.html#aa189e9477c486a6eef29d93821297ad5">    1</a></span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _PIXEL_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#  define _PIXEL_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#  include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#  include &quot;<a class="code" href="shape_8h.html">shape.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#  include &quot;<a class="code" href="list_8h.html">list.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structpixel.html">   22</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structpixel.html">pixel</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structpixel.html#a23904b56775cf89cc062968a81b2d947">   23</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpixel.html#a23904b56775cf89cc062968a81b2d947">px</a>;  </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structpixel.html#ac21bce9325de2a0d2bc73b215eae4598">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpixel.html#ac21bce9325de2a0d2bc73b215eae4598">py</a>;  </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structpixel.html#aabdacae19819ff8bdccbe368f03d2377">   25</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpixel.html#aabdacae19819ff8bdccbe368f03d2377">color</a>;  </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpixel.html">pixel</a> <a class="code" href="structpixel.html">Pixel</a>; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<a class="code" href="structlist__.html">list</a> *<a class="code" href="pixel_8h.html#a484b3385a2339f74f9e0ad43bdbd3344">create_shape_to_pixel</a>(<a class="code" href="structshape.html">Shape</a> * <a class="code" href="structshape.html">shape</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pixel_8h.html#aa885a1c0aceaa86e24b2822756553f14">remove_pixel_shape</a>(<a class="code" href="structlist__.html">list</a> * pixel_lst);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">/* Fonctions privées */</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="structpixel.html">Pixel</a> *<a class="code" href="pixel_8h.html#a8a4bcbde9aa312231fd4bae3a01478ab">create_pixel</a>(<span class="keywordtype">int</span> <a class="code" href="structpixel.html#a23904b56775cf89cc062968a81b2d947">px</a>, <span class="keywordtype">int</span> <a class="code" href="structpixel.html#ac21bce9325de2a0d2bc73b215eae4598">py</a>, <span class="keywordtype">int</span> color);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pixel_8h.html#a2719c50c617c53984ef5484ea011c9cf">delete_pixel</a>(<a class="code" href="structpixel.html">Pixel</a> * <a class="code" href="structpixel.html">pixel</a>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pixel_8h.html#ac5fdff7e509d6ede5e290a32044d4ae9">pixel_point</a>(<a class="code" href="structshape.html">Shape</a> * <a class="code" href="structshape.html">shape</a>, <a class="code" href="structlist__.html">list</a> * lst);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pixel_8h.html#a49e9a749297e1988b199d7fb75c7f7cd">pixel_line</a>(<a class="code" href="structshape.html">Shape</a> * <a class="code" href="structshape.html">shape</a>, <a class="code" href="structlist__.html">list</a> * lst);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pixel_8h.html#a87abc331cfb87a9a9a56f1db0c1ca587">pixel_cercle</a>(<a class="code" href="structshape.html">Shape</a> * <a class="code" href="structshape.html">shape</a>, <a class="code" href="structlist__.html">list</a> * lst);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pixel_8h.html#a4be84707cddae4c88c715fc31a89db84">pixel_rectangle</a>(<a class="code" href="structshape.html">Shape</a> * <a class="code" href="structshape.html">shape</a>, <a class="code" href="structlist__.html">list</a> * lst);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pixel_8h.html#a33ac3154a410a7daf32aa794ed4c000a">pixel_square</a>(<a class="code" href="structshape.html">Shape</a> * <a class="code" href="structshape.html">shape</a>, <a class="code" href="structlist__.html">list</a> * lst);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pixel_8h.html#a5667750b581fe21ec08d266b521b98f4">pixel_polygon</a>(<a class="code" href="structshape.html">Shape</a> * <a class="code" href="structshape.html">shape</a>, <a class="code" href="structlist__.html">list</a> * lst);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pixel_8h.html#a1a17e77b9983a5d25c11f697bb1f6147">pixel_curve</a>(<a class="code" href="structshape.html">Shape</a> * <a class="code" href="structshape.html">shape</a>, <a class="code" href="structlist__.html">list</a> * lst);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PIXEL_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="alist_8h_html"><div class="ttname"><a href="list_8h.html">list.h</a></div><div class="ttdoc">Définition et manipulation de listes doublement chaînées.</div></div>
+<div class="ttc" id="apixel_8h_html_a1a17e77b9983a5d25c11f697bb1f6147"><div class="ttname"><a href="pixel_8h.html#a1a17e77b9983a5d25c11f697bb1f6147">pixel_curve</a></div><div class="ttdeci">void pixel_curve(Shape *shape, list *lst)</div><div class="ttdoc">Convertit une courbe de Bézier en une liste de pixels.</div><div class="ttdef"><b>Definition:</b> pixel.c:371</div></div>
+<div class="ttc" id="apixel_8h_html_a2719c50c617c53984ef5484ea011c9cf"><div class="ttname"><a href="pixel_8h.html#a2719c50c617c53984ef5484ea011c9cf">delete_pixel</a></div><div class="ttdeci">void delete_pixel(Pixel *pixel)</div><div class="ttdoc">Supprime un pixel et libère sa mémoire.</div><div class="ttdef"><b>Definition:</b> pixel.c:39</div></div>
+<div class="ttc" id="apixel_8h_html_a33ac3154a410a7daf32aa794ed4c000a"><div class="ttname"><a href="pixel_8h.html#a33ac3154a410a7daf32aa794ed4c000a">pixel_square</a></div><div class="ttdeci">void pixel_square(Shape *shape, list *lst)</div><div class="ttdoc">Convertit un carré en une liste de pixels.</div><div class="ttdef"><b>Definition:</b> pixel.c:275</div></div>
+<div class="ttc" id="apixel_8h_html_a484b3385a2339f74f9e0ad43bdbd3344"><div class="ttname"><a href="pixel_8h.html#a484b3385a2339f74f9e0ad43bdbd3344">create_shape_to_pixel</a></div><div class="ttdeci">list * create_shape_to_pixel(Shape *shape)</div><div class="ttdoc">Crée une liste de pixels à partir d'une forme géométrique.</div><div class="ttdef"><b>Definition:</b> pixel.c:54</div></div>
+<div class="ttc" id="apixel_8h_html_a49e9a749297e1988b199d7fb75c7f7cd"><div class="ttname"><a href="pixel_8h.html#a49e9a749297e1988b199d7fb75c7f7cd">pixel_line</a></div><div class="ttdeci">void pixel_line(Shape *shape, list *lst)</div><div class="ttdoc">Convertit une ligne en une liste de pixels.</div><div class="ttdef"><b>Definition:</b> pixel.c:180</div></div>
+<div class="ttc" id="apixel_8h_html_a4be84707cddae4c88c715fc31a89db84"><div class="ttname"><a href="pixel_8h.html#a4be84707cddae4c88c715fc31a89db84">pixel_rectangle</a></div><div class="ttdeci">void pixel_rectangle(Shape *shape, list *lst)</div><div class="ttdoc">Convertit un rectangle en une liste de pixels.</div><div class="ttdef"><b>Definition:</b> pixel.c:253</div></div>
+<div class="ttc" id="apixel_8h_html_a5667750b581fe21ec08d266b521b98f4"><div class="ttname"><a href="pixel_8h.html#a5667750b581fe21ec08d266b521b98f4">pixel_polygon</a></div><div class="ttdeci">void pixel_polygon(Shape *shape, list *lst)</div><div class="ttdoc">Convertit un polygone en une liste de pixels.</div><div class="ttdef"><b>Definition:</b> pixel.c:299</div></div>
+<div class="ttc" id="apixel_8h_html_a87abc331cfb87a9a9a56f1db0c1ca587"><div class="ttname"><a href="pixel_8h.html#a87abc331cfb87a9a9a56f1db0c1ca587">pixel_cercle</a></div><div class="ttdeci">void pixel_cercle(Shape *shape, list *lst)</div><div class="ttdoc">Convertit un cercle en une liste de pixels.</div><div class="ttdef"><b>Definition:</b> pixel.c:200</div></div>
+<div class="ttc" id="apixel_8h_html_a8a4bcbde9aa312231fd4bae3a01478ab"><div class="ttname"><a href="pixel_8h.html#a8a4bcbde9aa312231fd4bae3a01478ab">create_pixel</a></div><div class="ttdeci">Pixel * create_pixel(int px, int py, int color)</div><div class="ttdoc">Crée un pixel avec des coordonnées spécifiques et une couleur donnée.</div><div class="ttdef"><b>Definition:</b> pixel.c:24</div></div>
+<div class="ttc" id="apixel_8h_html_aa885a1c0aceaa86e24b2822756553f14"><div class="ttname"><a href="pixel_8h.html#aa885a1c0aceaa86e24b2822756553f14">remove_pixel_shape</a></div><div class="ttdeci">void remove_pixel_shape(list *pixel_lst)</div><div class="ttdoc">Supprime les pixels associés à une forme géométrique.</div><div class="ttdef"><b>Definition:</b> pixel.c:96</div></div>
+<div class="ttc" id="apixel_8h_html_ac5fdff7e509d6ede5e290a32044d4ae9"><div class="ttname"><a href="pixel_8h.html#ac5fdff7e509d6ede5e290a32044d4ae9">pixel_point</a></div><div class="ttdeci">void pixel_point(Shape *shape, list *lst)</div><div class="ttdoc">Convertit un point en une liste de pixels.</div><div class="ttdef"><b>Definition:</b> pixel.c:108</div></div>
+<div class="ttc" id="ashape_8h_html"><div class="ttname"><a href="shape_8h.html">shape.h</a></div><div class="ttdoc">Définition des structures et fonctions pour la manipulation de différentes formes géométriques (point...</div></div>
+<div class="ttc" id="astructlist___html"><div class="ttname"><a href="structlist__.html">list_</a></div><div class="ttdoc">Structure représentant une liste doublement chaînée.</div><div class="ttdef"><b>Definition:</b> list.h:31</div></div>
+<div class="ttc" id="astructpixel_html"><div class="ttname"><a href="structpixel.html">pixel</a></div><div class="ttdoc">Représente un pixel avec des coordonnées et une couleur.</div><div class="ttdef"><b>Definition:</b> pixel.h:22</div></div>
+<div class="ttc" id="astructpixel_html_a23904b56775cf89cc062968a81b2d947"><div class="ttname"><a href="structpixel.html#a23904b56775cf89cc062968a81b2d947">pixel::px</a></div><div class="ttdeci">int px</div><div class="ttdef"><b>Definition:</b> pixel.h:23</div></div>
+<div class="ttc" id="astructpixel_html_aabdacae19819ff8bdccbe368f03d2377"><div class="ttname"><a href="structpixel.html#aabdacae19819ff8bdccbe368f03d2377">pixel::color</a></div><div class="ttdeci">int color</div><div class="ttdef"><b>Definition:</b> pixel.h:25</div></div>
+<div class="ttc" id="astructpixel_html_ac21bce9325de2a0d2bc73b215eae4598"><div class="ttname"><a href="structpixel.html#ac21bce9325de2a0d2bc73b215eae4598">pixel::py</a></div><div class="ttdeci">int py</div><div class="ttdef"><b>Definition:</b> pixel.h:24</div></div>
+<div class="ttc" id="astructshape_html"><div class="ttname"><a href="structshape.html">shape</a></div><div class="ttdoc">Structure générique représentant une forme géométrique.</div><div class="ttdef"><b>Definition:</b> shape.h:112</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

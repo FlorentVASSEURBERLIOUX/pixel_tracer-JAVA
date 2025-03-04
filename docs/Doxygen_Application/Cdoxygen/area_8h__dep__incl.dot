@@ -1,0 +1,18 @@
+digraph "Documents/srcCPixelTracer/src/area.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Documents/srcCPixelTracer\l/src/area.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Définition de la structure et des fonctions pour la gestion des zones de dessin."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Documents/srcCPixelTracer\l/src/area.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$area_8c.html",tooltip="Gestion des zones et des listes de zones."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Documents/srcCPixelTracer\l/src/pixel_tracer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pixel__tracer_8h.html",tooltip="Déclarations des fonctions liées à la gestion de l'application de traçage de pixels."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Documents/srcCPixelTracer\l/src/command.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$command_8h.html",tooltip="Déclarations des fonctions et structures liées à la gestion des commandes pour une application de tra..."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Documents/srcCPixelTracer\l/src/command.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$command_8c.html",tooltip="Commande et gestion des paramètres du programme."];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Documents/srcCPixelTracer\l/src/main.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html",tooltip="Application principale de traçage de pixels."];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}
